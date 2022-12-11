@@ -6,7 +6,7 @@
   }
 
   html {
-    font-size: 62.5%;
+    font-size: 82.5%;
   }
 
   body {
@@ -91,4 +91,66 @@
   li span {
     cursor:pointer;
   }
+
+  footer {
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px 20px;
+  }
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+  }
+
+
+  /* .header-content, h1 {
+    font-size: 24px;
+    color: #333;
+  } */
+
+  /* .header-content, .logo {
+    background-color: yellow;
+  } */
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #23232e;
+    height: 10vh;
+  }
+
+  .nav-list {
+    list-style: none;
+    display:flex;
+  }
+
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+
+  .mobile-menu {
+    cursor: pointer;
+  }
+
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+  }
+}
+
+.nav-list {
+  position: absolute;
 }
