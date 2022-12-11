@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Imagem-logo e menu de navegação */
+
+.navbar img{
+    height: 125px;
+    width: 125px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar nav{
+    background-color: #142852;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.navbar nav ul a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  
+}
+
+/* Inputs */
+
+.inputs input{
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #142852;
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+
+    
+}
+
+.inputs textarea{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #142852;
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.paragrafo p {
+    position: relative;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+
+.footer{
+    width: 100%;
+    height: 14em;
+    bottom: 0;
+    margin-top: 70px;
+    background-color: #142852;
+    padding: 70px 0;
+}
+
+.conteiner_footer{
+    max-width: 1170px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer_col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer_col h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer_col h4::before{
+    content:'';
+    position: absolute;
+    left:0px;
+    bottom: -10px;
+    background-color: white;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer_col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer_col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.footer_col ul li :hover{
+    padding: 8px;
+}
+
+
+
+
+
+@media(max-widh: 741px){
+    .footer_col{
+        width: 25%;
+        margin-bottom: 30px;
+
+    }
+}
+
+@media(max-widh: 574px){
+    .footer_col{
+        width: 100%;
+        
+
+    }
+}
+
