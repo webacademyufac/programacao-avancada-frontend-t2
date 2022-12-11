@@ -4,27 +4,33 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   font-size: 62.5%;
-}
+} */
 
 body {
   font-family: 'Quicksand', sans-serif;
-  
   background: #7159c1;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-  width: 80%;
-  max-width: 400px;
-  
-  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+header img {  
+  width: 100%;
+  height: auto;
 }
 
 h1 {
   text-align:center;
   color: white;
-  
   font-size: 3.4rem;
 }
 
