@@ -1,2 +1,2 @@
-# Programação Avancada Frontend
-Repositório da disciplina de Programação Avançada Frontend da segunda turma do Web Academy.
+# Programação Avancada Front-end
+Repositório da disciplina de Programação Avançada Front-end da segunda turma do Web Academy.
