@@ -1,0 +1,66 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    background-color: rgba(136, 136, 136, 0.111);
+}
+
+h1, h2, h3, div, header, main, footer, nav{
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.logo{
+    margin-top: 10px;
+    justify-self: center;
+}
+
+.icone_decorativo{
+    display: grid;
+    align-content: center;
+}
+
+#cabecalho{
+    margin: 10px 0px;
+    padding: 10px 30px;
+    display: grid;
+    justify-items: stretch;
+    background-color: rgba(136, 136, 136, 0.515);
+}
+
+#menu_navegacao{
+    display: grid;
+    grid-template-columns: 1fr 75px;
+    gap: 30px;
+}
+
+#form_pesquisa{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    gap: 5px;
+}
+
+#pesquisa{
+    height: 1.5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+#menu_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#conteudo_principal{
+    display: grid;
+    padding: 10px 30px;
+}
