@@ -37,6 +37,9 @@ nav .img {
 img.logo{
     width: 195px;
 }
+img.sobre{
+    width: 200px;
+}
 
 nav ul {
     display: flex;
@@ -100,7 +103,7 @@ div.mylinks {
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 80px;
     width: 100%;
 }
 
@@ -140,7 +143,7 @@ div.lorem {
 }
 p{
     text-align: justify;
-    text-indent: 20px;
+    text-indent: 30px;
 }
 .orgDiv {
     display: flex;
@@ -150,6 +153,7 @@ p{
 .video{
     position: relative;
     width: 100%;
+    
 }
 .video iframe{
     position: relative;
@@ -160,6 +164,7 @@ p{
 .imagem {
     position: relative;
     width: 100%;
+    margin-left: 2px;
 }
 .imagem img{
     position: relative;
@@ -243,6 +248,8 @@ main {
     .imagem {
         position: relative;
         width: 100%;
+        margin-top: 2px;
+        margin-left: 0;
     }
     .imagem img{
         position: relative;
