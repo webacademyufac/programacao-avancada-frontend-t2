@@ -6,6 +6,7 @@
 
 /* Imagem-logo e menu de navegação */
 
+
 .navbar img{
     height: 125px;
     width: 125px;
@@ -32,6 +33,8 @@
     color: white;
   
 }
+
+
 
 /* Inputs */
 
@@ -130,9 +133,7 @@ ul{
     padding: 8px;
 }
 
-
-
-
+/* footer */
 
 @media(max-widh: 741px){
     .footer_col{
@@ -147,6 +148,13 @@ ul{
         width: 100%;
         
 
+    }
+}
+
+@media (max-widh: 480px){
+
+    * {
+        background-color: black;
     }
 }
 
