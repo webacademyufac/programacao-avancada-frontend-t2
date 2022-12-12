@@ -25,12 +25,12 @@ header img {
   height: auto;
 }
 
-.nav-list {
+/* .nav-list {
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 h1 {
   text-align:center;
