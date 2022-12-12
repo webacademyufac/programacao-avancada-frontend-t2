@@ -1,0 +1,198 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 56px;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+h4 {
+    font-size: 40px;
+}
+
+h5 {
+    font-size: 32px;
+}
+
+h6 {
+    font-size: 24px;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #23232e;
+    height: 8vh;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    padding-top: 96px;
+    padding-right: 24px;
+    padding-left: 24px;
+    background: url('https://alefmirandadesigner.com/wp-content/uploads/2022/08/bg.jpg') no-repeat center center;
+    background-size: cover;
+
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu{
+     display: none; /* esconde */
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.text-center {
+    text-align: center;
+}
+
+p {
+    color: #555;
+}
+
+.list {
+    list-style: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    text-align: right;
+    margin-left: 48px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+li {
+    color: #777;
+    padding: 16px 24px;
+    border-bottom: 1px solid #222;
+}
+
+input[type=text] {
+    background-color: #111;
+    border: 0;
+    border-radius: 4px;
+    height: 40px;
+    padding: 8px;
+    margin-top: 24px;
+    font-size: 18px;
+    color: white;
+}
+
+button {
+    padding: 8px;
+    border: 0;
+    border-radius: 4px;
+    margin-left: 8px;
+    background-color: #eee;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #aaa;
+}
+
+@media (max-width: 999px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-list {
+         position: absolute; /* posiciona aonde quiser */
+         top: 8vh;
+         right: 0;
+         width: 100vw;
+         height: 92vh;
+         background: #23232e;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-around;
+         transform: translateX(100%);
+         transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}

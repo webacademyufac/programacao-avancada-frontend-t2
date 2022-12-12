@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>challenger 01</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <a href="/" class="logo">Tiger Codes</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/">Sobre</a></li>
+                <li><a href="/">Projetos</a></li>
+                <li><a href="/">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h2 class="text-center">Meus Links</h2>
+
+        <h6 class="text-center">Digite um novo link para a lista:</h6>
+        <div class="text-center">
+            <input type="text" name="text-item" placeholder="Digite a URL...">
+            <button>Adicionar</button>
+        </div>
+
+        <ul class="list">
+        </ul>
+    </section>
+    <script>
+        class MobileNavbar {
+            constructor(mobileMenu, navList, navLinks) {
+                this.mobileMenu = document.querySelector(mobileMenu);
+                this.navList = document.querySelector(navList);
+                this.navLinks = document.querySelectorAll(navLinks);
+                this.activeClass = "active";
+
+                this.handleClick = this.handleClick.bind(this);
+            }
+
+            animateLinks() {
+                this.navLinks.forEach((link, index) => {
+                    link.style.animation
+                        ? (link.style.animation = "")
+                        : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3
+                            }s`);
+                });
+            }
+
+            handleClick() {
+                this.navList.classList.toggle(this.activeClass);
+                this.mobileMenu.classList.toggle(this.activeClass);
+                this.animateLinks();
+            }
+
+            addClickEvent() {
+                this.mobileMenu.addEventListener("click", this.handleClick);
+            }
+
+            init() {
+                if (this.mobileMenu) {
+                    this.addClickEvent();
+                }
+                return this;
+            }
+        }
+
+        const mobileNavbar = new MobileNavbar(
+            ".mobile-menu",
+            ".nav-list",
+            ".nav-list li",
+        );
+        mobileNavbar.init();
+    </script>
 </body>
+
 </html>
