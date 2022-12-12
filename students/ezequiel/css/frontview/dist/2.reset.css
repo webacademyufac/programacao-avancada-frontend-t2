@@ -37,7 +37,13 @@ html {
 
 /* Mobile */
 
-@media (max-width: 128px) {
+@media (min-width: 0px) {
+    body {
+        font-size: 600%;
+    }
+}
+
+@media (min-width: 128px) {
     body {
         font-size: 500%;
     }
