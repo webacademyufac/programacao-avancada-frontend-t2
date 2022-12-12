@@ -143,8 +143,9 @@
     height: auto;
     width: 100vw;
     padding-top: 40px 20px; */
+    width: 100%;
     background-color: #003366;
-    margin-top: auto;
+    padding-top: 100%
     padding: 0.5em;
   }
 
@@ -167,6 +168,6 @@
   }
 }
 
-.nav-list {
+nav {
   position: absolute;
 }
