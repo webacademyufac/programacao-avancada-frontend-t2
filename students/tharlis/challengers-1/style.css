@@ -9,9 +9,11 @@ body, ul, li, p {
   font-family: Arial;
 }
 
-a {
-  text-decoration: none;
-  color: white !important;
+img {
+  height: 40px;
+  border: 10px;
+  background: #ddd;
+  border-radius: 100px;
 }
 
 h1 {
