@@ -1,0 +1,68 @@
+/* ========== GRID ========== */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.row > .col {
+    box-sizing: border-box;
+    padding: 0.5em 1em;
+    flex: 1 1 0; /* por padrão todos os itens da row possuem o mesmo tamanho */
+}
+
+.row.align {
+    align-items: center;
+}
+
+.row.center {
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.row.container {
+    width: 75%;
+    margin: auto;
+}
+
+.row.auto > .col {
+    flex: 1 1 auto; /* o tamanho dos itens é de acoro com espaço disponível */
+}
+
+.row.two > .col {
+    flex: 1 1 50%; /* define o tamanho máximo dos itens para duas colunas */
+}
+
+.row.tree > .col {
+    flex: 1 1 33.3333333333%; /* define o tamanho máximo dos itens para três colunas */
+}
+
+.row.four > .col {
+    flex: 1 1 25%; /* define o tamanho máximo dos itens para quatro colunas */
+}
+
+.row > .col.center {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .row > .col,
+    .row.align > .col,
+    .row.center > .col,
+    .row.two > .col,
+    .row.tree > .col,
+    .row.four > .col {
+        flex: 1 1 auto;
+    }
+
+    .row.center {
+        flex-wrap: wrap;
+    }
+
+}

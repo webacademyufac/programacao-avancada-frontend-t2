@@ -1,0 +1,13 @@
+/* =================================== NAVIGATION SAMPLE LINK =================================== */
+
+.navigation.sample.link > a:not(:first-child) {
+    display: block;
+    margin-top: 0.75em;
+}
+
+.navigation.sample.link > a > i {
+    color: hsla(240, 50%, 50%, 1);
+    margin-right: 0.5em;
+}
+
+/* =================================== NAVIGATION SAMPLE LINK =================================== */
