@@ -1,5 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
 
+/* resetar alguns estilos padrões */
+body, ul, li, p {
+  margin: 0%;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+
+a {
+  text-decoration: none;
+  color: white !important;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.header{
+  background: #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li{
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+
+}
+
 * {
   box-sizing: border-box;
 }
@@ -71,7 +114,7 @@ a {
   display: block;
   
   color: #333;
-  text-decoration: none;  
+  text-decoration: none; 
   
   padding: 16px 0;
   font-size: 1.8rem;
