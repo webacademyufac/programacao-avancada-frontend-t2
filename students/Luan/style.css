@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* html {
@@ -13,11 +15,6 @@ body {
   background: #7159c1;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -26,6 +23,13 @@ html, body {
 header img {  
   width: 100%;
   height: auto;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
