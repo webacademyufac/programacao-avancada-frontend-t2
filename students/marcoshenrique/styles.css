@@ -1,92 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
-
-* {
-  box-sizing: border-box;
+:root{
+  font-size: 16px;
+  --black: #0a0c0d; 
+  --cinza: #213635; 
+  --white-gelo: #f2f2f2;
+  --background: #e2e3e9; 
 }
 
-html {
-  font-size: 62.5%;
+body, ul{
+  margin: 0;
+  padding: 0; 
 }
 
-body {
-  font-family: 'Quicksand', sans-serif;
-  
-  background: #7159c1;
+body{
+  font-family: -web-system,
+  BlinkMacSystemFont, "Segoe UI",
+  Roboto, Oxygen, 
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+  sans-serif;
+  background: var(--background);
 }
 
-.container {
-  width: 80%;
-  max-width: 400px;
-  
-  margin: auto;
-}
-
-h1 {
-  text-align:center;
-  color: white;
-  
-  font-size: 3.4rem;
-}
-
-input {
-  width: 100%;
-  
-  padding: 8px 16px;
-  margin-bottom: 32px;
-  
-  border-radius: 16px;
-  border: 1px solid #ccc;
-  
-  outline: none;
-  
-  font-size: 1.6rem;
-  font-weight:300;
-}
-
-ul {
-  background: white;
-  
-  box-shadow: 0px 4px 8px -2px #00000033;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  
-  padding: 16px;
-  
-  font-size: 1.4rem;
-  
-}
-
-li {
-  list-style: none;
-  
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  
-  border-bottom: 1px solid #ddd;
-}
-
-
-a {
-  display: block;
-  
-  color: #333;
-  text-decoration: none;  
-  
-  padding: 16px 0;
-  font-size: 1.8rem;
-  
-}
-
-a:hover {
+div#logo{
+  color: var(--white-gelo);
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
-li:first-child,
-li:last-child {
-  border: none;
+a{
+  color: var(--white-gelo);
+  text-decoration: none;
 }
 
-li span {
-  cursor:pointer;
+.header{
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  background: var(--black);
+  padding: 1rem;
+}
+@media screen and (max-width: 480px){
+  .header{
+      margin-top: 1em;
+      text-align: left;
+  }
+}
+
+
+.menu{
+  list-style: none;
+  display: flex;
+  gap: 0.5rem; 
+}
+
+@media screen and (max-width: 480px){
+  nav ul li a{
+      display: block;
+      width: 100%;
+  }
+}
+
+
+
+
+.footer{
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  background: var(--black);
+  padding: 1rem;
+  color: #f2f2f2;
+  margin-top: 20%;
+
 }
