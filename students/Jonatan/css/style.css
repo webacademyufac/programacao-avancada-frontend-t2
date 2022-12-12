@@ -75,7 +75,7 @@ nav .menu-btn i{
 }
 
 div.myinput {
-    margin-bottom: 5px;
+    margin-bottom: 50px;
 }
 
 input.box {
@@ -103,7 +103,7 @@ div.mylinks {
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     width: 100%;
 }
 
@@ -150,21 +150,34 @@ p{
     position: relative;
     
 }
-.video{
+.video {
     position: relative;
     width: 100%;
-    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f88f06;
 }
+    
+
+
 .video iframe{
     position: relative;
     width: 100%;
     height: 100%;
     border: none;
-} 
+}
+/* iframe:hover {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f88f06;
+} */
 .imagem {
     position: relative;
     width: 100%;
     margin-left: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f88f06;
 }
 .imagem img{
     position: relative;
