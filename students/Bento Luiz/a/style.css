@@ -1,16 +1,24 @@
 body{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     display: grid;
-    background-color: rgba(136, 136, 136, 0.111);
+    /*background-color: rgb(43, 43, 43);*/
+    background-color: rgba(125, 125, 125, 0.125);
 }
 
-h1, h2, h3, div, header, main, footer, nav{
+h1, h2, h3, ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
     margin: 0px;
 }
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 img{
@@ -18,8 +26,8 @@ img{
 }
 
 .logo{
-    margin-top: 10px;
     justify-self: center;
+    margin-bottom: 15px;;
 }
 
 .icone_decorativo{
@@ -28,30 +36,30 @@ img{
 }
 
 #cabecalho{
-    margin: 10px 0px;
-    padding: 10px 30px;
+    padding: 15px;
     display: grid;
-    justify-items: stretch;
-    background-color: rgba(136, 136, 136, 0.515);
+    background-color: rgb(45, 106, 228);
+    /*border-bottom: 3px solid black;*/
 }
 
 #menu_navegacao{
     display: grid;
     grid-template-columns: 1fr 75px;
-    gap: 30px;
+    gap: 20px;
 }
 
 #form_pesquisa{
     display: grid;
     grid-template-columns: 30px 1fr;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 
-#pesquisa{
+.campo{
     height: 1.5rem;
     border-radius: 10px;
-    border: none;
+    border: 2px solid black;
+    box-shadow: 4px 4px;
 }
 
 #menu_items{
@@ -62,5 +70,32 @@ img{
 
 #conteudo_principal{
     display: grid;
-    padding: 10px 30px;
+    padding: 15px 30px;
 }
+
+#secao_links{
+    display: grid;
+    padding: 15px;
+    gap: 15px;
+    background-color: rgb(25, 70, 161);
+}
+
+#form_url{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.links_json{
+    font-weight: bold;
+}
+
+.links_json li{
+    margin-left: 20px;
+}
+
+main h1{
+    /*não sei porquê, mas essa fonte h1 tá 10px maior do que a outra.*/
+    font-size: 30px;
+}
+
+/*<p class="texto">Aliquam erat volutpat. Curabitur consectetur, velit et lacinia tempor, lorem mauris auctor nisi, eu aliquet sem odio nec odio. Suspendisse placerat euismod diam sit amet fringilla.</p>*/

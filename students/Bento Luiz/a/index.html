@@ -9,14 +9,14 @@
 </head>
 <body>
 
-    <img class="logo" src="img/bikcraft.svg" alt="Logo Bikcraft">
-
     <header id="cabecalho">
+
+        <img class="logo" src="img/bikcraft.svg" alt="Logo Bikcraft">
 
         <nav id="menu_navegacao">
             <form id="form_pesquisa" action="">
                 <a class="icone_decorativo" href=""><img src="img/search.png"></a>
-                <input id="pesquisa" name="pesquisa" type="text" placeholder="Estou pesquisando...">
+                <input class="campo" name="pesquisa" type="text" placeholder="Estou pesquisando...">
             </form>
             <div id="menu_items">
                 <a class="icone_decorativo" href=""><img src="img/user.png" alt="login de usuário"></a>
@@ -26,8 +26,29 @@
 
     </header>
 
+
+    <section id="secao_links">
+
+        <h1>Digite um Link:</h1>
+
+        <form id="form_url" action="">
+            <input class="campo" type="text" placeholder="Digite a url...">
+        </form>
+
+    </section>
+
+
     <main id="conteudo_principal">
-        <p class="texto">Aliquam erat volutpat. Curabitur consectetur, velit et lacinia tempor, lorem mauris auctor nisi, eu aliquet sem odio nec odio. Suspendisse placerat euismod diam sit amet fringilla.</p>
+
+        <h1>Meus Links:</h1>
+
+        <ul class="links_json">
+            <li><a href="https://playstation.com">playstation.com</a></li>
+            <li><a href="https://xbox.com">xbox.com</a></li>
+            <li><a href="https://sig.ifac.edu.br">sig.ifac.edu.br</a></li>
+            <li><a href="https://submarino.com.br">submarino.com</a></li>
+        </ul>
+
     </main>
 
     <footer id="rodape">
