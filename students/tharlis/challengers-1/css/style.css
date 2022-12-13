@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
 
-/* resetar alguns estilos padrões */
+#title {
+  background-color: aqua;
+}
+
+@media (min-width: 480px){
+  #title {
+    background-color: red;
+  }
+}
+
+@media (min-width: 768px){
+  #title {
+    background-color: forestgreen;
+  }
+}
+
+/* resetar alguns estilos padrões
 body, ul, li, p {
   margin: 0%;
   padding: 0px;
@@ -60,4 +76,4 @@ body {
   font-family: 'Quicksand', sans-serif;
   
   background: #7159c1;
-}
+} */
