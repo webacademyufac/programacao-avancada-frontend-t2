@@ -1,5 +1,6 @@
 /* body */
 body {
+  margin: 0;
   background-color: rgb(229, 229, 229);
   display: flex;
   flex-direction: column;
@@ -9,8 +10,7 @@ body {
 /* nav */
 nav {
   background-color: rgb(210, 210, 210);
-  /* border: 1px solid white; */
-  /* border-bottom: 1px solid white; */
+  width: 100%;
 }
 
 nav ul {
@@ -34,8 +34,14 @@ img.logo {
   height: 30px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 input {
-  width: 100%;
+  /* width: 100%; */
   padding: 8px 16px;
   margin-bottom: 32px;
   border-radius: 10px;
@@ -45,12 +51,25 @@ input {
   font-weight:300;
 }
 
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /* divs */
-div.texto {
-  background-color: greenyellow;
+.text {
+  background-color: rgb(186, 182, 182);
   border-color: black;
+  margin: 0;
 }
 
+.video {
+  background-color: rgb(186, 182, 182);
+}
+
+.slide {
+  background-color: rgb(186, 182, 182);
+}
 
 
 /* footer */
