@@ -8,25 +8,95 @@
     <!-- <script src="../server.js" defer></script> defer é usado para que o script seja executado depois que o html for carregado -->
     <link rel="shortcut icon" href="assets/icons8-lista-de-verificação-16.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js" defer></script>
+    <!-- <script src="scripts.js" defer></script> -->
 </head>
 <body>
-    <h1>Meus links</h1>
+    <header>
+        <img src="images/logo-transparente.png" alt="Logo" class="logo">
+    </header>
+    <nav class="menu">
+        <li type="none">
+            <ul>
+                
+                <a href="#">
+                    <img src="images/Web-Home/icons8-página-inicial-ios-16-glyph-32.png" alt="Home">
+                    Home
+                </a>
+            </ul>
+            <ul>
+                
+                <a href="#">
+                    <img src="images/Web-Editar/icons8-lápis-ios-16-glyph-32.png" alt="Editar">
+                    Editar
+                </a>
+            </ul>
+            <ul>
+                <a href="#">
+                    <img src="images/Web-Editar/icons8-lápis-ios-16-glyph-32.png" alt="Tema">
+                    Tema
+                </a>
+            </ul> <!--Não achei o icon-->
+            <ul>
+                
+                <a href="#">
+                    <img src="images/Web-Configurações/icons8-engrenagem-ios-16-glyph-32.png" alt="Configurações">
+                    Configurações
+                </a>
+            </ul>
+        </li>
+    </nav>
+    <main>
+        <div class="formulario" >
+            <form action="">
+                <label for="link">Insira o link aqui:</label>
+                <input type="text" id="link" name="link" placeholder="Digite a URL...">
+                <input type="submit" value="Adicionar" class="button" name="button">
+            </form>
+        </div>
     
-    <div class="formulario" >
-        <form action="">
-            <label for="link">Insira o link aqui:</label>
-            <input type="text" id="link" name="link" placeholder="Digite a URL...">
-            <input type="submit" value="Adicionar" class="button" name="button">
-        </form>
+        <div class="list">
+            <ul>
+                <li>Nunca mais esqueca seus links</li>
+            </ul>
+        </div>
+    </main>
+    <span class="description-aplication">
+        <h3>Descrição da Aplicação</h3>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, in placeat fugiat praesentium perferendis quos non quibusdam maiores aliquam! Sequi, amet dolorum hic nisi quaerat a distinctio commodi officiis! Distinctio.
+    </span>
+    <div class="hidden media-advertising">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GdB8AgnpG1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <img src="images/images-advertising.jpg" alt="Advertising">
     </div>
 
-    <div class="list">
-    <ul>
-        <li>Nunca mais esqueca seus links</li>
-    </ul>
-    </div>
-
-    <footer>Develops by Tailan Abreu and Marcos Guilherme.</footer>
+    <footer>
+        <span class="contacts">
+            <a href="tel:+55 68 992338248" target="_blank">
+                <img src="images/Web-WhatsApp/icons8-whatsapp-material-outlined-16.png"> 
+                WhatsApp
+            </a> 
+            <a href="mailto:marcos.rocha@sou.ufac.br">
+                <img src="images/email.png" alt="email">
+                Email
+            </a>
+            <a href="#">
+                <img src="images/Web-Instagram/icons8-instagram-material-outlined-16.png" alt="intagram">
+                Intagram
+            </a><br> 
+            <a href="#">
+                <img src="images/Web-Linkedin/icons8-linkedin-material-outlined-16.png" alt="Linkedin">
+                Linkedin
+            </a> 
+            <a href="#">
+                <img src="images/github.png" alt="github">
+                Github
+            </a><br>
+        </span>
+        <div class="developer">
+        <span >Develope by Marcos Guilherme</span>
+        </div>
+        
+    </footer>
 </body>
 </html>
