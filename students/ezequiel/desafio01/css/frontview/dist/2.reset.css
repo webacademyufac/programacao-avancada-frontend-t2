@@ -35,6 +35,12 @@ html {
     font-size: 1vw;
 }
 
+/*
+PARA ATIVIDADE FAZER AS SEGUINTES QUEBRAS:
+@media (min-width: 480px) {} -> PARA TABLET
+@media (min-width: 768px) {} -> PARA DESKTOP
+*/
+
 /* Mobile */
 
 @media (min-width: 0px) {
