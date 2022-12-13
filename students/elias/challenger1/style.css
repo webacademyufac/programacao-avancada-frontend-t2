@@ -1,0 +1,75 @@
+.container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr 3fr 3fr;
+  grid-template-areas: 
+  "header header"
+  "nav img"
+  "campoentrada campoentrada"
+  "links links"
+  "desc desc"; 
+  grid-gap: 0.5em;
+}
+
+.header{
+  text-align: center;
+  background-color: black;
+  color: white;
+  grid-area: "header";
+}
+
+.nav{
+  grid-area: "nav";
+  background-color: yellow;
+}
+
+.nav img{
+  width: 20%;
+  position: absolute;
+  right: 0;
+  grid-area: "img";
+}
+
+header h1{
+  font-size: 2rem;
+}
+
+#campoentrada{
+  background-color: gray;
+  grid-area: "campoentrada";
+}
+
+#campoentrada input{
+  width: 80%;
+  margin-left: 2rem;
+}
+
+#links{
+  background-color: rgb(104, 104, 255);
+
+  grid-area: "links";
+}
+
+#links h2{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#desc{
+  grid-area: "desc";
+  background-color: aqua;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  grid-area: "footer";
+}
+
+footer span{
+  font-size: 0.8rem;
+}
