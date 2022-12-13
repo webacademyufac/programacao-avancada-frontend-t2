@@ -45,6 +45,14 @@ input {
   font-weight:300;
 }
 
+/* divs */
+div.texto {
+  background-color: greenyellow;
+  border-color: black;
+}
+
+
+
 /* footer */
 footer {
   background-color: rgb(98, 134, 111);
