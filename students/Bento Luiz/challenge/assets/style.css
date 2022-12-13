@@ -3,6 +3,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     display: grid;
+    gap: 20px;
     /*background-color: rgb(43, 43, 43);*/
     background-color: rgba(170, 170, 170, 0.048);
 }
@@ -33,7 +34,7 @@ img{
 #cabecalho{
     padding: 15px;
     display: grid;
-    background-color: rgb(45, 106, 228);
+    background-color: #4AA0D5;
     /*border-bottom: 3px solid black;*/
 }
 
@@ -88,6 +89,8 @@ img{
 #conteudo_principal{
     display: grid;
     padding: 15px 30px;
+    background-color: aqua;
+    
 }
 
 .links_json{
@@ -96,11 +99,6 @@ img{
 
 .links_json li{
     margin-left: 20px;
-}
-
-main h1{
-    /*não sei porquê, mas essa fonte h1 tá 10px maior do que a outra.*/
-    font-size: 30px;
 }
 
 /*<p class="texto">Aliquam erat volutpat. Curabitur consectetur, velit et lacinia tempor, lorem mauris auctor nisi, eu aliquet sem odio nec odio. Suspendisse placerat euismod diam sit amet fringilla.</p>*/
