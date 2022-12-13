@@ -281,7 +281,7 @@ footer p#ass{
 }
 
 /* none na versão mobile */
-video{
+div#video > iframe{
     display: none;
 }
 
