@@ -11,27 +11,79 @@
   
   * {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
+    font-size: 1.0em;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
   }
 
-  .header {
+  .header-container {
+    display: flex;
     margin-top: auto;
     text-align: center;
-    background: #0a0c0d;
+    background: black;
+    align-items: center;
+    justify-content: center;
   }
 
-  nav > ul > li > a {
+  #burguer{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #burguer:hover{
+    background-color: white;
+    color: black;
+  }
+  .menu{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #e68b02;
+  }
+  nav ul li a:hover{
+    color: white;
+
+  }
+
+  .menu-item{
+    flex: 1;
+    margin: 5px;
+    padding: 0;
+    flex: 1 1 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+    .menu-link{
+      color: black;
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+    }
+
+
+
+/*   nav > ul > li > a {
+    display: flex;
     text-align: center;
     text-decoration: none;
     border-top: 2px solid white;
     color: #00b4cc;
+    justify-content: center;
+    flex-wrap: wrap;
   }
+
   nav > ul > li > a:hover {
     color: white;
-  }
+  } */
   
   body, html {
     height: 100vh;
@@ -80,6 +132,12 @@
     font-size: 1.4rem;
     list-style-type: none;
     
+  }
+
+  .btn{
+    text-align: end;
+    background: #cc0707;
+    width: ;
   }
 
   h2 {

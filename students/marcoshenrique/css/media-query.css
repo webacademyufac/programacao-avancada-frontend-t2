@@ -21,10 +21,44 @@ desktop: 992px até 1200px;
 Grandes Telas: acima de 1200px; 
 */
 
-@media screen and (min-width: 768px) and (max-width: 1024px){ /* tablet */
+@media screen and (min-width: 480px){ /* tablet */
+    .menu-item{
+        flex-basis: 100px;
+    }
+
+    .header-container{
+        display: flex;
+        margin-top: auto;
+        text-align: left;
+        background: #f2ea02;
+        align-items: left;
+        justify-content: left;
+    }
+    div#logo{
+        display: flex;
+        justify-content: flex-start;
+
+    }
 
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1200px){ /* desktop */
+@media screen and (min-width: 768px){ /* desktop */
+    .menu-item{
+        flex-basis: 100px;
+    }
+
+    .header-container{
+        display: flex;
+        margin-top: auto;
+        text-align: left;
+        background: #a6a21c;
+        align-items: left;
+        justify-content: left;
+    }
+    div#logo{
+        display: flex;
+        justify-content: flex-start;
+
+    }
 
 }
