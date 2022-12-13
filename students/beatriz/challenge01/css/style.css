@@ -89,7 +89,15 @@ li {
   
   border-bottom: 1px solid #ddd;
 }
-/* Fim do input e output do formulário */
+
+#form-input {
+  padding: 2.5em;
+  margin-top: 3em;
+}
+/* Fim do input do formulário */
+
+/* Output */
+
 
 a {
   display: block;
