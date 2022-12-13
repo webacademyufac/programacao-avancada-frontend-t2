@@ -1,99 +1,63 @@
-
-html {
-  font-size: 62.5%;
+body{
+  display: grid;
+  grid-template-rows: 5em 3em;
 }
 
-body {
-  font-family: 'Quicksand', sans-serif;
-  
-  background: #59b5c1;
+header{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: yellow;
+  text-align: center;
 }
 
-.container {
-  background-color: rgb(64, 102, 110);
-
-  width: 900px;
- 
-  max-width: 900px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: 18px;
-
+#menu{
+  width: 70px;
+  right: 0px;
   position: absolute;
-  top: 20%;
-  left: 10%;
+
 }
 
+/* nav{
+  display: grid;
+  grid-template-columns: 30px 30px;
+}
+ul{
+  display: grid;
+  grid-template-columns: auto auto auto;
+} */
 
-
-h1 {
-  padding-top: 15px;
-  text-align:center;
-  color: white;
-  font-size: 3.1rem;
+#links h2{ 
+  text-align: center;
 }
 
-input {
-  width: 100%;
-  
-  padding: 8px 16px;
-  margin-bottom: 20px;
-  
-  
-  border-radius: 16px;
-  border: 1px solid #ccc;
-  
-  outline: none;
-  
-  font-size: 1.6rem;
-  font-weight:300;
+#campoentrada{
+  display: grid;
+  grid-template-columns: auto;
+  background-color: rgb(241, 107, 107);
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
-ul {
-  background: white;
-  
-  box-shadow: 0px 4px 8px -2px #00000033;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  
-  padding: 16px;
-  
-  font-size: 1.4rem;
-  
-}
-
-li {
-  list-style: none;
-  
-  display:flex;
+#campoentrada form input{
+  width: 80%;
+  padding: 0.4em;
   align-items: center;
-  justify-content: space-between;
-  
-  border-bottom: 1px solid #ddd;
 }
 
-
-a {
-  display: block;
-  
-  color: #333;
-  text-decoration: none;  
-  
-  padding: 16px 0;
-  font-size: 1.8rem;
-  
+#campoentrada form{
+  margin-left: em;
 }
 
-a:hover {
-  font-weight: bold;
+#desc span{
+  text-align: center;
+  margin: 2em 2em;
 }
-
-li:first-child,
-li:last-child {
-  border: none;
-}
-
-li span {
-  cursor:pointer;
+footer{
+  position: fixed;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.796);
+  color: white;
+  padding: 0.5em;
+  width: 100vh;
+  margin-right: 0.1em;
 }
