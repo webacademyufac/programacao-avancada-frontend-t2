@@ -4,7 +4,7 @@ body{
     font-size: 20px;
     display: grid;
     /*background-color: rgb(43, 43, 43);*/
-    background-color: rgba(125, 125, 125, 0.125);
+    background-color: rgba(170, 170, 170, 0.048);
 }
 
 h1, h2, h3, ul{
@@ -30,11 +30,6 @@ img{
     margin-bottom: 15px;;
 }
 
-.icone_decorativo{
-    display: grid;
-    align-content: center;
-}
-
 #cabecalho{
     padding: 15px;
     display: grid;
@@ -46,6 +41,11 @@ img{
     display: grid;
     grid-template-columns: 1fr 75px;
     gap: 20px;
+}
+
+.icone_decorativo{
+    display: grid;
+    align-content: center;
 }
 
 #form_pesquisa{
@@ -68,21 +68,26 @@ img{
     gap: 15px;
 }
 
-#conteudo_principal{
-    display: grid;
-    padding: 15px 30px;
-}
-
 #secao_links{
     display: grid;
     padding: 15px;
-    gap: 15px;
-    background-color: rgb(25, 70, 161);
+    gap: 10px;
+    background-color: rgb(31, 81, 181);
+}
+
+#secao_links h2{
+    margin-left: 2px;
+    font-size: 1.5rem;
 }
 
 #form_url{
     display: grid;
     grid-template-columns: 1fr;
+}
+
+#conteudo_principal{
+    display: grid;
+    padding: 15px 30px;
 }
 
 .links_json{
