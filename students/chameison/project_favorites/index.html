@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <script src="./scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <section class="container">
+            <div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li class="selected">
+                        <a href="index.html">Home</a>
+                    </li>
+                
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="menu-mobile">
+                <h2><i class="fa fa-bars"></i></h2>
+                <ul>
+                    <li class="selected">
+                        <a href="index.html">Home</a>
+                    </li>
+            
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </section>
+    </header>
+    
+    <section class="main">
+        <div class="links">
+            <h1>Meus links</h1>
+            <form action="" id="form">
+                <input type="text" name="url" id="url" placeholder="Url....">
+                <button class="btn" type="submit">Guardar</button>
+                <div class="clear"></div>
+            </form>
+            <ul>
+                <li><a>www.google.com</a></li>s
+            </ul>
+            <div class="aviso">
+                <p>Não esqueça o link!</p>
+            </div>
+        </div>           
+    </section>
+
+    <footer class="footer">
+        <div class="dev">
+            <a href="">Chameison</a>
+        </div>
+        
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $('nav.menu-mobile h2').click(function(){
+                $('nav.menu-mobile ul').slideToggle();
+            });
+    </script>
+</body>
+</html>
