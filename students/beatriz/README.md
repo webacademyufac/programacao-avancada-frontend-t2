@@ -50,3 +50,26 @@ Criar a aplicação partindo de um dispositivo móvel.
 **Media query:** consiste de um *media type* e pelo menos uma expressão que limita o escopo das folhas de estilo usando *media features*, tal como lagura, altura e cor. **Isso não é mobile-first**.
 
 Ler a página da MDN Docs Usndo Media Queries. 
+
+> Não utilizar em ou px e sim .rem.
+
+olhar `fr`.
+
+### Aula 2
+**Data:** 12/12/22
+
+https://www.freecodecamp.org/portuguese/news/elementos-semanticos-do-html5-explicados/
+
+https://stackoverflow.com/questions/65547552/right-implementation-of-nav-for-burger-menu-html5-semantic
+
+https://cursos.alura.com.br/forum/topico-footer-sempre-ao-final-da-pagina-22772
+
+Os arquivos referentes ao Challenge01 foram movidos para a pasta challenge01.
+
+A pasta `docs` diz respeito à aula do dia 12/12/2022, iniciando com o bootstrap.
+
+~Java 8 Prático Lambdas, Streams e os novos recursos da linguagem~
+
+TODO : trocar o @media para @media (min-width: 480px); @media (min-width: 768px)
+
+#### Bootstrap
