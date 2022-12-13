@@ -1,0 +1,17 @@
+#title {
+   background-color: aqua;
+}
+
+
+@media (min-width: 480px) {
+   
+   #title {
+      background-color: red;
+   }
+}
+@media (min-width: 788px) {
+   
+   #title {
+      background-color: orange;
+   }
+}

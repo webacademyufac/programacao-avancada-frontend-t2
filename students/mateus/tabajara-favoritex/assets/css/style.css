@@ -1,5 +1,12 @@
 body {
    margin: 0;
+   font-size: 2em;
+}
+
+input {
+   font-size: 1.5em;
+   border-radius: 0.4em;
+   padding: 0.5em;
 }
 
 .visual-identity {
@@ -10,7 +17,7 @@ body {
 }
 
 .logo {
-   max-height: 8em;
+   max-width: 40%;
 }
 
 .nav-menu {
@@ -27,7 +34,7 @@ body {
 
 .nav-menu ul li {
    display: flex;
-   padding: 0.5em;
+   padding: 1em;
 }
 
 .search-container {
@@ -35,4 +42,17 @@ body {
    padding: 1em;
    display: flex;
    justify-content: center;
+}
+
+.fav-list-container {
+   background-color: aqua;
+}
+
+.fav-list-container ul {
+   margin: 0;
+   list-style: none;
+}
+.nav-menu ul li {
+   display: flex;
+   padding: 0.5em;
 }
