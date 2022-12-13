@@ -1,7 +1,7 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(#155aa3,#04274b);
+  background: linear-gradient(#71a8e4,#8fc3f7);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -29,6 +29,7 @@ ul {
   font-size: 1.4rem;
   width: 90%;
   margin: auto;
+  float: left;
   
 }
 
@@ -40,6 +41,8 @@ li {
   justify-content: space-between;
   
   border-bottom: 1px solid #ddd;
+  float:left ;
+  padding: 5px;
   
 }
 
@@ -60,4 +63,7 @@ input {
   
   font-size: 1.6rem;
   font-weight:300;
+}
+a{
+  text-decoration: none;
 }
