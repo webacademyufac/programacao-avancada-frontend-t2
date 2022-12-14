@@ -93,4 +93,13 @@ Os prefixos existentes sao `xs` para telas abaixo de 768px, `sm` para telas de 7
 svgrepo.com => repositório de svg
 freepik => repositório de svg tambem
 
-É possível editar svgs, basta abrir com o vscode. Ele vai abrir o XML correspondente ao vetor
+É possível editar svgs, basta abrir com o vscode. Ele vai abrir o XML correspondente ao vetor.
+
+Se nao der certo o parallax.js usando apenas as linhas
+
+```javascript
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+```
+
+baixar em https://pixelcog.github.io/parallax.js/
