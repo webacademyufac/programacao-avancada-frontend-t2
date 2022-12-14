@@ -52,6 +52,7 @@ main {
 
 article h2 {
     padding-bottom: 20px; 
+    text-align: center;
 }
 
 article p {
@@ -72,4 +73,36 @@ article p {
   #burguer:hover{
     background-color: white;
     color: black;
+  }
+
+  input {
+    width: 95%;
+    
+    padding: 8px 16px;
+    margin-bottom: 32px;
+    
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    
+    font-size: 1.6rem;
+    font-weight:300;
+    
+  }
+
+  ul.urls{
+    background: #00b4cc;
+    box-shadow: 0px 4px 8px -2px #00000033;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 16px;
+    font-size: 1.4rem;
+    list-style-type: none;
+    
+  }
+
+  .btn{
+    text-align: end;
+    background: #cc0707;
+    width: 20%;
   }
