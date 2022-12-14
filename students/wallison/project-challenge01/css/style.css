@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@600&display=swap');
+
 :root {
     --yellow: #FFD166;
     --orange: #FB8500;
@@ -5,31 +7,83 @@
     --blue: #118AB2;
     --blue-secondary: #073B4C;
     --black: #023047;
-    --green: #06D6A0;
+    --blue-light: #06D6A0;
     --purple: #482344;
     --white: #fff9de;
 }
 
-body {
+.text-white {
+    color: var(--white)
+}
+
+.text-black {
+    color: var(--black)
+}
+
+.bg-white {
     background-color: var(--white);
 }
 
-#header {
-    background-color: var(--green);
+body {
+    background-color: var(--white);
+    font-family: 'Ruda', sans-serif;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#header .logo {
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+}
+
+#header .logo h1{
+    height: 48px;
+    align-self: center;
+}
+
+#header .logo img{
+    height: 48px;
+    align-self: center;
+}
+
+#header .menu {
+    background-color: var(--orange);
+    flex-grow: 1;
 }
 
 #main {
     background-color: var(--blue);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+#main .content-1 {
+    background-color: var(--red);
+}
+
+#main .content-2 {
+    background-color: var(--blue);
+}
+
+#main .content-3 {
+    background-color: var(--white);
+}
+
+#main .content-4 {
+    display: none;
 }
 
 #footer {
     background-color: var(--black);
     display: flex;
-    flex-direction: row;
 }
 
 @media (min-width: 480px){
