@@ -1,7 +1,6 @@
 *{
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.406);
 }
 
 .botao1, .botao2{
@@ -25,6 +24,10 @@
   padding-top: 25px;
   justify-content: center;
   background-color: whitesmoke;
+}
+#topo .logo{
+  background-image: url(images/newG.png) no-repeat;
+  background-size:  100px;
 }
 .logo {
   justify-items: center;
@@ -71,9 +74,7 @@
   background-color: #4a3d3d;
   
 }
-.bloco{
-  
-}
+
 .bloco1, .bloco2{
   display: none;
   margin: 5px;
