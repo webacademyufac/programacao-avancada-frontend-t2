@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* TABLET */
 @media (min-width: 480px) {
     #title {
