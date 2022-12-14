@@ -205,3 +205,20 @@ footer>p {
   }
 
 }
+/* UTILIZANDO O RESET NO HTML E NO CSS AULA 12/12/2022 */
+#title {
+  background-color: aqua;
+}
+
+@media(min-width: 480px) {
+  #title {
+    background-color: crimson;
+  }
+
+}
+
+@media(min-width: 768px) {
+  #title {
+    background-color: forestgreen;
+  }
+}
