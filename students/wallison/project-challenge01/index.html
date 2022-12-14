@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
-    <link rel="stylesheet" href="css/tailwind-form.css">
+    <link rel="stylesheet" href="css/tailwind-reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="header">
-        <div class="logo">
-            <h1 class="text-black">Cat it!</h1>
-            <img src="img/database_logo.png" alt="">
+        <div class="logo items-center justify-center p-2">
+            <h1 class="tracking-wide text-3xl text-black">Cat it!</h1>
+            <img class="h-10 w-10 mr-3" src="img/database_logo.png" alt="">
         </div>
-        <div class="menu">
+        <div class="menu p-2">
             <ul>
                 <li>Home</li>
                 <li>About</li>
@@ -24,9 +24,9 @@
             </ul>
         </div>
     </div>
-    <div id="main">
+    <div id="main" class="min-h-screen">
         <!-- Form -->
-        <div class="content-1 p-6 bg-white">
+        <div class="content-1 p-6">
             <div class="flex items-center justify-center font-black m-3">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mr-3 text-black animate-pulse" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
@@ -35,7 +35,7 @@
                 <h1 class="tracking-wide text-3xl text-black">Meus Links</h1>
             </div>
 
-            <form action="#">
+            <form action="#" class="flex flex-col">
                 <input type="text" name="link" placeholder="Digite a url...">
                 <button onclick="insert()">Add</button>
             </form>

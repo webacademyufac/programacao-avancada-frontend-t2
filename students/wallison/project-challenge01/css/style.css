@@ -42,16 +42,15 @@ body {
     background-color: var(--yellow);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #header .logo h1{
     height: 48px;
-    align-self: center;
 }
 
 #header .logo img{
     height: 48px;
-    align-self: center;
 }
 
 #header .menu {
@@ -85,6 +84,134 @@ body {
     background-color: var(--black);
     display: flex;
 }
+
+/* 
+    Utils Tailwind Patterns
+    https://tailwindcss.com/docs/font-size
+*/
+.justify-center {
+    justify-content: center; /* horizntal */
+}
+
+.items-center {
+    align-items: center; /* vertical */
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+.tracking-wide {
+    letter-spacing: 0.025em;
+}
+
+.p-1 {
+    padding: .25rem;
+}
+
+.p-2 {
+    padding: .5rem;
+}
+
+.p-3 {
+    padding: .75rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+  
+.p-6 {
+    padding: 1.5rem;
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.m-3 {
+    margin: 0.75rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mb-12 {
+    margin-bottom: 3rem;
+}
+
+.mr-3 {
+    margin-right: 0.75rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.h-10 {
+    height: 2.5rem;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-10 {
+    width: 2.5rem;
+}
+
+.max-w-md {
+    max-width: 28rem;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+/* Media queries */
 
 @media (min-width: 480px){
     #main {
