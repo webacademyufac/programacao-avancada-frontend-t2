@@ -3,7 +3,7 @@
 ## Resetar CSS código
 https://meyerweb.com/eric/tools/css/reset/
 
-~~~~/* http://meyerweb.com/eric/tools/css/reset/ 
+~~~/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -51,3 +51,5 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+~~~
+# Aula 13-12-2022
