@@ -106,3 +106,27 @@ article p {
     background: #cc0707;
     width: 20%;
   }
+
+
+
+
+
+
+
+
+
+
+  .footer{
+    background-color: black;
+    color: #f2f2f2;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+    
+  }
