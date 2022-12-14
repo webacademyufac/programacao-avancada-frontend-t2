@@ -1,1 +1,5 @@
+//Biblioteca de ícones (em SVG)
 <script src="https://kit.fontawesome.com/e00b21def0.js" crossorigin="anonymous"></script>
+
+//Biblioteca para a barra de carregamento de uma das seções
+https://github.com/kimmobrunfeldt/progressbar.js
