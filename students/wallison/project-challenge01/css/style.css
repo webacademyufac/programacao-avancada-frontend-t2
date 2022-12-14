@@ -45,10 +45,6 @@ body {
     align-items: center;
 }
 
-#header .logo h1{
-    height: 48px;
-}
-
 #header .logo img{
     height: 48px;
 }
@@ -62,6 +58,7 @@ body {
     background-color: var(--blue);
     display: flex;
     flex-direction: column;
+    row-gap: 10px;
 }
 
 #main .content-1 {
@@ -70,6 +67,8 @@ body {
 
 #main .content-2 {
     background-color: var(--blue);
+    display: flex;
+    flex-grow: 1;
 }
 
 #main .content-3 {
@@ -83,6 +82,7 @@ body {
 #footer {
     background-color: var(--black);
     display: flex;
+    flex-grow: 1;
 }
 
 /* 
