@@ -21,12 +21,14 @@ desktop: 992px até 1200px;
 Grandes Telas: acima de 1200px; 
 */
 
-@media screen and (min-width: 480px){ /* tablet */
-    .menu-item{
+@media screen and (min-width: 480px) {
+
+    /* tablet */
+    .menu-item {
         flex-basis: 100px;
     }
 
-    .header-container{
+    .header-container {
         display: flex;
         margin-top: auto;
         text-align: left;
@@ -34,7 +36,8 @@ Grandes Telas: acima de 1200px;
         align-items: left;
         justify-content: left;
     }
-    div#logo{
+
+    div#logo {
         display: flex;
         justify-content: flex-start;
 
@@ -42,12 +45,14 @@ Grandes Telas: acima de 1200px;
 
 }
 
-@media screen and (min-width: 768px){ /* desktop */
-    .menu-item{
+@media screen and (min-width: 768px) {
+
+    /* desktop */
+    .menu-item {
         flex-basis: 100px;
     }
 
-    .header-container{
+    .header-container {
         display: flex;
         margin-top: auto;
         text-align: left;
@@ -55,10 +60,11 @@ Grandes Telas: acima de 1200px;
         align-items: left;
         justify-content: left;
     }
-    div#logo{
+
+    div#logo {
         display: flex;
         justify-content: flex-start;
 
     }
 
-}
+} 

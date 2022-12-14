@@ -16,14 +16,12 @@
     padding: 0px;
     box-sizing: border-box;
   }
-
-  .header-container {
-    display: flex;
-    margin-top: auto;
+  header {
+    background-color: #3a10d1;
+  }
+  header#logo {
+    padding: 10px;
     text-align: center;
-    background: black;
-    align-items: center;
-    justify-content: center;
   }
 
   #burguer{
@@ -32,13 +30,14 @@
     display: block;
     text-align: center;
     padding: 10px;
+    cursor: pointer;
   }
 
   #burguer:hover{
     background-color: white;
     color: black;
   }
-  .menu{
+  menu{
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
@@ -46,7 +45,7 @@
     padding: 0;
     background: #e68b02;
   }
-  nav ul li a:hover{
+  menu ul li a:hover{
     color: white;
 
   }
@@ -69,22 +68,6 @@
       text-decoration: none;
     }
 
-
-
-/*   nav > ul > li > a {
-    display: flex;
-    text-align: center;
-    text-decoration: none;
-    border-top: 2px solid white;
-    color: #00b4cc;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  nav > ul > li > a:hover {
-    color: white;
-  } */
-  
   body, html {
     height: 100vh;
   }
@@ -137,7 +120,7 @@
   .btn{
     text-align: end;
     background: #cc0707;
-    width: ;
+    width: 0;
   }
 
   h2 {
@@ -157,75 +140,3 @@
     padding: 10px;
     text-align: center;
   }
-
-
-
-
-
-  
-  /* body, ul{
-    margin: 0;
-    padding: 0; 
-  }
-  
-  body{
-    font-family: -web-system,
-    BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, 
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-    background: var(--background);
-  }
-  
-  div#logo{
-    color: var(--white-gelo);
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  a{
-    color: var(--white-gelo);
-    text-decoration: none;
-  }
-  
-  .header{
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    background: var(--black);
-    padding: 1rem;
-  }
-  @media screen and (max-width: 480px){
-    .header{
-        margin-top: 1em;
-        text-align: left;
-    }
-  }
-  
-  
-  .menu{
-    list-style: none;
-    display: flex;
-    gap: 0.5rem; 
-  }
-  
-  @media screen and (max-width: 480px){
-    nav ul li a{
-        display: block;
-        width: 100%;
-    }
-  }
-  
-  
-  
-  
-  .footer{
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    background: var(--black);
-    padding: 1rem;
-    color: #f2f2f2;
-    margin-top: 20%;
-  
-  } */
