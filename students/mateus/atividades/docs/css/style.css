@@ -1,0 +1,4 @@
+/* slideshow */
+#mainSlider .carousel-inner, #mainSlider .carousel-item  {
+   height: 90vh;
+}
