@@ -6,3 +6,6 @@
 ### Materialize - Luiz Felipe | Sexta
 
 https://html5boilerplate.com/
+
+Svelte - compila todo o build em um único arquivo e economiza recursos
+O Svelte lê o código, compila e e atualiza o DOM com base na diferença
