@@ -1,4 +1,7 @@
-
+/* Slideshow */
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 90vh;
+}
 
 /* #title {
     background-color: aqua;
