@@ -1,5 +1,12 @@
-#title {
-    background-color: aqua;
+/* Slide show */
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item  {
+    /* height: 35vh; */
+    height: 45vh;
+}
+
+#fas, #fa-check{
+    color: pink;
 }
 
 /* Tablet */

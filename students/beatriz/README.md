@@ -103,3 +103,8 @@ Se nao der certo o parallax.js usando apenas as linhas
 ```
 
 baixar em https://pixelcog.github.io/parallax.js/
+
+### Aula 4
+**Data:** 14/12/2022
+
+"active" indica que é o slide que inicia
