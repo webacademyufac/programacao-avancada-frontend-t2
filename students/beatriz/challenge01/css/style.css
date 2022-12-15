@@ -23,8 +23,9 @@ body {
   grid-template-rows: auto;
 }
 
-#logo {
-  margin-left: 2vh;
+#header-content #logo {
+  height: 15vh;
+  margin-left: 0.5vh;
 }
 
 #header-content #titulo {
