@@ -31,3 +31,20 @@
    display: none;
    overflow: hidden;
 }
+
+@media (min-width: 480px) {
+   .accordion {
+      display: none;
+   }
+   
+   .accordion span {
+      display: none;
+   }
+   
+   .panel {
+      display: flex !important;
+      flex-direction: row !important;
+      background-color: #282828 !important;
+      color: #fff !important;
+   }
+}

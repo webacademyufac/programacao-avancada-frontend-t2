@@ -3,6 +3,7 @@
 body {
    margin: 0;
    font-size: 2.5em;
+   gap: 0;
 }
 
 /* input css */
@@ -11,6 +12,28 @@ input {
    font-size: 1.2em;
    border-radius: 0.6em;
    padding: 0.4em;
+   border: none;
+}
+
+main {
+   padding: 0;
+   margin: 0;
+   gap: 0;
+}
+
+footer {
+   background-color: #272727;
+   color: #fff;
+   justify-content: center;
+   align-items: center;
+   font-size: 0.5em;
+   padding-block: 5em;
+   padding-inline: 2.5em;
+   text-align: center;
+}
+
+footer a {
+   color: #fff;
 }
 
 /* header */
@@ -89,14 +112,22 @@ input {
    justify-content: center;
 }
 
-.search-input-container {}
+.search-input-container {
+   position: relative;
+}
 
 .search-input-container input {
-   float: left;
+   width: 100%;
 }
 
 #lupa {
-   float: left;
+   position: absolute;
+   top: 30%;
+   right: 0;
+   z-index: 10;
+   border: none;
+   background: transparent;
+   outline: none;
 }
 
 
@@ -104,3 +135,110 @@ input {
 .fav-list-container {
    background-color: aqua;
 }
+
+.fav-list-container ul {
+   display: flex;
+   flex-direction: column;
+   gap: 1;
+}
+
+.fav-list-container li {
+   display: flex;
+   padding: 0.5em;
+   margin: 0.5em;
+   border-radius: 0.5em;
+   background-color: #fff;
+   justify-content: space-between;
+   align-items: center;
+   flex-grow: 1;
+}
+
+.fav-list-container li a {
+   text-decoration: none;
+}
+
+.fav-list-container li button {
+   justify-content: center;
+   font-size: 1em;
+   border: none;
+   background-color: #0000;
+   margin-right: 0.5em;
+}
+
+.container {
+   padding-block: 2.5em;
+   padding-inline: 1em;
+}
+
+.container h1 {
+   font-weight: bold;
+   font-size: 1.5em;
+   padding-bottom: 0.5em;
+}
+
+.image-fluid {
+   width: 100%;
+}
+
+.video-fluid {
+   width: 100%;
+   height: 15em;
+}
+
+@media (min-width: 480px) {
+   body {
+      margin: 0;
+      font-size: 1em;
+      gap: 0;
+   }
+
+   header {
+      display: flex;
+      flex-direction: row;
+      background-color: #282828;
+   }
+
+   .visual-identity {
+      display: flexbox;
+      flex-direction: column;
+      background-color: #272727;
+      justify-content: center;
+      padding: 0.1em;
+      align-items: center;
+
+      color: #fff;
+      font-weight: bold;
+
+   }
+
+   .visual-identity h1 {
+      display: none;
+   }
+
+   .logo {
+      padding: 1em;
+      width: 30vh;
+      max-width: 100px;
+   }
+
+   .nav-menu {
+      background-color: #ebc277;
+      display: flex;
+   }
+
+   .nav-menu ul li {
+      display: flex;
+      flex-grow: 1;
+      justify-content: end;
+   }
+
+   .nav-menu ul li a {
+      color: #fff;
+      padding: 1.5em;
+      display: flex;
+      flex-grow: 0;
+      align-items: center;
+   }
+}
+
+@media (max-width: 768px) {}
