@@ -7,21 +7,14 @@ body{
     color: #1E1E1E;
 }
 
+.container{
+    display: grid;
+    padding: 40px 15px;
+    gap: 10px;
+}
+
 .logo{
     justify-self: center;
-}
-
-#cabecalho{
-    padding: 15px;
-    display: grid;
-    gap: 15px;
-    background-color: #4AA0D5;
-}
-
-#menu_navegacao{
-    display: grid;
-    grid-template-columns: 1fr 75px;
-    gap: 20px;
 }
 
 .icone_decorativo{
@@ -29,49 +22,19 @@ body{
     align-content: center;
 }
 
-#form_pesquisa{
-    display: grid;
-    grid-template-columns: 30px 1fr;
-    align-items: center;
-    gap: 10px;
-}
-
 .campo{
     height: 1.5rem;
     border-radius: 10px;
     border: 2px solid #1E1E1E;
     box-shadow: 4px 4px #1E1E1E;
-}
-
-#section_link .campo{
-    box-shadow: none;
-}
-
-#menu_items{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
-
-#section_link{
-    display: grid;
-    padding: 40px 30px;
-    gap: 10px;
-    background-image: url('../img/background_bicycle.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    max-width: 600px;
 }
 
 .arrow{
-    width: 50px;
-    height: 3px;
+    width: 60px;
+    height: 4px;
     background-color: #E4E4E4;
     justify-self: center;
-}
-
-#container_principal .arrow{
-    background-color: #1E1E1E;
 }
 
 .titulo{
@@ -81,8 +44,58 @@ body{
     font-size: 1.7rem;
 }
 
-#section_link .titulo{
+.text{
+    text-align: center;
+}
+
+#cabecalho{
+    background-color: #4AA0D5;
+    gap: 20px;
+}
+
+#menu_navegacao{
+    display: grid;
+    grid-template-columns: 1fr 75px;
+    gap: 20px;
+}
+
+#form_pesquisa{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+#section_link .campo{
+    box-shadow: none;
+}
+
+#section_link h2{
+    font-weight: bold;
+    text-align: center;
+}
+
+#menu_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#section_link{
+    background-image: url('../img/background_bicycle.jpg');
+    background-size: cover;
+    background-position: center center;
     color: #E4E4E4;
+}
+
+main .arrow{
+    background-color: #1E1E1E;
+}
+
+footer .arrow{
+    height: 3px;
+    width: 100%;
+    background-color: #1E1E1E;
 }
 
 #form_url{
@@ -90,22 +103,10 @@ body{
     grid-template-columns: 1fr;
 }
 
-#container_principal{
-    padding: 15px 30px;
-    display: grid;
-    gap: 10px;
-}
-
 #table_urls{
-    border-collapse: collapse;
-}
-
-#table_urls th{
-    background-color: #4AA0D5;
-    color: #1E1E1E;
-    padding: 11px 13px;
-    font-weight: bold;
-    border: 2px solid #E4E4E4;
+    border-collapse: separate;
+    border: 2px solid #1E1E1E;
+    border-radius: 12px;
 }
 
 #table_urls th:first-child{
@@ -116,13 +117,6 @@ body{
     border-top-right-radius: 10px;
 }
 
-#table_urls td{
-    background-color: #1E1E1E;
-    color: #E4E4E4;
-    padding: 8px 10px;
-    border: 2px solid #E4E4E4;
-}
-
 #table_urls tr:last-child td:first-child{
     border-bottom-left-radius: 10px;
 }
@@ -131,4 +125,68 @@ body{
     border-bottom-right-radius: 10px;
 }
 
-/*<p class="texto">Aliquam erat volutpat. Curabitur consectetur, velit et lacinia tempor, lorem mauris auctor nisi, eu aliquet sem odio nec odio. Suspendisse placerat euismod diam sit amet fringilla.</p>*/
+#table_urls th{
+    background-color: #4AA0D5;
+    padding: 11px 13px;
+    font-weight: bold;
+    border: 2px solid #1E1E1E;
+}
+
+#table_urls td{
+    background-color: #E4E4E4;
+    padding: 8px 10px;
+    border: 2px solid #1E1E1E;
+}
+
+#article_description{
+    background-image: url('../img/287126.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: #E4E4E4;
+}
+
+#footer_content{
+    padding: 30px 15px;
+    background-color: #4AA0D5;
+    display: grid;
+    gap: 20px;
+}
+
+#footer_socialmedia{
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    gap: 10px;
+    justify-content: center;
+}
+
+#footer_information{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#footer_information ul{
+    display: flex;
+    width: auto;
+    flex-flow: column;
+    gap: 8px;
+}
+
+#footer_rights{
+    padding: 30px 15px;
+    background-color: #1E1E1E;
+    color: #E4E4E4;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+
+
+@media (min-width: 480px) {
+    #cabecalho{
+        grid-template-columns: auto 1fr;
+    }
+}
+
