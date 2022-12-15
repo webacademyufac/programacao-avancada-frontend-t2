@@ -2,3 +2,10 @@
     font-family: 'Roboto', sans-serif;
 
 }
+
+/* SlideShow */
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 90vh;
+    
+}

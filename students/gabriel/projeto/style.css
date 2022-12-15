@@ -21,9 +21,9 @@ h1{
 
 }
 nav ul li a{
-
+    display: flex;
 }
- ul li{
+nav ul li{
     background-color: WHITE;
     display: flex;
 }
@@ -76,3 +76,17 @@ li{
     border: 1px blue ;
 }
 
+@media (min-width: 480px) {
+    body {
+        background-color: rgb(152, 11, 11);
+    }
+    
+}
+
+
+@media (min-width: 768px) {
+    body {
+        background-color: rgb(41, 35, 237);
+    }
+    
+}
