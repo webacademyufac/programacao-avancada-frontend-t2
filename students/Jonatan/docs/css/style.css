@@ -1,15 +1,5 @@
-#title{
-    background-color: aqua;
-}
+/* Slideshow */
 
-@media (min-width: 480px){
-    #title {
-        background-color: crimson;
-    }
-}
-
-@media (min-width: 768px){
-    #title{
-        background-color: forestgreen;
-    }
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 90vh;
 }
