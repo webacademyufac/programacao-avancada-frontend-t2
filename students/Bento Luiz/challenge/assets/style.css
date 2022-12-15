@@ -1,10 +1,10 @@
 body{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     display: grid;
     background-color: #E4E4E4;
-    color: #1E1E1E;
+    color: #1E1E1E; 
 }
 
 .container{
@@ -41,7 +41,7 @@ body{
     align-self: end;
     text-align: center;
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
 }
 
 .text{
