@@ -53,3 +53,9 @@ table {
 }
 ~~~
 # Aula 13-12-2022
+
+# Aula 14-12-2022
+
+	Dica para identar o código CTRL + A e depois SHIFT + ALT + F 
+
+	SHIFT + ALT + A = cria um comentário

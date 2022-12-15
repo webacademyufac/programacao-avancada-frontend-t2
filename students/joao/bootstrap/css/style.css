@@ -1,15 +1,5 @@
-#title{
-  background-color: aqua;
-}
+/*======== SLIDESHOW ========== */
 
-@media (min-width: 468px) {
-  #title {
-    background-color: blue;
-  }
-}
-
-@media (min-width:768px) {
-  #title{
-    background-color: pink;
-  }
+#main__slider .carousel-inner, #main__slider .carousel-item{
+  height: 90pvh;
 }
