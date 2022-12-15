@@ -3,39 +3,19 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     display: grid;
-    gap: 20px;
-    /*background-color: rgb(43, 43, 43);*/
-    background-color: rgba(170, 170, 170, 0.048);
-}
-
-h1, h2, h3, ul{
-    margin: 0px;
-    padding: 0px;
-}
-
-li{
-    margin: 0px;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-img{
-    max-width: 100%;
+    background-color: #E4E4E4;
+    color: #1E1E1E;
 }
 
 .logo{
     justify-self: center;
-    margin-bottom: 15px;;
 }
 
 #cabecalho{
     padding: 15px;
     display: grid;
+    gap: 15px;
     background-color: #4AA0D5;
-    /*border-bottom: 3px solid black;*/
 }
 
 #menu_navegacao{
@@ -59,8 +39,12 @@ img{
 .campo{
     height: 1.5rem;
     border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 4px 4px;
+    border: 2px solid #1E1E1E;
+    box-shadow: 4px 4px #1E1E1E;
+}
+
+#section_link .campo{
+    box-shadow: none;
 }
 
 #menu_items{
@@ -69,16 +53,36 @@ img{
     gap: 15px;
 }
 
-#secao_links{
+#section_link{
     display: grid;
-    padding: 15px;
+    padding: 40px 30px;
     gap: 10px;
-    background-color: rgb(31, 81, 181);
+    background-image: url('../img/background_bicycle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-#secao_links h2{
-    margin-left: 2px;
-    font-size: 1.5rem;
+.arrow{
+    width: 50px;
+    height: 3px;
+    background-color: #E4E4E4;
+    justify-self: center;
+}
+
+#container_principal .arrow{
+    background-color: #1E1E1E;
+}
+
+.titulo{
+    align-self: end;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+#section_link .titulo{
+    color: #E4E4E4;
 }
 
 #form_url{
@@ -86,19 +90,45 @@ img{
     grid-template-columns: 1fr;
 }
 
-#conteudo_principal{
-    display: grid;
+#container_principal{
     padding: 15px 30px;
-    background-color: aqua;
-    
+    display: grid;
+    gap: 10px;
 }
 
-.links_json{
+#table_urls{
+    border-collapse: collapse;
+}
+
+#table_urls th{
+    background-color: #4AA0D5;
+    color: #1E1E1E;
+    padding: 11px 13px;
     font-weight: bold;
+    border: 2px solid #E4E4E4;
 }
 
-.links_json li{
-    margin-left: 20px;
+#table_urls th:first-child{
+    border-top-left-radius: 10px;
+}
+
+#table_urls th:last-child{
+    border-top-right-radius: 10px;
+}
+
+#table_urls td{
+    background-color: #1E1E1E;
+    color: #E4E4E4;
+    padding: 8px 10px;
+    border: 2px solid #E4E4E4;
+}
+
+#table_urls tr:last-child td:first-child{
+    border-bottom-left-radius: 10px;
+}
+
+#table_urls tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
 }
 
 /*<p class="texto">Aliquam erat volutpat. Curabitur consectetur, velit et lacinia tempor, lorem mauris auctor nisi, eu aliquet sem odio nec odio. Suspendisse placerat euismod diam sit amet fringilla.</p>*/

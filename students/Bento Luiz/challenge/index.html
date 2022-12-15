@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/style.css">
     <title>Loja Bikcraft</title>
 </head>
@@ -16,7 +17,7 @@
         <nav id="menu_navegacao">
             <form id="form_pesquisa" action="">
                 <a class="icone_decorativo" href=""><img src="img/search.png"></a>
-                <input class="campo" name="pesquisa" type="text" placeholder="Estou pesquisando...">
+                <input class="campo" name="pesquisa" type="text" placeholder="Pesquisando...">
             </form>
             <div id="menu_items">
                 <a class="icone_decorativo" href=""><img src="img/user.png" alt="login de usuário"></a>
@@ -26,32 +27,45 @@
 
     </header>
 
+    <section id="section_link">
+        <h1 class="titulo">LINKS</h1>
 
-
-
-
-    <main id="conteudo_principal">
-
-        <div class="container">
-            <section id="secao_links">
-
-                <h2>Digite um Link:</h2>
+        <div class="arrow"></div>
         
-                <form id="form_url" action="">
-                    <input class="campo" type="text" placeholder="Digite a url...">
-                </form>
+        <form id="form_url" action="">
+            <input class="campo" type="text" placeholder="Adicionando um link...">
+        </form>
+
+    </section>
+
+    <main id="container_principal">
+
+        <h1 class="titulo">MEUS LINKS</h1>
+
+        <div class="arrow"></div>
         
-            </section>
-    
-            <h2>Meus Links:</h2>
-    
-            <ul class="links_json">
-                <li><a href="https://playstation.com">playstation.com</a></li>
-                <li><a href="https://xbox.com">xbox.com</a></li>
-                <li><a href="https://sig.ifac.edu.br">sig.ifac.edu.br</a></li>
-                <li><a href="https://submarino.com.br">submarino.com</a></li>
-            </ul>
-        </div>
+        <table id="table_urls">
+            <tr>
+                <th>NOME</th>
+                <th>URL</th>
+            </tr>
+            <tr>
+                <td>Playstation</td>
+                <td>https://playstation.com</td>
+            </tr>
+            <tr class="tr_content">
+                <td>Xbox</td>
+                <td>https://xbox.com</td>
+            </tr>
+            <tr class="tr_content">
+                <td>SIGAA IFAC</td>
+                <td>https://sig.ifac.edu.br</td>
+            </tr>
+            <tr class="tr_content">
+                <td>Submarino</td>
+                <td>https://submarino.com.br</td>
+            </tr>
+        </table>
 
     </main>
 
