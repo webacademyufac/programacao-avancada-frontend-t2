@@ -16,9 +16,20 @@ body {
 }
 
 /* Header */
+#header-content {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+}
+
 #logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  margin-left: 2vh;
+}
+
+#header-content #titulo {
+  margin-left: 8vh;
+  padding: 4px;
 }
 
 /* Menu de navegação */
@@ -155,7 +166,7 @@ nav {
 footer {
   width: 100%;
   background-color: #003366;
-  padding-top: 100%
+  padding-top: 100%;
   padding: 0.5em;
 }
 
@@ -185,5 +196,9 @@ footer span {
 
 /* Desktop */
 @media (min-width: 768px) {
+
+#titulo {
+  text-align: center;
+}
 
 }
