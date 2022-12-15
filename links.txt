@@ -3,3 +3,4 @@
 
 //Biblioteca para a barra de carregamento de uma das seções
 https://github.com/kimmobrunfeldt/progressbar.js
+<script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.5.6/dist/progressbar.min.js"></script>
