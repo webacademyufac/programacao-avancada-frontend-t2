@@ -1,21 +1,5 @@
-/* #title{
-    background-color: aqua;
+/* SlideShow */
 
+#mainSlider .carousel-inner, #mainslider .carousel-item{
+    height: 90vh;
 }
- */
-/* font-family: 'Roboto', sans-serif; */
-
-
-
-
-/* @media (min-width: 480px){
-    #title{
-        background-color: brown;
-    }
-}
-
-@media (min-width: 768px){
-    #title{
-        background-color: blueviolet;
-    }
-} */
