@@ -12,7 +12,7 @@
 
     <title>WebSystem</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -30,9 +30,9 @@
 
     <main>
         <section class="api">
-            <h1>Meus Links</h1>
             <form action="" >
-                <input type="text" placeholder="Digite a url...">
+                <input class="inputUrl"type="text" placeholder="Digite a url...">
+                <input class="inputBtn" type="button" value="Add+">
             </form>
 
             <ul class="urls">

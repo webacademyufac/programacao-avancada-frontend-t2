@@ -76,7 +76,7 @@ article p {
   }
 
   input {
-    width: 95%;
+    width: 70%;
     
     padding: 8px 16px;
     margin-bottom: 32px;
@@ -85,9 +85,20 @@ article p {
     border: 1px solid #ccc;
     outline: none;
     
-    font-size: 1.6rem;
+    font-size: 1.0rem;
     font-weight:300;
     
+  }
+
+  .inputBtn {
+    width: 20%;
+    background-color: green;
+    color: white;
+  }
+
+  .inputBtn:hover{
+    background-color: white;
+    color: black;
   }
 
   ul.urls{
