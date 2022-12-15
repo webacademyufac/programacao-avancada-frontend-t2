@@ -37,7 +37,28 @@
 
     <!-- Cabeçalho -->
     <header>
-      <!-- barra superior com identidade visual e menu -->
+      <div class="container" id="nav-container">
+        <!-- <nav class="navbar navbar-expand-lg fixed-top">
+            <a href="#" class="navbar-brand">
+                <img id="logo" src="./img/hdcagency_logo.svg" alt="Agency"> Agency
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" 
+            aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" id="home-menu">Home</a>
+                    <a class="nav-item nav-link" id="about-menu">Agência</a>
+                    <a class="nav-item nav-link" id="services-menu">Serviços</a>
+                    <a class="nav-item nav-link" id="team-menu">Time</a>
+                    <a class="nav-item nav-link" id="portfolio-menu">Projetos</a>
+                    <a class="nav-item nav-link" id="contact-menu">Contato</a>
+                </div>
+
+            </div>
+        </nav> -->
+    </div>
     </header>
 
     <!-- Slideshow -->
@@ -94,7 +115,7 @@
             <img src="img/agencia.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-md-6">
-            <h3>Uma agência que pensa no futuro</h3>
+            <h3 id="about-title">Uma agência que pensa no futuro</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             <p>Ab perspiciatis consectetur necessitatibus amet aperiam neque quia veritatis.</p>
             <p>Ea minus ratione corporis veniam suscipit hic nam, culpa eos officiis eligendi libero!</p>
@@ -117,7 +138,13 @@
           <div class="col-12">
             <h3 class="main-title">Nossas especialidades</h3>
           </div>
-          <div class="col-md-4 col-lg-2">
+
+          <div class="col-md-4 col-lg-2" specialities-box>
+            <i class="fa-solid fa-comments-dollar"></i>
+            <h4>Ferramentas comerciais</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="col-md-4 col-lg-2" specialities-box>
             <i class="fa-solid fa-comments-dollar"></i>
             <h4>Ferramentas comerciais</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -127,22 +154,17 @@
             <h4>Ferramentas comerciais</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
-          <div class="col-md-4 col-lg-2">
+          <div class="col-md-4 col-lg-2" specialities-box>
             <i class="fa-solid fa-comments-dollar"></i>
             <h4>Ferramentas comerciais</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
-          <div class="col-md-4 col-lg-2">
+          <div class="col-md-4 col-lg-2" specialities-box>
             <i class="fa-solid fa-comments-dollar"></i>
             <h4>Ferramentas comerciais</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
-          <div class="col-md-4 col-lg-2">
-            <i class="fa-solid fa-comments-dollar"></i>
-            <h4>Ferramentas comerciais</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div class="col-md-4 col-lg-2">
+          <div class="col-md-4 col-lg-2" specialities-box>
             <i class="fa-solid fa-comments-dollar"></i>
             <h4>Ferramentas comerciais</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -158,8 +180,8 @@
     <section id="team">
       <div class="container">
         <div class="row">
-          <div class="main-title">
-            <h3>Nosso time</h3>
+          <div>
+            <h3 class="main-title">Nosso time</h3>
           </div>
 
           <div class="card col-6 col-md-3">
@@ -194,9 +216,58 @@
             </div>
           </div>
 
+
         </div>
       </div>
     </section>
+
+    <section id="know">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="main-title">Conheça nossos projetos</h3>
+          </div>
+          <div class="col-12 text-center mb-5">
+              <button class="btn btn-outline-info rounded-5 px-4">Todos</button>
+              <button class="btn btn-outline-info rounded-5 px-4">Desenvolvimento</button>
+              <button class="btn btn-outline-info rounded-5 px-4">Design</button>
+              <button class="btn btn-outline-info rounded-5 px-4">SEO</button>
+          </div>
+          <div class="col-4 mb-3"><img src="./img/proj1.jpg" alt="" class="img-fluid"></div>
+          <div class="col-4 mb-3"><img src="./img/proj2.jpg" alt="" class="img-fluid"></div>
+          <div class="col-4 mb-3"><img src="./img/proj3.jpg" alt="" class="img-fluid"></div>
+          <div class="col-4 mb-3"><img src="./img/proj4.jpg" alt="" class="img-fluid"></div>
+          <div class="col-4 mb-3"><img src="./img/proj5.jpg" alt="" class="img-fluid"></div>
+          <div class="col-4 mb-3"><img src="./img/proj6.jpg" alt="" class="img-fluid"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="know">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="main-title">Entre em contado conosco</h3>
+            
+          </div>
+          <div class="col-4 text-center">
+              <i class="fa-solid fa-phone"></i>
+              <p><strong class="text-info">Ligue para</strong>: 99999999</p>
+              <p>Horário: 18: 00</p>
+          </div>
+          <div class="col-4 text-center">
+            <i class="fa-solid fa-envelope"></i>
+            <p>Envie um email: felipegade@hotmail.com</p>
+            
+        </div>
+        <div class="col-4 text-center">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Venha tomar um café: Rua jose luis 909</p>
+         
+      </div>
+        </div>
+      </div>
+    </footer>
 
   </div>
 
