@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0 auto;
     font-family: 'Raleway',sans-serif;
+    
 }
 
 #container{
@@ -9,22 +10,17 @@
 }
 
 /* Topo do site */
-header, header {
+header,  header {
     background-color: black;
 }
 
-.texto {
-    width: 90%;
-    justify-items: center;
-}
+
 
 header li{
 }
 
 header #logo{
     color: white;
-    margin-right: 10px;
-    padding-left: 10px;
     background-image: url("../images/newG.png");
 }
 /* Barra de navegação */
@@ -53,43 +49,142 @@ li a:hover{
 
 
 .busca {
-    margin-left: 60%;
     width: 30%;
     border-radius: 10px;
 }
 
+
 /* Formulario */
+.text , form{
+
+}
+.texto {
+    width: 90%;
+
+    margin-top: 3px;
+    border-radius: 10px;
+    position: relative;
+    display: block;
+}
+
 form {
     background-color: white;
-    margin: 0.7em;
+    border-radius: 10px;
+    width: 90%;
+    padding: 0.5em;
+    margin-top: 7px;
+    display: block;
+
+
+}
+form ul li, form ul li .botoes{
+    display: flex;
 }
 
 /* Bloco conteudo texto de ajuda e conteudo extra */
 #bloco {
     display: flex;
-    padding: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
 }
 /* Texto de ajuda */
 #help{
     padding: 5px;
-    
+    background-color: rgb(237, 77, 77);
+    border-radius: 10px;
+    width: 90%;
+    display: block;
+    text-align: center;
+    justify-content: space-between;
+
 }
 /* Conteudo extra */
 #conteudo{
+    justify-content: space-between;
+    display: none;
+    margin: 0 5px 0 10px;
+}
+iframe {
+    width: 210px;
+}
+.del{
+    padding: 5px;
+    background-color: red;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+.ed {
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
 }
 
+form li{
+    background-color: rgb(166, 166, 166);
+    color: black;
+    margin-top: .25em;
+    border-radius: 5px;
+    padding: .25em;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    display: block;
+    padding-left: 28%;
+    margin-top: 10px;
+}
 @media (min-width: 480px){
     #container {
-        background-color: red;
-        
+        background-color: rgb(246, 156, 22);
+        width: auto;
+        margin: 0 auto;;
     }
     header{
         display: flex;
+    }
+    .busca{
+        width: 40%;
+        padding-left: 5px;
+    }
+    nav ul{
+        position: relative;
+        right:200px;
+        top: 20px;
+    }
+    
+    header #logo{
+        position: relative;
+    }
+    #conteudo , iframe{
+        display: inline-block;
+        width: auto;
+        height: auto;
+            border-radius: 10px;
+
+    }
+    
+    #bloco{
+        width: 94%;
+       
+    }
+    
+   
+    
+    #help {
+
     }
 }
 
 @media (min-width: 768px){ 
     #container {
-        background-color: aqua;
+        background-color: rgb(246, 156, 22);
     }
 }
