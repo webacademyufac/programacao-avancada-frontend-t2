@@ -76,9 +76,9 @@ article p {
   }
 
   input {
-    width: 70%;
+    width: 95%;
     
-    padding: 8px 16px;
+    padding: 8px 10px;
     margin-bottom: 32px;
     
     border-radius: 16px;
@@ -90,25 +90,15 @@ article p {
     
   }
 
-  .inputBtn {
-    width: 20%;
-    background-color: green;
-    color: white;
-  }
-
-  .inputBtn:hover{
-    background-color: white;
-    color: black;
-  }
-
   ul.urls{
     background: #00b4cc;
     box-shadow: 0px 4px 8px -2px #00000033;
     border-radius: 6px;
     border: 1px solid #ddd;
     padding: 16px;
-    font-size: 1.4rem;
+    font-size: 1.0rem;
     list-style-type: none;
+    width: 70%;;
     
   }
 
@@ -116,14 +106,23 @@ article p {
     text-align: end;
     background: #cc0707;
     width: 20%;
+    text-align: center;
+    color: white;
   }
 
+  .btn:hover{
+    background-color: brown;
+    cursor: pointer;
+  }
 
+  img{
+    display: none;
+    width: 100%;
+  }
 
-
-
-
-
+iframe{
+  display: none;
+}
 
 
 
@@ -131,7 +130,6 @@ article p {
     background-color: black;
     color: #f2f2f2;
     display: flex;
-    margin: auto;
     text-align: center;
     flex-wrap: wrap;
     text-align: center;
@@ -139,5 +137,17 @@ article p {
     margin: auto;
     padding: 10px;
     margin-top: 10px;
+    font-size: 0.8em;
     
   }
+
+  .footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+    color: #00b4cc;
+  } 

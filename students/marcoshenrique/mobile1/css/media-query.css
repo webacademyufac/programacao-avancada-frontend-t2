@@ -32,16 +32,11 @@ Grandes Telas: acima de 1200px;
         display: flex;
         margin-top: auto;
         text-align: left;
-        background: #f2ea02;
+        background: #f24e02;
         align-items: left;
         justify-content: left;
     }
 
-    div#logo {
-        display: flex;
-        justify-content: flex-start;
-
-    }
 
 }
 
@@ -66,5 +61,10 @@ Grandes Telas: acima de 1200px;
         justify-content: flex-start;
 
     }
+
+    iframe{
+        display: block;
+      }
+
 
 } 
