@@ -1,5 +1,84 @@
+/*======== GENERAL =============*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.row {
+  margin: 0;
+}
+
+.container {
+  padding: 50px 0;
+}
+
+p,li {
+  font-size: 14px;
+  color: #442;
+}
+
+.line__title {
+  border-bottom: 2px solid #333;
+  width: 10%;
+  left: 45%;
+  position: absolute;
+  margin-top: -40px;
+}
 /*======== SLIDESHOW ========== */
 
-#main__slider .carousel-inner, #main__slider .carousel-item{
-  height: 90pvh;
+#main__slider .carousel-inner,
+#main__slider .carousel-item {
+  height: 80pvh;
 }
+
+/*========== ABOUT AREA ==========*/
+
+#about__area {
+  background-color: rgb(221, 215, 215);
+}
+
+.main__title {
+  color: #444;
+  margin: 0 0 50px 0;
+  text-align: center;
+}
+
+#about__title {
+  font-size: 17px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+#about__list {
+  padding: 0;
+}
+
+#about__list li {
+ line-height: 30px;
+}
+
+#about__list i {
+  color: #347fc4;
+  margin-right: 8px;
+}
+
+.specialities__box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.specialities__box:hover>i,
+.specialities__box:hover>h4 {
+  color: #347fc4;
+}
+
+.specialities__box i{
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.specialities__box h4 {
+  font-size: 24px;
+}
+

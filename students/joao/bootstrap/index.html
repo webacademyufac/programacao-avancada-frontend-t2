@@ -42,11 +42,7 @@
 
       <!--===========================CARROUSEL===============================-->
       <section id="slide__show">
-        <div
-          id="main__slider"
-          class="carousel carousel-dark slide"
-          data-bs-ride="carousel"
-        >
+        <div id="main__slider" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button
               type="button"
@@ -119,15 +115,16 @@
         </div>
       </section>
 
-      <!--===========================SOBRE(MAIN)==================================-->
+      <!--=======================SOBRE(MAIN)===========================-->
 
       <main>
         <div id="about__area" class="container">
           <div class="row">
             <div class="col-12">
-              <h3 class="main__title">Sobre a MVP Studio</h3>
+              <h3 id="about__title">Sobre a MVP Studio</h3>
             </div>
             <div class="col-md-6">
+              <div class="line__title"></div>
               <img src="img/agencia.jpg" class="img-fluid" alt="" />
             </div>
             <div class="col-md-6">
@@ -164,79 +161,107 @@
         </div>
       </main>
 
-      <!--===========================ESPECIALIDADES===============================-->
+      <!--=======================ESPECIALIDADES========================-->
       <section id="specialities">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h3 class="main-title">Nossas Especialidades</h3>
+              <h3 class="main__title">Nossas Especialidades</h3>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-2 specialities__box">
+              <div class="line__title"></div>
               <i class="fa-solid fa-comments"></i>
               <h4>Lorem ipsum dolor sit, amet</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                dicta porro blanditiis sint, veritatis esse enim ab. Molestiae,
-                in facilis. Adipisci quidem doloribus fugiat ut rem, laudantium
-                odit cupiditate sint.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               </p>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-2 specialities__box">
               <i class="fa-solid fa-person"></i>
               <h4>Lorem ipsum dolor sit, amet</h4>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Consequatur ullam natus exercitationem. Ad amet minus dicta
-                neque! Repellat maiores perferendis tempora natus eum, harum
-                consequuntur ullam? Commodi perspiciatis possimus at?
+                Consequatur
               </p>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-2 specialities__box">
               <i class="fa-solid fa-person"></i>
               <h4>Lorem ipsum dolor sit, amet</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Cupiditate et est, non voluptate fugit, placeat minima illo
-                molestiae quas nisi possimus voluptatem. Animi quae libero at.
-                Ab quasi praesentium beatae!
+                Cupiditate et est, 
               </p>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-2 specialities__box">
               <i class="fa-solid fa-person"></i>
               <h4>Lorem ipsum dolor sit, amet</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Cupiditate et est, non voluptate fugit, placeat minima illo
-                molestiae quas nisi possimus voluptatem. Animi quae libero at.
-                Ab quasi praesentium beatae!
+                Cupiditate et est
               </p>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-lg-2 specialities__box">
               <i class="fa-solid fa-person"></i>
               <h4>Lorem ipsum dolor sit, amet</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Cupiditate et est, non voluptate fugit, placeat minima illo
-                molestiae quas nisi possimus voluptatem. Animi quae libero at.
-                Ab quasi praesentium beatae!
+                Cupiditate
+              </p>
+            </div>
+
+            <div class="col-md-4 col-lg-2 specialities__box">
+              <i class="fa-solid fa-person"></i>
+              <h4>Lorem ipsum dolor sit, amet</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!--===========================NÚMEROS======================================-->
+      <!--============NÚMEROS========================-->
+      <div class="date__area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="semnome">
+                <p>60</p>
+              </div>
+            </div>
 
-      <!--===========================NOSSO TIME===================================-->
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="semnome">
+                <p>254</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="semnome">
+                <p>32</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="semnome">
+                <p>5423</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--==============NOSSO TIME===================-->
       <section id="team">
         <div class="container">
           <div class="row">
-            <div class="main__title">
-              <h3>Nosso Time</h3>
+            <div class="">
+              <h3 class="main__title">Nosso Time</h3>
             </div>
 
             <div class="card col-6 col-md-3">
@@ -273,6 +298,85 @@
           </div>
         </div>
       </section>
+
+      <!--====== PORTIFOLIO ==========-->
+      <section class="project">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main__title">Conheça nossos projetos</h3>
+              <div class="line__title"></div>
+              <button class="btn btn-primary active">Todos</button>
+              <button class="btn btn-primary">Desenvolvimento</button>
+              <button class="btn btn-primary">Design</button>
+              <button class="btn btn-primary">SEO</button>
+            </div>
+
+            <div class="col-md-4">
+              <img src="img/proj1.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-md-4">
+              <img src="img/proj2.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-md-4">
+              <img src="img/proj3.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-md-4">
+              <img src="img/proj4.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-md-4">
+              <img src="img/proj5.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-md-4">
+              <img src="img/proj6.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+         
+        </div>
+      </section>
+
+      <!--NOVIDADE-->
+      <section class="news">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main__title">Fique por dentro das novidades</h3>
+              <div class="line__title"></div>
+
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure!</p>
+
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Seu melhor e-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Inscrever</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main__title">Entre em contato conosco</h3>
+            </div>
+
+            <div class="col-md-4">
+              <i class="fa-solid fa-person"></i>
+              <h4>Lorem ipsu</h4>
+              <p>
+                Lorem ipsum dolor 
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <!-- JavaScript Bundle with Popper -->
