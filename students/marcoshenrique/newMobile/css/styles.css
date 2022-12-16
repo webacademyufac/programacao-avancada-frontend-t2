@@ -14,7 +14,7 @@ header {
     background-color: rgb(148, 148, 148);
 }
 
-header > h1 {
+.logo { /* header > div > h1 = class logo */
     padding: 10px;
     text-align: center;
 }
@@ -39,6 +39,49 @@ menu > ul > li > a {
 
 menu ul li a:hover{
     background-color: gray;
+}
+
+.api{
+  padding: 10px;
+}
+
+.inputUrl {
+  width: 95%;
+
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  outline: none;
+  
+  font-size: 1.0rem;
+  font-weight:300;
+  
+}
+
+.urls{
+  display: flex;
+  justify-content: space-between
+  
+}
+.api > ul > li {
+  background: #00b4cc;
+  box-shadow: 0px 4px 8px -2px #00000033;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  display: flex;
+  width: 100%;
+
+}
+
+.btn{
+  background: #cc0707;
+  color: white;
+}
+
+.btn:hover{
+  background-color: brown;
 }
 
 main {
@@ -79,45 +122,7 @@ main {
     color: black;
   }
 
-  input {
-    width: 95%;
-    
-    padding: 8px 10px;
-    margin-bottom: 32px;
-    
-    border-radius: 16px;
-    border: 1px solid #ccc;
-    outline: none;
-    
-    font-size: 1.0rem;
-    font-weight:300;
-    
-  }
 
-  ul.urls{
-    background: #00b4cc;
-    box-shadow: 0px 4px 8px -2px #00000033;
-    border-radius: 6px;
-    border: 1px solid #ddd;
-    padding: 16px;
-    font-size: 1.0rem;
-    list-style-type: none;
-    width: 70%;;
-    
-  }
-
-  .btn{
-    text-align: end;
-    background: #cc0707;
-    width: 20%;
-    text-align: center;
-    color: white;
-  }
-
-  .btn:hover{
-    background-color: brown;
-    cursor: pointer;
-  }
 
 
 
@@ -131,7 +136,8 @@ main {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    margin: auto;
+    margin-bottom: 0px;
+    position: absolute;
     padding: 10px;
     margin-top: 10px;
     font-size: 0.8em;

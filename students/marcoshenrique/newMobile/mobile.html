@@ -15,7 +15,9 @@
 </head>
 <body onresize="mudouTamanho()">
     <header>
-        <h1>Meu Site</h1>
+        <div class="logo">
+            <h1>Meu Site</h1> 
+        </div>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
@@ -29,21 +31,25 @@
 
     </header>
 
-    <main>
-        <section class="api">
+    <section class="api">
+        <div>
             <form action="" >
                 <input class="inputUrl"type="text" placeholder="Digite a url...">
             </form>
+        </div>
 
-            <ul class="urls">
-                <li>Nunca mais esqueça um link!</li>
-            </ul>
+        <ul class="urls">
+            <li>Nunca mais esqueça um link!</li>
             <span class="btn"><input class="btn" type="button" value="Delete"></span>
-        </section> 
+        </ul>
 
+    </section> 
+
+
+    <main>
         <!-- Descrição, Inframe e Slider -->
-        <section class="descricao-main">
-            <div class="descricao">
+        <div class="descricao-main">
+            <div class="descricao-texto">
                 <h2>Descrição da Aplicação</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit adipisci delectus cum eveniet qui nostrum est nihil quisquam libero officiis quas quaerat id ab, error excepturi perspiciatis eius commodi quod?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis minus vero possimus! Itaque error obcaecati quis nostrum recusandae numquam temporibus, enim earum explicabo accusamus suscipit, deserunt aut quasi pariatur.</p>
             </div>
@@ -57,9 +63,9 @@
                     <img src="../newMobile/img/slider.jpg" alt="">
                 </div>
             </div>
-        </section>
+        </div>
 
-    </main>        
+    </main>     
     
    <footer class="footer">
         <span>Desenvolvedor: Marcos Henrique / (68) 98411-9153 | <a href="mailto:marcossistemas.ac@gmail.com">marcossistemas.ac@gmail.com</a></span>
@@ -67,3 +73,36 @@
     </footer>
 </body>
 </html>
+
+
+<!-- <main>
+    <section class="api">
+        <form action="" >
+            <input class="inputUrl"type="text" placeholder="Digite a url...">
+        </form>
+
+        <ul class="urls">
+            <li>Nunca mais esqueça um link!</li>
+        </ul>
+        <span class="btn"><input class="btn" type="button" value="Delete"></span>
+    </section> 
+
+    //Descrição, Inframe e Slider
+    <section class="descricao-main">
+        <div class="descricao">
+            <h2>Descrição da Aplicação</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit adipisci delectus cum eveniet qui nostrum est nihil quisquam libero officiis quas quaerat id ab, error excepturi perspiciatis eius commodi quod?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis minus vero possimus! Itaque error obcaecati quis nostrum recusandae numquam temporibus, enim earum explicabo accusamus suscipit, deserunt aut quasi pariatur.</p>
+        </div>
+
+        <div class="midias">
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qIGYM4S8x50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div>
+                <img src="../newMobile/img/slider.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+</main>  -->

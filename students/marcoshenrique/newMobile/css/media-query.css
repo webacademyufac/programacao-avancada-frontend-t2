@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 480px){
     
-    header > h1{
+    .logo { /* header > div > h1 = class logo */
         display: flex;
     }
     #burguer {
@@ -28,7 +28,6 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-    
     }
 
     .descricao{
