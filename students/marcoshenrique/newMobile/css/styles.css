@@ -50,15 +50,19 @@ main {
     margin-top: 10px;
 }
 
-article h2 {
+.descricao h2 {
     padding-bottom: 20px; 
     text-align: center;
 }
 
-article p {
+.descricao p {
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
+}
+
+.midias{
+  display: none;
 }
 
 #burguer{
@@ -115,14 +119,7 @@ article p {
     cursor: pointer;
   }
 
-  img{
-    display: none;
-    width: 100%;
-  }
 
-iframe{
-  display: none;
-}
 
 
 
