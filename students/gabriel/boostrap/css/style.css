@@ -1,11 +1,111 @@
-*{
+body {
     font-family: 'Roboto', sans-serif;
-
 }
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 50px 0;
+}
+
+p,
+li {
+    font-size: 14px;
+    color: #442;
+}
+
 
 /* SlideShow */
 
-#mainSlider .carousel-inner, #mainSlider .carousel-item {
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
     height: 90vh;
-    
+}
+
+@media (max-width: 480px) {}
+
+
+/* About */
+
+#about-area {
+    background-color: rgb(220, 220, 220);
+}
+
+.main-title {
+    color: #444;
+    margin: 0 0 50px 0;
+    font-size: 40px;
+    text-align: center;
+    justify-items: flex-end;
+}
+
+
+/* After */
+
+.main-title::after {
+    content: "__________";
+    padding-top: 10px;
+    display: block;
+    margin-top: -40px;
+}
+
+#about-title {
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#about-list {
+    padding-left: 0;
+}
+
+#about-list li {
+    line-height: 30px;
+}
+
+#about-list li i {
+    color: rgb(40, 234, 23);
+    margin: 15px;
+}
+
+
+/* especialdiades */
+
+.specialities-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.specialities-box i,
+.specialities-box h4 {
+    color: #444;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    margin-bottom: 20px;
+}
+
+.specialities-box:hover>i,
+.specialities-box:hover>h4 {
+    color: rgb(40, 234, 23);
+}
+
+.specialities-box i {
+    font-size: 36px;
+}
+
+.specialities-box h4 {
+    font-size: 24px;
+}
+
+
+/* Team */
+
+.card-body {
+    text-align: center;
 }
