@@ -18,9 +18,8 @@ body {
 /* Header */
 #header-content {
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: auto;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto; */
 }
 
 #header-content #logo {
@@ -192,7 +191,18 @@ footer span {
 
 /* Tablet */
 @media (min-width: 480px) {
+  * {
+    color:rgba(0, 0, 0, .05);
+  }
 
+  h1 {
+    text-align: center;
+    padding: 20rem;
+  }
+
+  #nav-menu {
+    background-color: violet
+  }
 }
 
 /* Desktop */
