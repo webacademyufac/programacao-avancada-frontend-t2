@@ -1,6 +1,100 @@
 /* Slideshow */
-#mainSlider .carousel-inner, #mainSlider .carousel-item {
+#mainSlider .carousel-inner, 
+#mainSlider .carousel-item {
     height: 90vh;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 40px 0;
+}
+
+p, 
+li {
+    font-size: 14px;
+    color: #444;
+}
+
+/* about */
+#about-area {
+    background-color: #f9f9f9;
+}
+
+.main-title {
+    color: #444;
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+#about-title {
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about-list {
+    padding-left: 0;
+}
+
+#about-list li {
+    line-height: 30px;
+}
+
+#about-list i {
+    color: rgb(2, 188, 2);
+    margin-right: 10px;
+}
+
+/* Specialities */
+.specialities-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.specialities-box i,
+.specialities-box h4 {
+    color: #444;
+    transition: 0.5s;
+}
+
+.specialities-box:hover>i,
+.specialities-box:hover>h4,
+.specialities-box:hover>p {
+    color: rgb(67, 162, 240);
+}
+
+.specialities-box i {
+    margin-bottom: 24px;
+    font-size: 44px;
+}
+
+.specialities-box h4 {
+    font-size: 24px;
+}
+
+/* Nossos times */
+.card-body {
+    text-align: center;
+}
+
+.nums h3 {
+    margin: 100px;
+    /* text-align: center; */
+    color: blue;
+
+}
+
+.time-footer {
+    margin-top: 50px;
+}
+
+.time-footer bnt {
+    align-items: center;
 }
 
 /* #title {
