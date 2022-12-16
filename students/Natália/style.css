@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
 
+
 * {
   box-sizing: border-box;
 }
@@ -90,3 +91,9 @@ li:last-child {
 li span {
   cursor:pointer;
 }
+
+footer {
+  color: white;
+  font-size: 1.5rem;
+}
+
