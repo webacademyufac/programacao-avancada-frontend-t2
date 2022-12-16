@@ -5,3 +5,5 @@
 ## https://github.com/kimmobrunfeldt/progressbar.js.git
 ## https://progressbarjs.readthedocs.io/en/latest/
 ## https://github.com/pixelcog/parallax.js
+
+## GoFullPages: Para prints de tela inteira

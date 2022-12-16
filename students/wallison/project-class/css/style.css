@@ -1,20 +1,97 @@
-#title {
-    background-color: aqua;
+/* General */
+
+body {
+    font-family: 'Ruda', sans-serif;
 }
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0; /* Cima e baixo, esquerda e direita */
+}
+
+p,
+li {
+    font-size: 14px;
+    color: #442; /* 444422 */
+}
+
+/* Slideshow */
 
 #mainSlider .carousel-inner,
 #mainSlider .carousel-item{
     height: 90vh;
 }
 
-@media (min-width: 480px) {
-    #title {
-        background-color: crimson;
-    }
+/* About */
+
+#about-area {
+    background-color: #dddddd;
 }
 
-@media (min-width: 768px) {
-    #title {
-        background-color: forestgreen;
-    }
+.main-title {
+    color: #444;
+    margin: 0 0 60px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+#about-title {
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about-list {
+    padding-left: 0;
+}
+
+#about-list li {
+    line-height: 30px;
+}
+
+#about-list i {
+    color: #347fc4;
+    margin-right: 15px;
+}
+
+/* Specialities */
+
+.specialities-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.specialities-box i,
+.specialities-box h4 {
+    color: #444;
+    transition: .5s;
+    margin-bottom: 20px;
+}
+
+.specialities-box:hover>i,
+.specialities-box:hover>h4,
+.specialities-box:hover>p {
+    color: #347fc4;
+}
+
+.specialities-box i {
+    font-size: 40px;
+}
+
+.specialities-box:hover>h4 {
+    font-size: 40px;
+}
+
+/* Nosso time */
+
+.card-body {
+    text-align: center;
+}
+
+.projects-buttons {
+    align-items: center;
 }
