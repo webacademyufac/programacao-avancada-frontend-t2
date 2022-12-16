@@ -4,7 +4,7 @@
     
 }
 
-/* Imagem-logo e menu de navegação */
+
 
 
 .navbar img{
@@ -36,7 +36,6 @@
 
 
 
-/* Inputs */
 
 .inputs input{
     display: block;
@@ -133,7 +132,7 @@ ul{
     padding: 8px;
 }
 
-/* footer */
+
 
 @media(max-widh: 741px){
     .footer_col{
