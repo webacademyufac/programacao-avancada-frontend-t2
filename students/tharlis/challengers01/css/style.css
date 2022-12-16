@@ -1,30 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
 
+body {
+  background-color: #7D79F2;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  color: black;
+  width: 100%;
+  height: 100px;    
+  text-align: center;
+  line-height: 100px;
+}
+
 .page-my-favotite {
   display: grid;
   grid-template-columns: 1fr;
-  width: 100%;
+  /* display: flex;
+  flex-direction: column; */
+  font-size: 12px;
+  /* width: 100%; */
   height: 100%;
-  background-color: #d4b9fc;
+  background-color: #7D79F2;
 }
 
-.campo-entrada {
-  margin-top: 15px;
+.paragraph {
+  display: block;
   align-items: center;
   justify-content: center;
+  font-size: 0.9rem;
+  font-family: Arial;
+  text-align: justify;
   margin-left: 0.8rem;
   margin-right: 0.8rem;
 }
 
+.paragraph #paragrafos {
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-family: Arial;
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+.campo-entrada {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+
+}
+
+.my-favotite{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.my-favotite .link {
+  background-color: aliceblue;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+
+.my-favotite .link ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.my-favotite .link ul #nome-site {
+  margin-right: 8px;
+  width: 35%;
+  
+}
+.my-favotite .link ul #link-site {
+  width: 50%;
+}
+.my-favotite .link ul #delete-link {
+  background-color: #af4f4c;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 input {
+  color: rgb(54, 54, 54);
   border: none;
   background-color: aliceblue;
-  border-radius: 4px;
+  border-radius: 10px;
+  padding: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 99%;
 }
 
 img{
-  width: 60px;
   height: 50px;
+  width: 60px;
 }
 .logo {
   display: flex;
@@ -43,10 +134,7 @@ img{
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
   background-color: aliceblue;
-  margin-left: 0.8rem;
-  margin-right: 0.8rem;
 }
 
 .nav ul {
