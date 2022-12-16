@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Raleway',sans-serif;
+}
+
+#container{
+    background-color: rgb(246, 156, 22);
+}
+
+/* Topo do site */
+header, header {
+    background-color: black;
+}
+
+.texto {
+    width: 90%;
+    justify-items: center;
+}
+
+header li{
+}
+
+header #logo{
+    color: white;
+    margin-right: 10px;
+    padding-left: 10px;
+    background-image: url("../images/newG.png");
+}
+/* Barra de navegação */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header ul{
+    display: flex;
+}
+
+header li{
+}
+/* Campo de busca */
+a{
+    color: white;
+    padding: 0.7em;
+
+}
+li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+.busca {
+    margin-left: 60%;
+    width: 30%;
+    border-radius: 10px;
+}
+
+/* Formulario */
+form {
+    background-color: white;
+    margin: 0.7em;
+}
+
+/* Bloco conteudo texto de ajuda e conteudo extra */
+#bloco {
+    display: flex;
+    padding: 1em;
+}
+/* Texto de ajuda */
+#help{
+    padding: 5px;
+    
+}
+/* Conteudo extra */
+#conteudo{
+}
+
+@media (min-width: 480px){
+    #container {
+        background-color: red;
+        
+    }
+    header{
+        display: flex;
+    }
+}
+
+@media (min-width: 768px){ 
+    #container {
+        background-color: aqua;
+    }
+}
