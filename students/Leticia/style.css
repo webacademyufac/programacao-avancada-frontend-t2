@@ -67,3 +67,11 @@ input {
 a{
   text-decoration: none;
 }
+.input-checkbox {
+
+  display: none; }
+  nav{
+    position: sticky;
+    top: 0px;
+  }
+ 
