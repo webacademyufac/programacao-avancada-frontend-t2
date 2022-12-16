@@ -1,13 +1,95 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 70px;
+}
+
+p, li {
+    font-size: 14px;
+    color: #444;
+}
+
 /* Slide show */
-
-#mainSlider .carousel-inner, #mainSlider .carousel-item  {
-    /* height: 35vh; */
-    height: 45vh;
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 30vh;
 }
 
-#fas, #fa-check{
-    color: pink;
+/* About */
+#about-area {
+    background-color: #f9f9f9;
 }
+
+.main-title {
+    color: #444;
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+#about-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+    text-transform: uppercase;
+}
+
+#about-list {
+    padding-left: 0;     /* retorna a lista para a margem */
+}
+
+#about-list li {
+    line-height: 30px;
+}
+
+#about-list i {
+    color: #347fce;
+    margin-right: 5px;
+}
+
+/* Specialities */
+.specialities-box {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.specialities-box i, .specialities-box h4 {
+    color: #444;
+    transition: 0.225s;
+}
+
+.specialities-box:hover>i, .specialities-box:hover>h4 {
+    color: #347fc4;
+}
+
+.specialities-box i {
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+}
+
+.specialities-box h4 {
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-bottom: 0.30rem;
+}
+
+/* Team */
+
+.card-body h5{
+    font-weight: bolder;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+
+}
+
 
 /* Tablet */
 @media (min-width: 480px) {

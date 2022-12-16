@@ -108,3 +108,13 @@ baixar em https://pixelcog.github.io/parallax.js/
 **Data:** 14/12/2022
 
 "active" indica que é o slide que inicia
+
+### Aula 5
+**Data:** 15/12/2022
+
+**TODO** Escrever a linha em baixo de todos os h3
+
+Pesquisar e usar `after`
+
+o commit "TODO header-content mesma linha" pode ser resolvido olhando o conteúdo de **box-model**
+
