@@ -1,1 +1,3 @@
-console.log("ola mundo")
+$( document ).ready(function(){
+    
+})
