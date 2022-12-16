@@ -244,6 +244,29 @@ footer a {
       border-top-left-radius: 2.5em;
       border-top-right-radius: 2.5em;
    }
+
+   .video-fluid {
+      height: 20em;
+   }
+
+   .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
 }
 
-/* @media (max-width: 768px) {} */
+@media (min-width: 768px) {
+
+   .container {
+      max-width: 25em;
+   }
+
+   .content {
+      display: flexbox;
+   }
+
+   .media-container {
+      display: flexbox;
+      flex-grow: 1;
+   }
+}
