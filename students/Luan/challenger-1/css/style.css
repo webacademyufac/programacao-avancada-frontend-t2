@@ -20,10 +20,6 @@ body {
   grid-template-columns: 1fr;
 }
 
-header img {  
-  width: 100%;
-  height: auto;
-}
 
 /* .nav-list {
   display: flex;
@@ -38,7 +34,7 @@ h1 {
   font-size: 3.4rem;
 }
 
-input {
+.principal input {
   width: 100%;
   
   padding: 8px 16px;
