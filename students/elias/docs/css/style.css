@@ -1,0 +1,89 @@
+/* Slideshow */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#mainSlider .carrousel-inner, #mainSlider .carrousel-item{
+    height: 90vh;
+}
+
+.row{
+    margin: 0;
+}
+
+.container{
+    padding: 50px 0;   
+}
+
+p, li{
+    font-size: 14px;
+    color: #444;
+}
+
+/* about */
+
+#about-area{
+    background-color: #f9f9f9;
+}
+
+.main-title, .main-title h3{
+    color: #444;
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+#about-title{
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about-list{
+    padding-left: 0;
+}
+
+#about-list li{
+    line-height: 30px;
+}
+
+#about-list i{
+    color: #347fc4;
+    margin-right: 15px;
+}
+
+/* specialities */
+
+.specialities-box{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.specialities-box i,
+.specialities-box h4{
+    color: #444;
+    transition: 0.5s;
+}
+
+
+.specialities-box:hover>i,
+.specialities-box:hover>h4{
+    color: #347fc4;
+}
+
+.specialities-box i{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.specialities-box h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* team */
+
+.card-body{
+    text-align: center;
+}

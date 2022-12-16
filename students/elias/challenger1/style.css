@@ -1,75 +1,41 @@
 .container{
-  height: 100vh;
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 2fr 2fr 2fr 3fr 3fr;
-  grid-template-areas: 
-  "header header"
-  "nav img"
-  "campoentrada campoentrada"
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10vh 20vh 40vh 20vh 10vh;
+  grid-template-areas:
+  "logo nav"
+  "form form"
   "links links"
-  "desc desc"; 
-  grid-gap: 0.5em;
+  "desc desc"
+  "footer footer";
 }
 
-.header{
-  text-align: center;
-  background-color: black;
-  color: white;
-  grid-area: "header";
+.especiais{
+  display: none;
 }
 
-.nav{
-  grid-area: "nav";
-  background-color: yellow;
+.container header .logo{
+  grid-area: logo;
+  height: 100%;
 }
 
-.nav img{
-  width: 20%;
-  position: absolute;
-  right: 0;
-  grid-area: "img";
+.container header .nav{
+  grid-area: nav;
+  height: 100%;
 }
 
-header h1{
-  font-size: 2rem;
+.container main .form{
+  grid-area: form;
 }
 
-#campoentrada{
-  background-color: gray;
-  grid-area: "campoentrada";
+.container main .links{
+  grid-area: links;
 }
 
-#campoentrada input{
-  width: 80%;
-  margin-left: 2rem;
-}
-
-#links{
-  background-color: rgb(104, 104, 255);
-
-  grid-area: "links";
-}
-
-#links h2{
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-#desc{
-  grid-area: "desc";
-  background-color: aqua;
+.container main .desc{
+  grid-area: desc;
 }
 
 footer{
-  background-color: black;
-  color: white;
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-  grid-area: "footer";
-}
-
-footer span{
-  font-size: 0.8rem;
+  grid-area: footer;
 }
