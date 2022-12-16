@@ -85,6 +85,24 @@ li {
     font-size: 24px;
 }
 
+/* Numbers */
+
+.circle-box div {
+    padding: 0 40px;
+}
+
+.progressbar-text {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#data-area p {
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
 /* Team */
 
 .card-body {
