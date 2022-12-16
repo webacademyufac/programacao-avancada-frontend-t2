@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>MVP Studio - Desenvolvendo Soluções</title>
-
+   <!-- Reset CSS -->
   <link rel="stylesheet" href="../Bootstrap/css/reset.css">
-
+  <!-- Bootstrap v5.2.3 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
+  <!-- Style -->
   <link rel="stylesheet" href="../Bootstrap/css/styles.css">
 
   <!-- Fontes -->
@@ -23,9 +24,9 @@
   <script src="https://kit.fontawesome.com/c53bf24523.js" crossorigin="anonymous"></script>
   <!-- Barra de progresso em JS -->
   <script src="../Bootstrap/js/progresssbar.min.js"></script>
-
+  <!-- jQuery que vai servir para o parallax -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
+  <!-- Parallax -->
   <script src="../Bootstrap/js/parallax.min.js"></script>
 </head>
 
@@ -41,8 +42,7 @@
 
     <!-- Slideshow -->
     <section id="slideshow">
-
-      <div id="mainSlider" class="carousel carousel-dark slide col-md-6 col-lg-3" data-bs-ride="carousel">
+      <div id="mainSlider" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true"
             aria-label="Slide 1"></button>
@@ -74,7 +74,6 @@
               <p>Some representative placeholder content for the third slide.</p>
             </div>
           </div>
-
         </div>
 
         <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
@@ -86,7 +85,6 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-
       </div>
     </section>
 
@@ -98,17 +96,15 @@
             <div class="col-12"><!-- quebramos o grid em 2 colunas de 12 -->
               <h3 class="main-title">Sobre a MVP Studio</h3>
             </div>
-        </div> 
-
             <div class="col-md-6"><!-- estamos quebrando a linha @mediaquery -->
               <img src="img/agencia.jpg" class="img-fluid" alt=""> 
             </div>
 
             <div class="col-md-6">
-              <h3>Uma Agência que pensa no futuro</h3>
-              <p>testando 1</p>
-              <p>testando 2</p>
-              <p>testando 3</p>
+              <h3 id="about-title">Uma Agência que pensa no futuro</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Ab perspiciatis consectetur necessitatibus amet aperiam neque quia veritatis.</p>
+              <p>Ea minus ratione corporis veniam suscipit hic nam, culpa eos officiis eligendi libero!</p>
               <p>Veja outros diferenciais</p>
               <ul id="about-list"> <!-- Lista não ordenada i de svg icone-->
                 <li><i class="fas fa-check"></i> Utilização de Machine Learning e Inteligência Artificial</li>
@@ -119,9 +115,7 @@
               </ul>
             </div>
           </div>
-        
       </div>
-
     </main>
 
     <!-- Especialidades -->
@@ -132,37 +126,37 @@
             <h3 class="main-title">Nossas especialidades</h3>
           </div>
           <!-- icone, titulo e texto, ou seja, <i>, <h4>, <p> -->
-          <div class="col-md-4 col-lg-2"> <!-- col-md-4 col-lg-2 -->
+          <div class="col-md-4 col-lg-2 specialities-box"> <!-- col-md-4 col-lg-2 -->
             <i class="fa-solid fa-download"></i>
             <h4>Download Portfólio</h4>
             <p>Baixar Portfólio</p>
           </div>
 
-          <div class="col-md-4 col-lg-2"> 
+          <div class="col-md-4 col-lg-2 specialities-box"> 
             <i class="fa-brands fa-github"></i>
             <h4>GitHub</h4>
             <p>https://github.com/Marcos-cmd-henrique</p>
           </div>
 
-          <div class="col-md-4 col-lg-2"> 
+          <div class="col-md-4 col-lg-2 specialities-box"> 
             <i class="fa-solid fa-code"></i>
             <h4>Conhecimentos Front-End</h4>
             <p>HTML:5, CSS3, Bootstrap 5, Js, Angular</p>
           </div>
 
-          <div class="col-md-4 col-lg-2"> 
+          <div class="col-md-4 col-lg-2 specialities-box"> 
             <i class="fa-solid fa-code"></i>
             <h4>Conhecimentos Back-End</h4>
             <p>Java Spring Boot, Nodejs, Python</p>
           </div>
 
-          <div class="col-md-4 col-lg-2"> 
+          <div class="col-md-4 col-lg-2 specialities-box"> 
             <i class="fa-solid fa-envelope"></i>
             <h4>E-mail</h4>
             <p>marcossistemas.ac@gmail.com</p>
           </div>
 
-          <div class="col-md-4 col-lg-2"> 
+          <div class="col-md-4 col-lg-2 specialities-box"> 
             <i class="fa-solid fa-location-dot"></i>
             <h4>Acre</h4>
             <p>Rio Branco-Acre</p>
@@ -178,11 +172,11 @@
     <section class="team">
       <div class="container">
         <div class="row">
-          <div class="main-title">
-            <h3>Nosso Time</h3>
+          <div>
+            <h3 class="main-title">Nosso Time</h3>
           </div>
 
-          <div class="card col-6 col-md-3" style="width: 18rem;">
+          <div class="card col-6 col-md-3">
             <img src="img/profile1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5>Fulano1</h5>
@@ -190,7 +184,7 @@
             </div>
           </div>
 
-          <div class="card col-6 col-md-3" style="width: 18rem;">
+          <div class="card col-6 col-md-3">
             <img src="img/profile2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5>Fulano2</h5>
@@ -198,7 +192,7 @@
             </div>
           </div>
 
-          <div class="card col-6 col-md-3" style="width: 18rem;">
+          <div class="card col-6 col-md-3">
             <img src="img/profile3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5>Fulano3</h5>
@@ -206,16 +200,38 @@
             </div>
           </div>
 
-          <div class="card col-6 col-md-3" style="width: 18rem;">
+          <div class="card col-6 col-md-3">
             <img src="img/profile4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5>Fulano4</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
-
         </div>
       </div>
+
+    </section>
+
+    <!-- PROJETOS - CONHEÇA NOSSOS PROJETOS (MARCOS E ADEGILSON) -->
+    <section class="conheca-projetos">
+      <div class="container">
+        <div class="row">
+            <div>
+              <h3 class="main-title">Conheça nossos projetos</h3>
+            </div>
+            <div class="BtnProject">
+              <button type="button" class="btn btn-light">Todos</button>
+              <button type="button" class="btn btn-light">Desenvolvimento</button>
+              <button type="button" class="btn btn-light">Design</button>
+              <button type="button" class="btn btn-light">SEO</button>
+            </div>
+
+      
+            </div>
+        </div>
+
+      </div>
+
 
     </section>
 
