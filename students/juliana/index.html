@@ -1,21 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-        <title>Document</title>
-        <!-- <script src="script/scripts.js" defer></script> -->
-    </head>
-    <body>
-        <h1>Meus Links</h1> 
-        <div id="form">
-            <h3>Digite sua URL</h3>
-            <form action=""><input type="text" placeholder="Digite a url ..."></form>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Os valores de col-md e col lg foram alterados para 480px e 768px respectivamente -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="content">
+        <header>
+            <div class="container">
+                <div class="row" id="row-logo">
+                    <div id="div-logo" class="col-md-1">
+                        <img src="img/logo.png" id="img-logo">
+                    </div>
+                    <div class="col-md-11">
+                        <nav class="navbar navbar-expand-lg navbar-light" id="nav-nav">
+                            <div class="container-fluid">
+                              <a class="navbar-brand" href="#"></a>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">About us</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="section-input-url">
+            <div class="container" id="container-url">
+                <div class="row">
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Enter your URL</span>
+                        <input type="text" id="input-url" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main>
             <ul>
                 <li>"Nunca mais esqueça o link"</li>
+                <li>"Nunca mais esqueça o link"</li>
             </ul>
-        </div>
-    
-    </body>
+        </main>
+        <section class="section-midia">
+            <div class="container" id="container-midia">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <p>Expedita odio officia commodi numquam magni dolorum tempore cumque i</p>
+                    </div>
+                    <div class="col-md-6 col-lg-8">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                    <iframe src="https://www.youtube.com/embed/r0CWl2EhR6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <img src="img/Imagem4.png" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <span>Desenvolvido por Juliana Abreu</span>
+            <span>Desenvolvimento: (68) 99999-9999 | <a href="juliana:abreu.juliana@sou.ufac.br">abreu.juliana@sou.ufac.br</a></span>
+        </footer>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
