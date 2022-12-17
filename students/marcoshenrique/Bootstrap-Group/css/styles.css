@@ -83,7 +83,42 @@ p, li {
     font-size: 24px;
 }
 
+/* Numbers */
+.circle-box{
+    padding: 0 40px;
+}
+
+#numbers-area p{
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+#numbers-area p:hover{
+    color: #347fc4;
+}
+
+
 /* Team */
+
 /* .card-body{
     text-align: ;
-} */
+}  */
+
+
+/* Work */
+#work-area{
+    height: 500px;
+}
+
+#work-area .container-fluid,
+#work-area .row {
+    height: 100%;
+}
+
+#company-img {
+    background-image: url('../img/empresa.jpg');
+    background-size: cover;
+    height: 100%;
+}

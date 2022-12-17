@@ -1,36 +1,80 @@
 $( document ).ready(function(){
-    // progressbar.js@1.0.0 version is used
-// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
 
-let bar = new ProgressBar.Circle(container, {
+
+
+
+let bar = new ProgressBar.Circle(circleA, {
     color: '#aaa',
-    // This has to be the same size as the maximum width to
-    // prevent clipping
     strokeWidth: 4,
     trailWidth: 1,
-    easing: 'easeInOut',
-    duration: 1400,
-    text: {
-      autoStyleContainer: false
-    },
-    from: { color: '#aaa', width: 1 },
-    to: { color: '#333', width: 4 },
-    // Set default step function for all animate calls
+    duration: 500,
+    from: { color: '#000', width: 1 },
+    to: { color: '#0db2ac', width: 4 },
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
-      circle.path.setAttribute('stroke-width', state.width);
-  
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText('');
-      } else {
-        circle.setText(value);
-      }
-  
+      var value = Math.round(circle.value() * 65);
+      circle.setText(value); 
     }
   });
-  bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-  bar.text.style.fontSize = '2rem';
-  
-  bar.animate(1.0);  // Number from 0.0 to 1.0
+
+bar.animate(1.0);
+
+
+let barB = new ProgressBar.Circle(circleB, {
+    color: '#aaa',
+    strokeWidth: 4,
+    trailWidth: 1,
+    duration: 500,
+    from: { color: '#000', width: 1 },
+    to: { color: '#0db2ac', width: 4 },
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+      var value = Math.round(circle.value() * 100);
+      circle.setText(value); 
+    }
+  });
+
+barB.animate(1.0);
+
+let barC = new ProgressBar.Circle(circleC, {
+    color: '#aaa',
+    strokeWidth: 4,
+    trailWidth: 1,
+    duration: 500,
+    from: { color: '#000', width: 1 },
+    to: { color: '#0db2ac', width: 4 },
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+      var value = Math.round(circle.value() * 60);
+      circle.setText(value); 
+    }
+  });
+
+barC.animate(1.0);
+
+
+let barD = new ProgressBar.Circle(circleD, {
+    color: '#aaa',
+    strokeWidth: 4,
+    trailWidth: 1,
+    duration: 500,
+    from: { color: '#000', width: 1 },
+    to: { color: '#0db2ac', width: 4 },
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+      var value = Math.round(circle.value() * 150);
+      circle.setText(value); 
+    }
+  });
+
+barD.animate(1.0);
+
+/* Parallax */
+$('#numbers-area').parallax({imageSrc: 'img/cidadeparallax.png'});
+$('#pattern-img').parallax({imageSrc: 'img/pattern.png'});
+
+
+
 })
+
+
