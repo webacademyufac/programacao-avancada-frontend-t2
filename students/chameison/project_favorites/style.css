@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-
 }
 header{
     background-color: #282634;
@@ -59,23 +58,25 @@ nav.menu-mobile h2{
 nav.menu-mobile ul{
     display: none;
     width: 100%;
-    background: white;
+    background: #282634;
     position: absolute;
     left: 0;
     top: 50px;
     z-index: 999;
     text-align: center;
+
 }
 nav.menu-mobile li{
     padding: 8px 0;
     border-bottom:1px solid black ;
+    list-style-type: none;
 }
 nav.menu-mobile li.selected{
-    background: rgb(225, 225, 225);
+    background: #4e4a65;
 }
 nav.menu-mobile a{
     display: block;
-    color: black;
+    color: #f1f1f1;
     text-decoration: none;
 }
 
@@ -99,7 +100,10 @@ nav.menu-desktop a {
     text-decoration: none;
 }
 nav.menu-desktop a:hover{text-decoration: underline;} 
-
+nav li.selected a{
+    color: rgb(176, 45, 62);
+    font-weight: bold;
+}
 
 /*Section main-back*/
 /* fim menu mobile */
@@ -117,23 +121,14 @@ nav.menu-desktop a:hover{text-decoration: underline;}
 }
 .main h1{
     font-size: 30px;
-    color: white;
+    color: #282634;
     font-weight: normal;
-}
-
-.links {
-    width: 350px;
-    height: 300px;
-    border-radius: 02%;
-    text-align: center;
-    background-color:  rgba(0, 0, 0, 0.5);
-    padding: 40px 20px;
 }
 .dev{
     padding-top: 15px;
 }
 .dev a {
-    color: white;
+    color: black;
     font-size: 15px;
     font-weight: lighter;
     text-decoration: none;
@@ -154,12 +149,21 @@ footer.footer{
     height: 50px;
     text-align: center;
 }
+.links {
+    width: 350px;
+    height: 400px;
+    border-radius: 02%;
+    background-color:  rgba(255, 255, 255, 0.8);
+    padding: 40px 30px;
+}
 
 .links ul {
-  background: rgba(152, 155, 150, 0.1);
+  background: rgba(12, 12, 12, 0.1);
   background-color:  rgba(red, green, blue, alpha);
   font-size: 10px;
-  margin: 10px;
+  padding: 10px;
+  margin: 10px 0;
+
 }
 
 div.links li {
@@ -171,7 +175,7 @@ div.links li {
 
 div.links a {
   display: block;  
-  color: white;
+  color: #282634;
   text-decoration: none;  
   padding: 16px 0;
   font-size: 1.0rem;
@@ -184,14 +188,14 @@ div.links a:hover {
 }
  /* input */
  div.links input{
-    background-color:  transparent;
     border: 0;
-    border-bottom: 1px solid #fff;
     display: block;
     width: 100%;
-    padding: 15px 0;
+    padding: 10px 10px;
     font-size: 18px;
-    color: #fff;
+    color: #4e4a65;
+    background-color: rgba(12, 12, 12, 0.1);;
+    margin-top: 10px;
 
 }
 /* botao */
@@ -208,8 +212,13 @@ div.links a:hover {
     color: white;
     font-weight: normal;
     flex: auto;
+    margin-bottom: 10px;
  }
 /* container */
+
+#apply-area {
+    height: 500px;
+}
 
 /* responsividade */
 @media screen and (max-width: 768px){
