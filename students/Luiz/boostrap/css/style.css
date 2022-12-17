@@ -12,21 +12,23 @@ body {
     padding: 50px 0;
 }
 
-p, li {
+p,
+li {
     font-size: 14px;
     color: #444;
 }
 
 /* Slideshow */
 
-#mainSlider .carousel-inner, #mainSlider .carousel-item{
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
     height: 90vh;
 }
 
 /* About */
 
 #about-area {
-    background-color: #F9F9F9;
+    background-color: #dddddd;
 }
 
 .main-title {
@@ -52,28 +54,27 @@ p, li {
 }
 
 #about-list i {
-    color: orange;
+    color: #347fc4;
     margin-right: 15px;
 }
 
-
-/* specialities */
+/* Specialities */
 
 .specialities-box {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.specialities-box:hover i,
-.specialities-box:hover h4 {
+.specialities-box i,
+.specialities-box h4 {
     color: #444;
-    transition: 0.5s;
+    transition: 1.5s;
     margin-bottom: 20px;
 }
 
 .specialities-box:hover>i,
 .specialities-box:hover>h4 {
-    color: #F9F9F9;
+    color: #347fc4;
 }
 
 .specialities-box i {
@@ -84,6 +85,8 @@ p, li {
     font-size: 24px;
 }
 
-.card-box{
-    
+/* Team */
+
+.card-body {
+    text-align: center;
 }
