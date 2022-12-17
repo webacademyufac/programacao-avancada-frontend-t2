@@ -25,6 +25,10 @@ p, li {
     height: 90vh;
 }
 
+/* @media (min-width: 480px){
+diferenças entre min e max 
+} */
+
 
 /* About */
 #about-area {
