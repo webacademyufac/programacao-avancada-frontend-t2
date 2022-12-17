@@ -7,3 +7,5 @@
 ## https://github.com/pixelcog/parallax.js
 
 ## GoFullPages: Para prints de tela inteira
+
+## parallax.js
