@@ -162,6 +162,26 @@ img{
   color: black;
 }
 
+.container {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+
+@media (min-width: 480px){
+  .paragraph-slide-video{
+    display: none;
+  }
+  .paragraph-slide-video{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* #title {
   background-color: aqua;
 }
