@@ -98,3 +98,8 @@ li {
 .card-body {
     text-align: center;
 }
+
+/* Work */
+#company-img{
+    background-image: url('../img/empresa.jpg');
+}
