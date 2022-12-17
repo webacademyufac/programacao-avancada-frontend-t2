@@ -84,6 +84,14 @@ li {
 .specialities-box h4 {
     font-size: 24px;
 }
+/* Number */
+.circle-box{
+    padding: 0 40px;
+}
+#numbers-area p{
+    color: #dddddd;
+    text-align: center;
+}
 
 /* Team */
 
