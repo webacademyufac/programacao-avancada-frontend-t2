@@ -92,16 +92,31 @@ li {
     
 }
 
-/* TABLET */
-@media (min-width: 480px) {
-    #title {
-        background-color: red;
-    }
+/* Work */
+
+#company-img {
+    background-image: url('../img/empresa.jpg');
+    background-size: cover;
+    height: 100%;
 }
 
-/* DESKTOP */
-@media (min-width: 768px) {
-    #title {
-        background-color: blue;
-    }
+#work-area {
+    height: 500px;
+}
+
+#work-area .container-fluid,
+#work-area .row {
+    height: 100%;
+}
+
+/* Progress Bar */
+.circle-box {
+    padding: 0 40px;
+}
+
+#numbers-area p {
+    color: #dddddd;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
 }
