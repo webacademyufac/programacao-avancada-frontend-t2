@@ -25,9 +25,13 @@ p,li {
 }
 /*======== SLIDESHOW ========== */
 
-#main__slider .carousel-inner,
-#main__slider .carousel-item {
-  height: 80pvh;
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
+    height: 90vh;
+}
+
+@media (min-width: 480px) {
+  
 }
 
 /*========== ABOUT AREA ==========*/
@@ -38,8 +42,9 @@ p,li {
 
 .main__title {
   color: #444;
-  margin: 0 0 50px 0;
-  text-align: center;
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-size: 40px;
 }
 
 #about__title {
@@ -82,3 +87,58 @@ p,li {
   font-size: 24px;
 }
 
+/*==================== Numbers===============*/
+
+.circle-box{
+  padding: 0 40px;
+}
+
+#numbers-area {
+  color: #dddddd;
+  text-align: center;
+}
+#circle__a {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+#circle__b {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+#circle__c {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+#circle__d {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+/*===========Work==========*/
+
+#work-area {
+  height: 500px;
+}
+
+#work-area .container-fluid, 
+#work-area .row {
+  height: 100%;
+}
+
+#company-img {
+  background-image: url('../img/empresa.jpg');
+  background-size: cover;
+  height: 100%;
+  border-radius: 12px;
+}

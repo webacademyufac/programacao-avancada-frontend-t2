@@ -41,135 +41,85 @@
       </header>
 
       <!--===========================CARROUSEL===============================-->
-      <section id="slide__show">
-        <div id="main__slider" class="carousel carousel-dark slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#main__slider"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#main___slider"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#main__slider"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <img src="img/banner1.png" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="img/banner2.png" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="img/banner3.png" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#main__slider"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#main__slider"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <!-- Slideshow -->
+    <section id="slideshow">
+      <div id="mainSlider" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-      </section>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/banner1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/banner2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
       <!--=======================SOBRE(MAIN)===========================-->
 
       <main>
-        <div id="about__area" class="container">
+        <div id="about-area" class="container">
           <div class="row">
             <div class="col-12">
-              <h3 id="about__title">Sobre a MVP Studio</h3>
+              <h3 class="main__title">Sobre a MVP Studio</h3>
             </div>
             <div class="col-md-6">
-              <div class="line__title"></div>
-              <img src="img/agencia.jpg" class="img-fluid" alt="" />
+              <img src="img/agencia.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-md-6">
-              <h3>Uma agência que pensa no futuro</h3>
-              <p>testando a segunda linha na primeira coluna</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit,
-                consectetur nemo ipsum est, molestias mollitia harum excepturi
-                id beatae at!
-              </p>
-              <p>
-                eaque cumque iusto aspernatur laboriosam sequi tempore
-                recusandae provident.
-              </p>
-              <ul id="about__list">
-                <li>
-                  <i class="fas fa-check"></i> Utilização de Machine Learning e
-                  Inteligência Artificial
-                </li>
-                <li>
-                  <i class="fas fa-check"></i> Integração com diversos sistemas
-                </li>
-                <li>
-                  <i class="fas fa-check"></i> Desenvolvimento com metodologia
-                  ágil
-                </li>
-                <li>
-                  <i class="fas fa-check"></i> Equipe qualificada nas pincipais
-                  tecnologias do mercado
-                </li>
+              <h3 id="about-title">Uma agência que pensa no futuro</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Ab perspiciatis consectetur necessitatibus amet aperiam neque quia veritatis.</p>
+              <p>Ea minus ratione corporis veniam suscipit hic nam, culpa eos officiis eligendi libero!</p>
+              <p>Veja outros diferenciais:</p>
+              <ul id="about-list">
+                <li><i class="fas fa-check"></i> Utilização de Machine Learning e Inteligência Artificial</li>
+                <li><i class="fas fa-check"></i> Layout responsivo com mobile first</li>
+                <li><i class="fas fa-check"></i> Integração com diversos sistemas</li>
+                <li><i class="fas fa-check"></i> Desenvolvimento com metodologia ágil</li>
+                <li><i class="fas fa-check"></i> Equipe qualificada nas principais tecnologias do mercado</li>
               </ul>
             </div>
           </div>
-        </div>
       </main>
-
       <!--=======================ESPECIALIDADES========================-->
       <section id="specialities">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <h3 class="main__title">Nossas Especialidades</h3>
+              <div class="line__title"></div>
             </div>
             <div class="col-md-4 col-lg-2 specialities__box">
-              <div class="line__title"></div>
               <i class="fa-solid fa-comments"></i>
               <h4>Lorem ipsum dolor sit, amet</h4>
               <p>
@@ -226,35 +176,28 @@
       </section>
 
       <!--============NÚMEROS========================-->
-      <div class="date__area">
+      <section id="numbers-area">
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-xs-6 circle-box">
-              <div id="semnome">
-                <p>60</p>
-              </div>
+              <div id="circle__a"></div>
+              <p>Projetos entregues</p>
             </div>
-
             <div class="col-md-3 col-xs-6 circle-box">
-              <div id="semnome">
-                <p>254</p>
-              </div>
+              <div id="circle__b"></div>
+              <p>Clientes Felizes</p>
             </div>
-
             <div class="col-md-3 col-xs-6 circle-box">
-              <div id="semnome">
-                <p>32</p>
-              </div>
+              <div id="circle__c"></div>
+              <p>Colaboradores</p>
             </div>
-
             <div class="col-md-3 col-xs-6 circle-box">
-              <div id="semnome">
-                <p>5423</p>
-              </div>
+              <div id="circle__d"></div>
+              <p>Cafézinhos</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!--==============NOSSO TIME===================-->
       <section id="team">
@@ -262,8 +205,9 @@
           <div class="row">
             <div class="">
               <h3 class="main__title">Nosso Time</h3>
+              <div class="line__title"></div>
             </div>
-
+            
             <div class="card col-6 col-md-3">
               <img src="img/profile1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -298,6 +242,23 @@
           </div>
         </div>
       </section>
+
+      <!--====================== Trabalhe conosco ========================== -->
+    <section id="work-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 work-box" id="company-img">
+          </div>
+          <div class="col-md-6 work-box" id="pattern-img">
+            <h4>Gosta de desafios?</h4>
+            <p>Temos várias posições abertas, entre elas: Software Engineer, UI/UX Designer, Project Manager e mais.</p>
+            <p>Clique no botão abaixo e confira os benefícios e as posições em aberto.</p>
+            <p>Aqui você terá a chance de trabalhar com as melhores tecnologias e os profissionais mais capacitados.</p>
+            <a href="#" class="main-btn" id="work-btn">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
       <!--====== PORTIFOLIO ==========-->
       <section class="project">
@@ -340,43 +301,68 @@
         </div>
       </section>
 
-      <!--NOVIDADE-->
-      <section class="news">
+      <!--===============================NOVIDADE==============-->
+      <section id="news-area">
+        <div class="container">
+          <div class="col-md-12">
+            <h3 class="main-title">Fique por dentro das novidades</h3>
+          </div>
+          <p>Assine nossa lista de e-mails, e receba nossos conteúdos sobre desenvolvimento de software</p>
+          <form action="">
+            <input type="text" class="form-control" id="email-input" name="email" placeholder="Seu e-mail aqui">
+            <input type="submit" id="news-btn" value="Inscrever">
+          </form>
+        </div>
+      </section>
+
+          <!-- Rodapé -->
+    <footer>
+      <!-- Contato -->
+      <section id="contact-area">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h3 class="main__title">Fique por dentro das novidades</h3>
-              <div class="line__title"></div>
-
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure!</p>
-
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Seu melhor e-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Inscrever</button>
-              </div>
-
+              <h3 class="main-title">Entre em contato conosco</h3>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-phone"></i>
+              <p><span class="contact-tile">Ligue para:</span> (99)99999-9999</p>
+              <p><span class="contact-tile">Horários:</span> 8:00 - 19:00</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-envelope"></i>
+              <p><span class="contact-tile">Envie um email:</span> contato@mvpstudio.com.br</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span class="contact-tile">Venha tomar um café:</span> Rua Lorem Ipsum - 1234</p>
+            </div>
+            <div class="col-md-6" id="msg-box">
+              <p>Ou nos deixe uma mensagem:</p>
+            </div>
+            <div class="col-md-6" id="contact-form">
+              <form action="">
+                <input type="text" class="form-control" placeholder="E-mail" name="email">
+                <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                <input type="submit" class="main-btn">
+              </form>
             </div>
           </div>
         </div>
       </section>
-
-      <footer>
+      <!-- Assinatura (copyright) -->
+      <section id="copy-area">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h3 class="main__title">Entre em contato conosco</h3>
-            </div>
-
-            <div class="col-md-4">
-              <i class="fa-solid fa-person"></i>
-              <h4>Lorem ipsu</h4>
-              <p>
-                Lorem ipsum dolor 
+              <p>Desenvolvido por <a href="https://www.horadecodar.com.br" target="_blank">João Victor Mendes</a> &copy; 2020
               </p>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
     </div>
 
     <!-- JavaScript Bundle with Popper -->
