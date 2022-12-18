@@ -2,23 +2,26 @@
 
 @media screen and (min-width: 480px){
     
-    .logo { /* header > div > h1 = class logo */
+    .logo > h1{ /* header > div > h1 = class logo */
         display: flex;
     }
     #burguer {
         display: none; 
     }
 
-    menu {
-        display: block;
+    #itens{
+        display: inline-block;
+ /*        display: block;
+        display: flex;
+        justify-content: space-between; */
+       
     }
-
-    menu > ul > li {
-        display: inline-block;  
+    #itens > ul > li > a {
+        display: inline-block;
+      
     }
 
     iframe, img{
-    display: block;
     width: 100%;
     display: flex;
     }
@@ -41,6 +44,34 @@
         display: flex;
       }
 
+}
+
+
+
+@media (max-width: 991px){
+    footer{
+        padding: 40px;
+    }
+
+    footer .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+
+    .copyrightText{
+        padding: 8px 100px;
+      }
+}
+
+
+@media (max-width: 768px){
+
+    footer .container {
+        grid-template-columns: repeat(2,1fr);
+
+    }
 }
 
 
