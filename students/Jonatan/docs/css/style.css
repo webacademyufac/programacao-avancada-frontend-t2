@@ -1,3 +1,4 @@
+
 /* General */
 
 body {
@@ -9,26 +10,154 @@ body {
 }
 
 .container {
-    padding: 50px 0;
-    font-size: 40px;
+    padding: 70px 0;
 }
 
-p, li{
+p,
+li {
     font-size: 14px;
     color: #444;
 }
 
+/* Nav Bar */
+header, .navbar {
+    background-color: #353d41;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 100px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+#navbar-links a {
+    color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem 0.8rem;
+}
+
+a.navbar-brand {
+    margin-left: 1rem;
+}
+
+/* Slideshow */
+
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
+    height: 90vh;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+#mainSlider .carousel-caption {
+    top: 30%;
+}
+
+#mainSlider .carousel-caption h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#mainSlider .carousel-caption p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #fff;
+}
+
+.main-btn {
+    background-color: #65daf9;
+    color: #fff;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+    text-decoration: none;
+    /* font-weight: bold; */
+
+}
+
+.main-btn:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border-color: #65daf9;
+}
+
 /* About */
 
-#about-area {
-    background-color: #dddddd;
+main {
+    background-color: #f9f9f9;
 }
+
+/* #about-area {
+    background-color: #f9f9f9;
+} */
 
 .main-title {
     color: #444;
-    margin: 0 0 50px 0;
-    text-align: center;  
+    margin: 0 0 65px 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
 }
+
+#img-projeto {
+    margin-bottom: 30px;
+}
+
+
+.main-title::after {
+    content: '';
+    display: block;
+    width: 15%;
+    height: 2px;
+    background: #333;
+    margin: 10px auto;
+}
+
+.main-title-white {
+    color: #fff;
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.main-title-white::after {
+    content: '';
+    display: block;
+    width: 15%;
+    height: 2px;
+    background: #fff;
+    margin: 10px auto;
+  }
+
+.project-number{
+    margin-bottom: 65px;
+}
+
 
 #about-title {
     font-size: 17px;
@@ -45,30 +174,38 @@ p, li{
     line-height: 30px;
 }
 
-#about-list i{
-    color: #347fc4;
+#about-list i {
+    color: #65daf9;
     margin-right: 15px;
 }
+
+#about-p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
 
 /* Specialities */
 
 .specialities-box {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
-.specialities-box i, .specialities-box h4  {
-    color: #444;
-    transition: 1s;
+.specialities-box i,
+.specialities-box h4 {
+    transition: .5s;
 }
 
-.specialities-box:hover>i, .specialities-box:hover>h4  {
-    color: #347fc4;
+.specialities-box:hover>i,
+.specialities-box:hover>h4 {
+    color: #65daf9;
 }
 
 .specialities-box i {
-    margin-bottom: 20px;
     font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
 }
 
 .specialities-box h4 {
@@ -76,18 +213,474 @@ p, li{
     margin-bottom: 20px;
 }
 
+/* Numbers */
+
+.circle-box div{
+    padding: 0 40px;
+}
+
+.progressbar-text {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#numbers-area p {
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+/* Ementa */
+#ementa {
+    background-color: #f9f9f9;
+}
+
+#ementa .ementa-txt {
+    text-align: justify;
+    font-size: 17px;
+}
+
+.resume-title {
+    font-size: 24px;
+    color: #444;
+    font-weight: bold;
+    
+}
+.resume-item h5 {
+    color: #3e8cd5;
+}
+
+#ementa .ementa-p {
+    text-align: center;
+    font-size: 17px;
+}
+
+.disciplinas {
+    color: rgb(182, 22, 22);
+    font-style: italic;
+    font-size: 17px;
+}
+
+
 /* Team */
 
 .card-body {
     text-align: center;
+    display: block;
+}
+
+.img-redonda {
+    border-radius: 50%;
+    width: 50%;
+    margin:0 auto;
+    margin-top: 10px;
+}
+
+/* Work */
+
+#work-area {
+    height: 500px;
+}
+
+#work-area .container-fluid,
+#work-area .row {
+    height: 100%;
+}
+
+#work-area .work-box {
+    text-align: center;
+    padding: 70px, 50px;
 }
 
 
+#company-img {
+    background-image: url('../img/empresa.jpg');
+    background-size: cover;
+    height: 100%;
+}
+#pattern-img h4, #pattern-img p {
+    color: #fff;
+}
 
-/* Slideshow */
+#pattern-img h4 {
+    margin-top: 8%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
 
-#mainSlider .carousel-inner, #mainSlider .carousel-item {
-    height: 90vh;
+#pattern-img p {
+    margin-bottom: 20px;
+}
+
+#app-btn {
+    display: block;
+    height: auto;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+#app-btn:hover {
+    border-color: #65daf9;
+    background-color: #65daf9;
+
+}
+
+/* Portfolio */
+
+.project-box {
+    margin-bottom: 30px;
+}
+
+#filter-btn-box {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#portfolio-area .filter-btn {
+    color: #444;
+    border: 1px solid #444;
+    background-color: transparent;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
+    color: #fff;
+    background-color: #65daf9;
+    border-color: #65daf9;
+}
+
+/* News letter */
+
+#news-area {
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#news-area p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+#email-input {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #65daf9;
+    display: inline;
+    box-sizing: border-box;
+    width: 40%;
+    height: 40px;
+}
+
+#news-btn {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #65daf9;
+    border-color: #65daf9;
+    background-color: #65daf9;
+    text-transform: uppercase;
+    color: #fff;
+    height: 40px;
+    padding: 0 30px;
+    margin-left: -130px;
+    position: absolute;
+    transition: .5s;
+
+}
+
+#news-btn:hover {
+    background-color: #fff;
+    color: #65daf9;
+}
+
+/* call to action */
+
+#call-area {
+    background-color: #65daf9;
+    text-transform: uppercase;
+}
+
+#call-area .container{
+    padding: 40px 100px;
+}
+
+#call-area .row {
+    display: block;
+    text-align: center;
+}
+
+#call-area p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    width: auto;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    display: inline;
+    height: 60px;
+    line-height: 60px;
+}
+
+#call-area #call-btn {
+    background-color: #fff;
+    color: #65daf9;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 30px;
+    width: auto;
+    letter-spacing: 2px;
+}
+
+/* footer */
+#organizations .container {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#organizations img {
+    width: 50%;
+}
+
+#contact-area {
+    text-align: center;
+}
+
+.contact-box {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #3ec1d5;
+}
+
+.contact-box i {
+    color: #444;
+    border: solid 1px #444;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    font-size: 16px;
+}
+
+.contact-title {
+    font-weight: bold;
+    color: #3ec1d5;
+}
+
+#msg-box p {
+    font-size: 22px;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
+    margin-bottom: 15px;
+    border-radius: 0;
+
+}
+
+#contact-form .main-btn {
+    width: 120px;
+    height: 50px;
+}
+
+#contact-form .main-btn:hover {
+    color: #3ec1d5;
+}
+
+/* Copy */
+
+#copy-area {
+    background-color: #f1f1f1;
+}
+
+#copy-area .container {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#copy-area .container p {
+    margin-bottom: 0;
 }
 
 
+#copy-area .container a {
+    font-weight: bold;
+    color: #444;
+}
+
+#copy-area .container a:hover {
+    text-decoration: none;
+    color: #3ec1d5;
+}
+
+/* responsive */
+
+@media(max-width: 768px) {
+    /* geral */
+    .container {
+        padding: 20px 0;
+    }
+    /* slider */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: auto;
+    }
+    #mainSlider .carousel-caption h2 {
+        font-size: 28px;
+    }
+    #mainSlider .carousel-caption p {
+        font-size: 18px;
+        margin-bottom: 40px;
+
+    }
+
+    .carousel-caption {
+        left: 10%;
+        right: 10%;
+    }
+
+    /* data */
+    .circle-box div {
+        padding: 0 10px;
+    }
+
+    #data-area p {
+        font-size: 16px;
+    }
+
+    /* team */
+    .card-title {
+        font-size: 14px;
+    }
+    .card-title p {
+        font-size: 12px;
+    }
+
+    /* work */
+    #work-area .work-box {
+        padding: 50px 25px;
+    }
+
+    /* news */
+    #news-area p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #email-input {
+        width: 70%;
+    }
+    #call-area {
+        margin-top: 30px;
+    }
+
+    #call-area .container {
+        padding: 30px;
+    }
+
+    #call-area p, #call-area #call-btn {
+        font-size: 16px;
+    }
+
+
+}
+
+@media(max-width: 480px){
+    /* slider */
+    #mainSlider {
+        margin-top: 90px;
+    }
+
+    #mainSlider .carousel-caption {
+        top: 15%;
+    }
+
+    #mainSlider .carousel-caption h2 {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #mainSlider .carousel-caption p {
+        display: none;
+    }
+
+    .carousel-caption .main-btn {
+        font-size: 14px;
+    }
+
+    /* About */
+    .main-title {
+        font-size: 30px;
+        margin: 0 0 30px 0;
+    }
+
+    .main-title-white {
+        font-size: 30px;
+        margin: 0 0 30px 0;
+    }
+
+    #about-area img {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #processo-seletivo p {
+        margin: 0 0 5px 0;
+    }
+
+    /* data */
+    .circle-box {
+        width: 50%;
+    }
+
+    /* team */
+
+    .laura {
+        padding-bottom: 25px;
+    }
+
+    #andre {
+        padding-bottom: 20px;
+    }
+
+    /* work */
+    #work-area {
+        height: auto;
+    }
+
+    #company-img {
+        display: none;
+    }
+
+    /* filter */
+
+    #portfolio-area .filter-btn {
+        margin-bottom: 20px;
+    }
+
+    .project-box {
+        width: 50%;
+    }
+
+    /* contact */
+    .contact-box {
+        border: none;
+        margin-bottom: 0;
+    }
+
+
+}

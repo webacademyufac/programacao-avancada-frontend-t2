@@ -1,12 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MVP Studio - Desenvolvendo soluções</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição do que é o conteúdo da sua página... Isso é o que aparece abaixo do título em uma pesquisa sobre a página, por exemplo, no Google.">
+    <meta name="keywords" content="desenvolvimento sistemas sites programação">
+    <title>Web Academy</title>
     <!-- Reset CSS -->
     <link rel="stylesheet" href="css/reset.css">
-    <!-- Bootstrap v.5.2.3 -->
+    <!-- Bootstrap v5.2.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
@@ -14,48 +17,74 @@
     <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); </style>
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/07297bdcb0.js" crossorigin="anonymous"></script>
-    <!-- Progress bar in JS -->
+    <!-- Barra de progresso em JS -->
     <script src="js/progressbar.min.js"></script>
-    <!-- Jquery for parallax -->
+    <!-- Jquery para parallax -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Parallax -->
     <script src="js/parallax.min.js"></script>
-  </head>
-  <body>
-
+</head>
+<body>
+    <!-- Todo o conteúdo da página -->
     <div id="content">
-
+  
+      <!-- Cabeçalho -->
       <header>
         <!-- barra superior com identidade visual e menu -->
+        <div class="container" id="nav-container">
+              <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                  <a href="#" class="navbar-brand">
+                      <img id="logo" src="img/Motorola-Logo-2.png" alt=" Web Academy"> Web Academy
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                      <div class="navbar-nav">
+                          <a class="nav-item nav-link" id="home-menu">Home</a>
+                          <a class="nav-item nav-link" id="about-menu">O projeto</a>
+                          <a class="nav-item nav-link" id="services-menu">Processo Seletivo</a>
+                          <a class="nav-item nav-link" id="team-menu">Ementa</a>
+                          <a class="nav-item nav-link" id="portfolio-menu">Equipe</a>
+                          <a class="nav-item nav-link" id="contact-menu">Contato</a>
+                      </div>
+                  </div>
+              </nav>
+          </div>
       </header>
-
+  
       <!-- Slideshow -->
-      <section>
-        <div id="mainSlider" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <section id="slideshow">
+        <div id="mainSlider" class="carousel carousel-dark slide container-fluid" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <img src="img/banner1.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="img/banner1.png" class="d-block w-100" alt="Projetos de e-commerce">
+              <div class="carousel-caption d-md-block">
+                <h2>WEB ACADEMY</h2>
+                <p>Capacitação em Desenvolvimento Web Full-Stack.</p>
+                <a href="#" class="main-btn">Seleção</a>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="img/banner2.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="img/banner2.png" class="d-block w-100" alt="Engenharia de Software">
+              <div class="carousel-caption d-md-block">
+                <h2>Está querendo tirar o projeto do papel?</h2>
+                <p>Nossa equipe de engenharia de software está pronta para lhe atender.</p>
+                <a href="#" class="main-btn">Entre em contato</a>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="img/banner3.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="img/banner3.png" class="d-block w-100" alt="Manutenção em Software">
+              <div class="carousel-caption d-md-block">
+                <h2>Está buscando manutenção em seu software?</h2>
+                <p>A Web Academy conta com engenheiros altamente qualificados para resolver seu problema.</p>
+                <a href="#" class="main-btn">Ver portifólio</a>
               </div>
             </div>
           </div>
@@ -69,170 +98,388 @@
           </button>
         </div>
       </section>
-
-  <!-- About -->
-
+  
+      <!-- Sobre (main) -->
       <main>
         <div id="about-area" class="container">
           <div class="row">
             <div class="col-12">
-              <h3 class="main-title">Sobre a MVP Studio</h3>
+              <h3 class="main-title">O Projeto</h3>
             </div>
-              <div class="col-md-6">
-                <img src="img/agencia.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="col-md-6">
-                <h3 id="about-title">Uma agência que pensa no futuro</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <p>Atque mollitia doloremque consequatur repellat ex nesciunt porro.</p>
-                <p>Eius, quam similique. Autem nobis voluptate dicta amet mollitia cumque nostrum dolorem asperiores dolor odit.</p>
+            <div id="img-projeto" class="col-xl-6 col-lg-12">
+              <img class="img-fluid" src="img/webacademy.jpg" alt="">
+            </div>
+            <div class="col-xl-6 col-lg-12">
+                <h3 id="about-title">Praparando para o mercado</h3>
+                <p id="about-p">O projeto de capacitação Web Academy tem como objetivo formar recursos humanos com habilidades para conceber, projetar, implementar e testar aplicações de software voltadas para a Internet, lançando mão de metodologias e ferramentas modernas, capazes de atender as demandas emergentes do mercado de desenvolvimento de software.
+                <br>O público alvo será composto por alunos de cursos técnicos e superiores nas áreas de computação e afins, assim como por profissionais já formados.
+                Serão ofertadas 2 turmas com 30 vagas cada.
+                <br">A capacitação terá carga horária total de 300 (trezentas) horas, sendo 195 (cento e noventa e cinco) destas, destinadas ao desenvolvimento do conteúdo teórico/prático em módulos (básico, intermediário e avançado) e 105 (cento e cinco) horas de atividades práticas (Hands-on). Além disso, vale frisar que as aulas teóricas serão lecionadas em 12 (doze) módulos e que os projetos serão acompanhados por 1 (um) professor e 1 (um) mentor, com a construção do pré-projeto ainda na fase das aulas teóricas.</p>
                 <p>Veja outros diferenciais:</p>
                 <ul id="about-list">
-                  <li><i class="fas fa-check"></i> Utilização de Machine learnin e Inteligência Artificial</li>
-                  <li><i class="fas fa-check"></i> Layout responsivo com mobile first</li>
-                  <li><i class="fas fa-check"></i> Inegração com diversos sistemas</li>
-                  <li><i class="fas fa-check"></i> Desenvolvimento com metodologia ágil</li>
-                  <li><i class="fas fa-check"></i> Equipe qualificada nas principais tecnologias do mercado</li>
+                    <li><i class="fas fa-check"></i> Professores qualificados nas principais tecnologias do mercado</li>
+                    <li><i class="fas fa-check"></i> Infraestrutura adequada</li>
+                    <li><i class="fas fa-check"></i> Capacitação do básico ao avançado</li>
+                    <li><i class="fas fa-check"></i> Bolsas de auxílio</li>
+                    <li><i class="fas fa-check"></i> Certificação ao final do curso</li>
                 </ul>
-              </div>
+            </div>
           </div>
-        </div>
       </main>
-
-  <!-- specialties -->
-      <section id="specialities">
+  
+      <section id="processo-seletivo">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h3 class="main-title">Nossas especialidades</h3>
+              <h3 class="main-title">Processo Seletivo</h3>
             </div>
-            <div class="col-md-4 col-lg-2 specialities-box">
-              <i class="fa-sharp fa-solid fa-comments-dollar"></i>
-              <h4 class="">Ganhe!</h4>
-              <p>Ganhe dinheiro sem sair de casa apenas com seu celular!</p>
+            <div class=""> 
+                <p>Edital 002 - Web Academy - clique <a href="http://200.129.173.65/material/EDITAL02WEBACADEMY.pdf">AQUI</a></p>
             </div>
-            <div class="col-md-4 col-lg-2 specialities-box">
-              <i class="fa-solid fa-phone"></i>
-              <h4 class="">Contato</h4>
-              <p>(68) 99999-9999</p>
+            <div class="">
+                <p>Anexo I - Termo de Compromisso - clique <a href="http://200.129.173.65/material/Anexo%20I.pdf">AQUI</a></p>
             </div>
-            <div class="col-md-4 col-lg-2 specialities-box">
-              <i class="fa-solid fa-hashtag"></i>
-              <h4 class="">Comunidade</h4>
-              <p>Siga-nos nas redes sociais.</p>
+            <div class="">
+                <p>Anexo II - Auto Declaração Preto, Pardos e Indígenas - clique <a href="http://200.129.173.65/material/ANEXO%20II.PDF">AQUI</a></p>
             </div>
-            <div class="col-md-4 col-lg-2 specialities-box">
-              <i class="fa-solid fa-gamepad"></i>
-              <h4 class="">Jogos</h4>
-              <p>Tenha acesso a jogos educativos e gratuitos para seus filhos.</p>
+            <div class="">
+                <p>Anexo III - Auto Declaração de outras vulnerabilidades socioeconômicas - clique <a href="http://200.129.173.65/material/ANEXO%20III.PDF">AQUI</a></p>
             </div>
-            <div class="col-md-4 col-lg-2 specialities-box">
-              <i class="fa-solid fa-lock"></i>
-              <h4 class="">Segurança</h4>
-              <p>Mantenha seus dados seguros.</p>
+            <div class="">
+                <p>Anexo IV - Informações do Projeto - clique <a href="http://200.129.173.65/material/Anexo%20IV.pdf">AQUI</a></p>
             </div>
-            <div class="col-md-4 col-lg-2 specialities-box">
-              <i class="fa-sharp fa-solid fa-comments-dollar"></i>
-              <h4 class="">Doação</h4>
-              <p>Doe e ajude outras pessoas.</p>
+            <div class="">
+                <p><s>Formulário de Recurso ao Edital - clique <a href="http://200.129.173.65/#">AQUI</s></a></p>
+            </div>
+            <div class="">
+                <p>Inscrições - Turma 2 - clique <a href="https://www.even3.com.br/webacademy2">AQUI</a></p>
+            </div>
+            <div class="">
+                <p>Resultado de Homologação de Inscrições e Análise Curricular - clique <a href="http://200.129.173.65/assets/pdf/ResultadoPreliminarCurriculo.pdf">AQUI</a></p>
+            </div>
+            <div class="">
+                <p>Formulário de Recurso à Homologação das Inscrições e Análise Curricular- clique <a href="https://forms.gle/wQ9Trhyez4od36HK7">AQUI</a></p>
+            </div>
+            <div class="">
+                <p>Resultado de Homologação de Inscrições e Análise Curricular - clique <a href="http://200.129.173.65/material/Homologa%C3%A7%C3%A3oResultadoCurr%C3%ADculo.pdf">AQUI</a></p>
+            </div>
+            <div class="">
+                <p>Convocação para Entrevistas- clique <a href="http://200.129.173.65/material/Convoca%C3%A7%C3%A3oEntrevistas.pdf">AQUI</a></p>
+            </div>
+            <div class="">
+                <p>Resultado Final Preliminar - clique <a href="http://200.129.173.65/material/ResultadoFinalPreliminar-t02.pdf">AQUI</a></p>
+            </div>
+            <div class="">
+                <p><s>Formulário de Recurso às Entrevistas (Resultado Final "Preliminar") - clique <a href="http://200.129.173.65/#">AQUI</s></a></p>
+            </div>
+            <div class="">
+                <p>Resultado Final (após recurso) - clique <a href="http://200.129.173.65/material/Resultado%20Final.pdf">AQUI</a></p>
             </div>
           </div>
         </div>
       </section>
 
-  <!-- Numbers -->
+  
+      <!-- Números -->
+      <section id="numbers-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+                <h3 class="main-title-white">Números</h3>
+                <p class="project-number">Nosso Projeto em Números.</p>
+            </div>
+            <div class="col-6 col-md-3 circle-box">
+              <div id="circleA"></div>
+              <p>Professores</p>
+            </div>
+            <div class="col-6 col-md-3 circle-box">
+              <div id="circleB"></div>
+              <p>Horas</p>
+            </div>
+            <div class="col-6 col-md-3 circle-box">
+              <div id="circleC"></div>
+              <p>Alunos</p>
+            </div>
+            <div class="col-6 col-md-3 circle-box">
+              <div id="circleD"></div>
+              <p>Bolsas</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <!-- Our team -->
+      <!-- Ementa -->
+      <section id="ementa">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h3 class="main-title">Ementa</h3>
+                    <!-- <p class="ementa-p">O projeto de Capacitação Web Academy consiste em formar recursos humanos com habilidades para conceber, projetar, implementar e testar aplicações de software voltadas para a Internet.</p> -->
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="resume-title">Básico</h4>
+                    <div class="resume-item">
+                        <h5>CATARINA DE SOUZA COSTA</h5>
+                        <p class="disciplinas">Tópicos Fundamentais - 20h</p>
+                        <div><p class="ementa-txt">Metodologias ágeis: conceitos , etapas, atividades, procedimentos, artefatos, papéis, ferramentas ágeis, SCRUM (Conceitos básicos sobre Sprint, Cerimônias, Entregas Contínuas; Conceitos; Ciclo de Vida de Produtos e Artefatos. Gerenciamento de Controle de Mudanças. Gerenciamento de Configuração; Rastreamento de Mudança; Seleção de Versão; Práticas usando Ferramentas GIT.</p></div>
+                        <br>
+                    </div>
+                    <div class="resume-item">
+                        <h5>FREDERICO DE OLIVEIRA TAVARES (UFAC)</h5>
+                        <p class="disciplinas">UX e Design Thinking - 10h</p>
+                        <div><p class="ementa-txt">Conceitos, etapas, técnicas, vantagens de cada abordagem. Similaridades e diferenças entre DT e UX. Princípios de cada abordagem.</p></div>
+                        <br>
+                    </div>
+                    <div class="resume-item">
+                        <h5>DANIEL AUGUSTO NUNES DA SILVA</h5>
+                        <p class="disciplinas">Fundamentos de Programação Front-End - 15h</p>
+                        <div><p class="ementa-txt">Fundamentos de HMTL. Padrões e recomendações da W3C, semântica e acessibilidade. Aplicação de estilos com CSS. Padrões de nomenclaturas para organizar o CSS. Técnicas de design responsivo. Tipos de dados, funções, objetos e estruturas de controle de fluxo em JavaScript. Manipulação de DOM (Document Object Model). JSON (JavaScript Object Notation). Requisições assíncronas.</p></div>
+                        <br>
+                    </div>
+                    <div class="resume-item">
+                        <h5>DANIEL AUGUSTO NUNES DA SILVA</h5>
+                        <p class="disciplinas">Fundamentos de Programação Back-End - 15h</p>
+                        <div><p class="ementa-txt">Linguagens de programação server-side. Arquitetura em camadas. Servlets e Jakarta Server Pages (JSP). Acesso à bases de dados com JDBC (Java Database Connectivity). Implementação de operações CRUD (Create, Read, Update, Delete). Segurança.</p></div>
+                        <br>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="resume-title">Intermediário</h4>
+                    <div class="resume-item">
+                        <h5>ANDRÉ LUIZ NASSERALA PIRES (UFAC)</h5>
+                        <p class="disciplinas">Computação em Nuvem - 15h</p>
+                        <div><p class="ementa-txt">Conceitos, arquitetura, aplicabilidade, funcionamento, estratégias de armazenamento, cloud services, serviços públicos e privados, nuvem híbrida. Virtualização: conceitos e exemplos. Clusters e data centers. Virtualização de redes (abordagens SDN). Tecnologias avançadas para virtualização de redes (SR-IOV, Offload, etc.). Sempre mostrar como usar esses conceitos no ambiente AWS e Google Cloud.</p></div>
+                        <br>
+                    </div>
+                    <div class="resume-item">
+                        <h5>DANIEL AUGUSTO NUNES DA SILVA</h5>
+                        <p class="disciplinas">Frameworks Front - End - 15h</p>
+                        <div><p class="ementa-txt">Frameworks Front end. TypeScript. Introdução ao Angular. Interface de linha de comando (CLI) do Angular. Espaços de trabalho e estrutura de projetos no Angular. Execução e deploy. Componentes, serviços e rotas. Comunicação com aplicações back-end por meio do protocolo HTTP.</p></div>
+                        <br>
+                    </div>
+                    <div class="resume-item">
+                        <h5>DANIEL AUGUSTO NUNES DA SILVA</h5>
+                        <p class="disciplinas">Frameworks Back-End - 15h</p>
+                        <div><p class="ementa-txt">Frameworks Back-end. Spring Framework. Injeção de dependência. Spring Boot. Persistência de dados com JPA, Hibernate e Mapeamento Objeto-Relacional (ORM). Spring Data. Arquitetura REST e APIs. Mapeamento de requisições HTTP. Segurança.</p></div>
+                        <br>
+                    </div>
+                    <div class="resume-item">
+                        <h5>VICTOR ANTUNES VIERA (IFAC)</h5>
+                        <p class="disciplinas">Testes - 15h</p>
+                        <div><p class="ementa-txt">Visão Geral, Taxonomia, Automação de testes,Estratégias e Priorização de Testes. Teste de back-end (teste de API HEST). Teste de front-end (JUnit, SuperTest, Jasmine, Chai, Mocha.,Selenium, Code Coverage). Frameworks de teste ( testes unitários, de Integração e E2E).</p></div>
+                        <br>
+                    </div>
+                    <div class="resume-item">
+                        <h5>DANIEL AUGUSTO NUNES DA SILVA</h5>
+                        <p class="disciplinas">Integração Contínua - 10h</p>
+                        <div><p class="ementa-txt">Entrega de software: problemas, anti-padrões, princípios e pipelines. DevOps. Controle de versões. Integração contínua. Boas práticas no uso de integração contínua. Desenvolvimento Baseado no Trunk (TBD). Servidores de integração contínua. GitHub Actions. Fluxo de trabalho no GitHub. Implantação contínua. Entrega contínua.</p></div>
+                        <br>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="resume-title">Avançado</h4>
+                    <div class="resume-item">
+                        <h5>VICTOR ANTUNES VIERA (IFAC)</h5>
+                        <p class="disciplinas">Programação Avançada Front - End - 25h</p>
+                        <div><p class="ementa-txt">HTML5: novos elementos e atributos. APIs na especificação do HTML5 (canvas, audio e video, geolocation e storage). Pré-compiladores: Less e Sass. Introdução ao Bootstrap. Design de Componentes Bootstrap com CSS. Componentes Javascript do Bootstrap. Componentes Bootstrap do AngularJS. Especificação do Google Material Design e sua aplicação. Introdução ao SVG para sintetização de imagens vetoriais. Resolução de problemas de Acessibilidade.</p></div>
+                        <br>
+                    </div>
+                    <div class="resume-item">
+                        <h5>VICTOR ANTUNES VIERA (IFAC)</h5>
+                        <p class="disciplinas">Programação Avançada Back-End - 25h</p>
+                        <div><p class="ementa-txt">Integrações entre back-end e frameworks full-stack: Node, organização de projetos, I/O Assícrono, Promises, Módulos. Ferramentas para controle de pacotes, repositórios NPM. Servidores, webservices e criação de APIs. Implementação de operações CRUD com banco de dados NoSQL e implementação com MongoDB.</p></div>
+                        <br>
+                    </div>
+                    <div class="resume-item">
+                        <h5>DANIEL AUGUSTO NUNES DA SILVA</h5>
+                        <p class="disciplinas">Tópicos Emergentes em WEB-Mobile - 15h</p>
+                        <div><p class="ementa-txt">O uso de ETL aliado a ferramentas de BI, para monitorar recursos ou produtos de sofware. Tópicos de mineração de dados. Conceitos de carga, transformação e limpeza dos dados (ETL). Passos para Construção de um DW; Profissionais envolvidos; Palestras com pessoas que estão no mercado.</p></div>
+                        <br>
+                    </div>
+                </div>
+                <hr>
+                <div class="col-lg-12">
+                    <h4 class="resume-title">Etapa final</h4>
+                    <div class="resume-item">
+                        <h5>DANIEL AUGUSTO NUNES DA SILVA / VICTOR ANTUNES VIERA</h5>
+                        <p class="disciplinas">Hands On / Projetos - 105h</p>
+                        <br>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+            </div>
+        </div>
+      </section>
+  
+      <!-- Nosso time -->
       <section id="team">
         <div class="container">
           <div class="row">
             <div>
-              <h3 class="main-title">Nosso Time</h3>
+              <h3 class="main-title">Nosso time</h3>
             </div>
-            <div class="card col-6 col-md-3">
-              <img src="img/profile1.jpg" class="card-img-top" alt="...">
+            <div class="card col-6 col-lg-4 col-xl-3">
+              <img src="img/daricelio.jpg" class="card-img-top img-redonda" alt="...">
               <div class="card-body">
-                <h5>Fulano</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5>Daricélio Moreira Soares</h5>
+                <p class="card-text">Doutorado em Engenharia de Sistemas e Informação.</p>
+                <p>Lattes: <a href="http://lattes.cnpq.br/7376671815596508">ver</a> </p>
               </div>
             </div>
-            <div class="card col-6 col-md-3">
-              <img src="img/profile2.jpg" class="card-img-top" alt="...">
+            <div class="card col-6 col-lg-4 col-xl-3">
+              <img src="img/laura.jpg" class="card-img-top img-redonda" alt="...">
               <div class="card-body">
-                <h5>Fulano</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="laura">Laura Costa Sarkis</h5>
+                <p class="card-text">Doutora em Engenharia de Sistemas e Informação.</p>
+                <p>Lattes: <a href="http://lattes.cnpq.br/6846153302568344">ver</a> </p>
               </div>
             </div>
-            <div class="card col-6 col-md-3">
-              <img src="img/profile3.jpg" class="card-img-top" alt="...">
+            <div class="card col-6 col-lg-4 col-xl-3">
+              <img src="img/nasserala.jpg" class="card-img-top img-redonda" alt="...">
               <div class="card-body">
-                <h5>Fulano</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5>André Luiz Nasserala Pires</h5>
+                <p id="andre" class="card-text">Doutorado em Computação.</p>
+                <p>Lattes: <a href="http://lattes.cnpq.br/2566007433985008">ver</a> </p>
               </div>
             </div>
-            <div class="card col-6 col-md-3">
-              <img src="img/profile4.jpg" class="card-img-top" alt="...">
+            <div class="card col-6 col-lg-4 col-xl-3">
+              <img src="img/catarina.jpg" class="card-img-top img-redonda" alt="...">
               <div class="card-body">
-                <h5>Fulano</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5>Catarina de Souza Costa</h5>
+                <p class="card-text">Doutorado em Ciência da Computação.</p>
+                <p>Lattes: <a href="http://lattes.cnpq.br/3445843226759945">ver</a> </p>
               </div>
             </div>
+            <div class="card col-6 col-lg-4 col-xl-3">
+                <img src="img/daniel.jpg" class="card-img-top img-redonda" alt="...">
+                <div class="card-body">
+                  <h5>Daniel Augusto Nunes da Silva</h5>
+                  <p class="card-text">Mestrado em Ciência da Computação.</p>
+                  <p>Lattes: <a href="http://lattes.cnpq.br/7450397594447510">ver</a> </p>
+                </div>
+              </div>
+              <div class="card col-6 col-lg-4 col-xl-3">
+                <img src="img/victor.jpg" class="card-img-top img-redonda" alt="...">
+                <div class="card-body">
+                  <h5>Victor Antunes Vieira</h5>
+                  <p class="card-text">Mestrado em Ciência da Computação.</p>
+                  <p>Lattes: <a href="http://lattes.cnpq.br/5831761495034815">ver</a> </p>
+                </div>
+              </div>
+              <div class="card col-6 col-lg-4 col-xl-3">
+                <img src="img/fred.jpg" class="card-img-top img-redonda" alt="...">
+                <div class="card-body">
+                  <h5>Frederico de Oliveira Tavares</h5>
+                  <p class="card-text">Mestrado em Aplicativos Educacionais.</p>
+                  <p>Lattes: <a href="http://lattes.cnpq.br/2303141661625503">ver</a> </p>
+                </div>
+              </div>
+              <div class="card col-6 col-lg-4 col-xl-3">
+                <img src="img/paulo.jpg" class="card-img-top img-redonda" alt="...">
+                <div class="card-body">
+                  <h5>Paulo Sampaio de Lima Junior</h5>
+                  <p class="card-text">Analista e Desenvolvedor de Sistemas.</p>
+                  <p>Lattes: <a href="http://lattes.cnpq.br/2183561514941297">ver</a> </p>
+                </div>
+              </div>
           </div>
-          <!-- <div class="row">
-            <div class="col-md-6">
-              <img src="img/empresa.jpg " alt="">
-            </div>
-            <div class="col-md-6">
-              <img src="img/pattern.png " alt="">
-            </div>
-          </div> -->
         </div>
       </section>
-
-      <footer>
+  
+  
+      <!-- Newsletter -->
+      <section id="news-area">
         <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h3 class="main-title">Entre em contato conosco</h3>
-            </div>
-            <div class="col-md-4 col-lg-2 specialities-box">
-              <i class="fa-solid fa-lock"></i>
-              <p>Ligue para:</p>
-              <p>Horários:</p>
-            </div>
-            <div class="col-md-4 col-lg-2 specialities-box">
-              <i class="fa-solid fa-lock"></i>
-              <p>Envie um email:</p>
-              <p>contato@mvpstudio.com.br/p>
-            </div>
-            <div class="col-md-4 col-lg-2 specialities-box">
-              <i class="fa-solid fa-lock"></i>
-              <p>Venha tomar um café:</p>
-              <p>Lorem Ipsum - 1314</p>
-            </div>
-            <hr>
-            <div class="col-md-6">
-              <h4>Ou nos deixe uma mensagem: </h4>
-            </div>
-            <div class="col-md-6">
-              <input class="input-text" type="text" placeholder="E-mail">
-              <input class="input-text" type="text" placeholder="Assunto">
-              <input  class="input-text input-msg" type="text" placeholder="Sua mensagem">
-              <button>Enviar</button>
-            </div>
-            <div>
-              <h3>Desenvolvido Por Web Academy © 2022</h3>
-            </div>
-            
-
+          <div class="col-md-12">
+            <h3 class="main-title">Fique por dentro das novidades</h3>
           </div>
+          <p>Assine nossa lista de e-mails, e receba todas as notícias sobre novas turmas e cursos</p>
+          <form action="">
+            <input type="text" class="form-control" id="email-input" name="email" placeholder="Seu e-mail aqui">
+            <input type="submit" id="news-btn" value="Inscrever">
+          </form>
         </div>
+      </section>
+  
+  
+      <!-- Rodapé -->
+      <footer>
+        <!-- Contato -->
+        <section id="contact-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="main-title">Entre em contato conosco</h3>
+              </div>
+              <div class="col-md-6 contact-box">
+                <i class="fas fa-envelope"></i>
+                <p><span class="contact-tile"></span> <a href="mailto:webacademyufac@gmail.com">webacademyufac@gmail.com</a></p>
+              </div>
+              <div class="col-md-6 contact-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <p><span class="contact-tile">Local:</span> Rodovia BR 364, Km 04 - Distrito Industrial, Rio Branco - AC, 69920-900</p>
+              </div>
+              <div class="col-md-6" id="msg-box">
+                <p>Ou nos deixe uma mensagem:</p>
+              </div>
+              <div class="col-md-6" id="contact-form">
+                <form action="">
+                  <input type="text" class="form-control" placeholder="E-mail" name="email">
+                  <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                  <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                  <input type="submit" class="main-btn">
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Organizations -->
+        <section id="organizations">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 img-ufac">
+                        <img src="img/ufac-logo.png" alt="UFAC">
+                    </div>
+                    <div class="col-3 img-flextronics">
+                        <img src="img/flextronics-logo.png" alt="Flextronics">
+                    </div>
+                    <div class="col-3 img-motorola">
+                        <img src="img/Motorola-logo.png" alt="Motorola">
+                    </div>
+                    <div class="col-3 img-fundape">
+                        <img src="img/fundape-logo.png" alt="Fundape">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Assinatura (copyright) -->
+        <section id="copy-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p>Desenvolvido por <a href="https://github.com/johnbom1" target="_blank">Jonatan Fragoso</a> &copy; 2022
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </footer>
-
-
-</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  
+    </div>
+  
+    <!-- JavaScript do Bootstrap v 5.2.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+    <!-- Scripts próprios -->
     <script src="js/scripts.js"></script>
+  
   </body>
-</html>
+  
+  </html>
