@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media-query.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c53bf24523.js" crossorigin="anonymous"></script>
+    <title>WebSystem</title>
+  </head>
+  <body>
+
+    <!-- HEADER (CABEÇALHO) -->
+    <header class="header-container">
+      <a href="#"><img src="img/logo.png" alt=""></a>
+      <!-- Mavegação -->
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- API DE URL -->
+    <h1 class="tituloAPI">Meus Links</h1>
+    <div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Nome,Url</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Nunca mais esqueça um link">
+        </div>
+    </div>
+
+    <div class="list-container">
+        <ul class="list-group">
+            <li class="list-group-item">Adicione um Link Acima</li>
+            <button type="button" class="btn btn-danger">Apagar</button>
+          </ul>
+    </div>
+
+
+    <!-- Conteúdo Principal de Informações  -->
+    <h1>Conteúdo de Usabilidade</h1>
+    <main class="main-container">
+      <div class="main-item">
+        <div>
+            <p class="texto-conteudo">Com base nas aulas de Back-End e Front-End avançada, 
+                aprendemos com o prof Victor Antunes Vieira (IFAC) 
+                sobre métodos avançados de programação no Webacademy 
+                do curso de de Fullstack na Universidade Federal do Acre - UFAC. 
+
+                Criamos uma API que insere dados digitados como nome e links
+                para um arquivo JSON dentro do sistema que será exibido na sua tlea. 
+                Uma ferramenta com intuíto de guardar seus links favoritos.
+
+            </p>
+        </div>
+      </div>
+      <div class="main-item">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qIGYM4S8x50" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Usando Fetch para obtençao do link da Api</p>
+      </div>
+      <div class="main-item">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/ufac1-frente.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/ufac-global.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/webacademy.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <p>Campus UFAC Capacitação Motorola FULLSTACK</p>
+      </div>
+    </main>
+
+
+    <!-- FOOTER (RODAPÉ) -->
+
+    <footer class="container my-5">
+
+        <!-- Footer -->
+        <div
+                class="text-center text-lg-start text-white"
+                style="background-color: #1c2331"
+                >
+          <!-- Section: Social media -->
+          <section
+                   class="d-flex justify-content-between p-4"
+                   style="background-color: #6351ce"
+                   >
+            <!-- Left -->
+            <div class="me-5">
+              <span>Conecte-se conosco nas redes sociais:</span>
+            </div>
+            <!-- Left -->
+      
+            <!-- Right -->
+            <div>
+                <a href="" class="text-white me-4">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+      
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold">O PROJETO</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p>
+                    O projeto de capacitação Web Academy tem como objetivo formar recursos 
+                    humanos com habilidades para conceber, projetar, implementar e testar 
+                    aplicações de software voltadas para a Internet, lançando mão de metodologias 
+                    e ferramentas modernas, capazes de atender as demandas emergentes do mercado de 
+                    desenvolvimento de software.</p>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Professores e Mestres</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p>
+                    <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4205419U5" class="text-white">CATARINA DE SOUZA COSTA</a>
+                  </p>
+                  <p>
+                    <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4798397J1" class="text-white">FREDERICO DE OLIVEIRA TAVARES</a>
+                  </p>
+                  <p>
+                    <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K8353171P2" class="text-white">DANIEL AUGUSTO NUNES DA SILVA</a>
+                  </p>
+                  <p>
+                    <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4758825T3" class="text-white">ANDRÉ LUIZ NASSERALA PIRES</a>
+                  </p>
+                  <p>
+                    <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4404499Z7" class="text-white">VICTOR ANTUNES VIERA</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Coordenadores</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p>
+                    <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do" class="text-white">Daricélio Moreira Soares</a>
+                  </p>
+                  <p>
+                    <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do" class="text-white">Laura Costa Sarkis</a>
+                  </p>
+                  <p>
+                    <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do" class="text-white">Paulo Sampaio de Lima Júnior</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Contatos</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p><i class="fas fa-home mr-3"></i> Rodovia BR 364, Km 04 - Distrito Industrial, Rio Branco - AC, 69920-900</p>
+                  <p><i class="fas fa-envelope mr-3"></i> webacademyufac@gmail.com</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2022 Copyright:<a class="text-white" href="http://webacademy.ufac.br/#">WEBACADEMY - Capacitação em Desenvolvimento Web Full-Stack</a><br>
+            <span>Desenvolvedor: Marcos Henrique C S D'avila</span>
+          </div>
+          <!-- Copyright -->
+        </div>
+        <!-- Footer -->
+      
+    </footer>
+      <!-- End of .container -->
+
+  </body>
+</html>
+</body>
+</html>
