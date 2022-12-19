@@ -93,10 +93,13 @@ p,li {
   padding: 0 40px;
 }
 
-#numbers-area {
+#numbers-area p {
   color: #dddddd;
   text-align: center;
+  font-size: 26px;
+  margin-top: 20px;
 }
+
 #circle__a {
   margin: 20px;
   width: 200px;
