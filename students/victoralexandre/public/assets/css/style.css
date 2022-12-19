@@ -17,7 +17,7 @@ body {
 
 main {
     display: block;
-    
+    height: 90vh;
     font-family: 'Quicksand', sans-serif;
     padding: 0.5em;
     background: #7159c1;
