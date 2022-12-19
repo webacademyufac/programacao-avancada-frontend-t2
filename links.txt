@@ -1,6 +1,19 @@
-//Biblioteca de ícones (em SVG)
+// Biblioteca de ícones (em SVG)
 <script src="https://kit.fontawesome.com/e00b21def0.js" crossorigin="anonymous"></script>
 
-//Biblioteca para a barra de carregamento de uma das seções
+// Biblioteca para a barra de carregamento de uma das seções
 https://github.com/kimmobrunfeldt/progressbar.js
 <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.5.6/dist/progressbar.min.js"></script>
+
+// Meta tags: entenda o que são e o impacto para a estratégia de SEO
+https://rockcontent.com/br/blog/meta-tags/
+
+// Native keyboard accessibility (exemplo de acessibilidade do MDN)
+https://mdn.github.io/learning-area/tools-testing/cross-browser-testing/accessibility/native-keyboard-accessibility.html
+https://github.com/mdn/learning-area/blob/main/tools-testing/cross-browser-testing/accessibility/native-keyboard-accessibility.html
+
+// ARIA para acessibilidade na Web
+https://desenvolvimentoparaweb.com/miscelanea/aria-acessibilidade-web-a11y/
+
+// Conteúdo sobre acessibilidade do MDN
+https://developer.mozilla.org/pt-BR/docs/Learn/Accessibility
