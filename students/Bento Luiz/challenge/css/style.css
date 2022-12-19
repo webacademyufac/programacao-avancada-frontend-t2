@@ -1,7 +1,6 @@
 body{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
     display: grid;
     background-color: #E4E4E4;
     color: #1E1E1E;
@@ -10,7 +9,7 @@ body{
 .container{
     display: grid;
     padding: 40px 15px;
-    gap: 10px;
+    gap: 20px;
 }
 
 .logo{
@@ -26,13 +25,12 @@ body{
     height: 1.5rem;
     border-radius: 10px;
     border: 2px solid #1E1E1E;
-    box-shadow: 4px 4px #1E1E1E;
-    max-width: 600px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.482);
 }
 
 .arrow{
-    width: 60px;
-    height: 4px;
+    width: 120px;
+    height: 2px;
     background-color: #E4E4E4;
     justify-self: center;
 }
@@ -66,18 +64,9 @@ body{
     gap: 10px;
 }
 
-#section_link .campo{
-    box-shadow: none;
-}
-
-#section_link h2{
-    font-weight: bold;
-    text-align: center;
-}
-
 #menu_items{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30px 30px;
     gap: 15px;
 }
 
@@ -86,6 +75,25 @@ body{
     background-size: cover;
     background-position: center center;
     color: #E4E4E4;
+    padding: 60px 15px;
+    display: grid;
+    gap: 20px;
+}
+
+#section_link .campo{
+    box-shadow: none;
+    max-width: 600px;
+    width: 75%;
+}
+
+#section_link h2{
+    font-weight: bold;
+    text-align: center;
+}
+
+#section_link form{
+    display: grid;
+    justify-items: center;
 }
 
 main .arrow{
@@ -93,7 +101,7 @@ main .arrow{
 }
 
 footer .arrow{
-    height: 3px;
+    height: 2px;
     width: 100%;
     background-color: #1E1E1E;
 }
@@ -105,8 +113,9 @@ footer .arrow{
 
 #table_urls{
     border-collapse: separate;
-    border: 2px solid #1E1E1E;
-    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    justify-self: center;
 }
 
 #table_urls th:first-child{
@@ -133,9 +142,10 @@ footer .arrow{
 }
 
 #table_urls td{
-    background-color: #E4E4E4;
+    background-color: #333333;
     padding: 8px 10px;
     border: 2px solid #1E1E1E;
+    color: #E4E4E4;
 }
 
 #article_description{
@@ -143,12 +153,11 @@ footer .arrow{
     background-size: cover;
     background-position: center center;
     color: #E4E4E4;
+    padding: 60px 15px;
 }
 
 #footer_content{
-    padding: 30px 15px;
     background-color: #4AA0D5;
-    display: grid;
     gap: 20px;
 }
 
@@ -161,7 +170,7 @@ footer .arrow{
 
 #footer_information{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
 }
 
@@ -173,20 +182,119 @@ footer .arrow{
 }
 
 #footer_rights{
-    padding: 30px 15px;
     background-color: #1E1E1E;
     color: #E4E4E4;
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.advertisement {
+    place-content: center;
+    background-color: #8a8a8a;
+}
+
+#tutorial_section {
+    background-color: #333333;
+    display: grid;
+    gap: 20px;
+}
+
+.advertisement {
+    display: none;
+}
+
+#tutorial {
+    display: none;
+}
+
+#desktop_menu_items {
+    display: none;
+}
+
+#CEP {
+    display: none;
 }
 
 
 
 
 @media (min-width: 480px) {
+
     #cabecalho{
         grid-template-columns: auto 1fr;
+    }
+
+    #tutorial_section {
+        grid-template-columns: 1fr 1fr;
+        padding: 40px 15px;
+    }
+
+    #tutorial_section article,
+    #tutorial_section iframe,
+    #tutorial_section .advertisement{
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.482);
+    }
+
+    #tutorial {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .advertisement {
+        display: grid;
+    }
+
+}
+
+@media (min-width: 760px) {
+
+    .container {
+        padding: 20px 100px;
+    }
+
+    #cabecalho {
+        column-gap: 40px;
+    }
+
+    #main {
+        padding: 40px 100px;
+    }
+
+    #CEP {
+        display: block;
+    }
+
+    #desktop_menu_items {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 5px;
+    }
+
+    #desktop_menu_items_list {
+        display: flex;
+        gap: 20px;
+    }
+
+    #tutorial_section{
+        padding: 20px 100px;
+        grid-template-columns: 33.33fr 66.66fr;
+    }
+
+    #tutorial {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #menu_navegacao {
+        grid-template-columns: 1fr;
+    }
+
+    #menu_items {
+        display: none;
     }
 }
 

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Loja Bikcraft</title>
 </head>
 <body>
@@ -25,22 +25,49 @@
             </div>
         </nav>
 
+        <div id="CEP">
+            <a href="">Informe o CEP</a>
+        </div>  
+
+        <div id="desktop_menu_items">
+
+            <div id="desktop_menu_items_list">
+
+                <div class="desktop_menu_item">
+                    <a href="">Ajuda</a>
+                </div>
+                <div class="desktop_menu_item">
+                    <a href="">Categorias</a>
+                </div>
+                <div class="desktop_menu_item">
+                    <a href="">Carrinho</a>
+                </div>
+
+            </div>
+
+            <div class="desktop_item">
+                <a href="">Faça Login</a>
+            </div>
+            
+        </div>
+
     </header>
 
-    <section id="section_link" class="container">
-        <h1 class="titulo">LINKS</h1>
+    <section id="section_link">
 
-        <div class="arrow"></div>
+            <h1 class="titulo">LINKS</h1>
 
-        <h2>ADICIONE UMA URL À SUA LISTA</h2>
-        
-        <form id="form_url" action="">
-            <input class="campo" type="text" placeholder="Adicionando uma url...">
-        </form>
+            <div class="arrow"></div>
+    
+            <h2>ADICIONE UMA URL À SUA LISTA</h2>
+            
+            <form id="form_url" action="">
+                <input class="campo" type="text" placeholder="Adicionando uma url...">
+            </form>
 
     </section>
 
-    <main class="container">
+    <main id="main" class="container">
 
         <h2 class="titulo">MEUS LINKS</h2>
 
@@ -71,16 +98,26 @@
 
     </main>
 
-    <article id="article_description" class="container">
-        <h2 class="titulo">LOREM IPSUM</h2>
+    <section id="tutorial_section">
 
-        <div class="arrow"></div>
+        <article id="article_description" class="container">
+            <h2 class="titulo">LOREM IPSUM</h2>
 
-        <p class="text">Aliquam erat volutpat. Curabitur consectetur, velit et lacinia tempor, lorem mauris auctor nisi, eu aliquet sem odio nec odio. Suspendisse placerat euismod diam sit amet fringilla.</p>
-    </article>
+            <div class="arrow"></div>
+
+            <p class="text">Aliquam erat volutpat. Curabitur consectetur, velit et lacinia tempor, lorem mauris auctor nisi, eu aliquet sem odio nec odio. Suspendisse placerat euismod diam sit amet fringilla.</p>
+        </article>
+
+        <div id="tutorial">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MXU_FlI5qFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="advertisement">
+                <p>ANÚNCIO</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <div id="footer_content">
+        <div id="footer_content" class="container">
 
             <div id="footer_socialmedia">
                 <img src="img/instagram-svgrepo-com.svg" alt="">
@@ -105,7 +142,7 @@
                 </ul>
             </div>
         </div>
-        <div id="footer_rights">
+        <div id="footer_rights" class="container">
             <p>Alguns direitos reservados - 2022</p>
             <img src="img/bikcraft.svg" alt="logo">
         </div>
