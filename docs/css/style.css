@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-   padding: 30px 0;
+   padding: 50px 0;
 }
 
 p,
@@ -19,50 +19,38 @@ li {
 }
 
 /* Slideshow */
-#mainSlider .carousel-inner, #mainSlider .carousel-item {
+
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
    height: 90vh;
 }
 
 /* About */
 
 #about-area {
-   background-color: #dcdcdc;
+   background-color: #dddddd;
 }
 
 .main-title {
    color: #444;
-   margin-bottom: 50px;
+   margin: 0 0 50px 0;
    text-align: center;
    font-size: 40px;
 }
 
-#about-title{
+#about-title {
    font-size: 17px;
    color: #444;
    text-transform: uppercase;
    font-weight: bold;
 }
 
-#about-list{
+#about-list {
    padding-left: 0;
-}
-
-.arrow{
-   height: 4px;
-   width: 80px;
 }
 
 #about-list li {
    line-height: 30px;
-}
-
-.main-title::after {
-   content: "";
-   display: block;
-   background-color: #444;
-   width: 200px;
-   height: 2.5px;
-   margin: 30px auto 0 auto;
 }
 
 #about-list i {
@@ -74,7 +62,7 @@ li {
 
 .specialities-box {
    text-align: center;
-   margin-bottom: 40px;
+   margin-bottom: 50px;
 }
 
 .specialities-box i,
@@ -84,10 +72,9 @@ li {
    margin-bottom: 20px;
 }
 
-.specialities-box:hover > i,
-.specialities-box:hover > h4 {
+.specialities-box:hover>i,
+.specialities-box:hover>h4 {
    color: #347fc4;
-   cursor: pointer;
 }
 
 .specialities-box i {
@@ -98,17 +85,38 @@ li {
    font-size: 24px;
 }
 
+/* Numbers */
+
+.circle-box {
+   padding: 0 40px;
+}
+
+#numbers-area p {
+   color: #dddddd;
+   text-align: center;
+   font-size: 26px;
+   margin-top: 20px;
+}
+
 /* Team */
 
 .card-body {
    text-align: center;
 }
 
-/* Work with us */
+/* Work */
 
-.decorative-image {
-   background-image: url("../img/empresa.jpg");
-   background-position: center center;
-   background-repeat: none;
+#work-area {
+   height: 500px;
+}
+
+#work-area .container-fluid,
+#work-area .row {
+   height: 100%;
+}
+
+#company-img {
+   background-image: url('../img/empresa.jpg');
    background-size: cover;
+   height: 100%;
 }
