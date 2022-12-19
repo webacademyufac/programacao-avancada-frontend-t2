@@ -11,18 +11,19 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
     font-family: 'Courier New', Courier, monospace, Tahoma, sans-serif;
     background-color: var(--color5);
     color: var(--color1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 /* ############ HEADER - LOGO ############ */
 header {
     display: flex;
     flex-direction: column;
-    
+    width: 100%;
 }
 
 header div.logo {
@@ -41,6 +42,8 @@ nav.menu {
     border-bottom:1px solid  #000;
     border-top:1px solid  #000;
     background-color: var(--color2);
+    width: 100%;
+    
 }
 
 nav.menu ul{
@@ -48,6 +51,7 @@ nav.menu ul{
     margin-top: 0em;
     padding: 0.5em;
     justify-content: center;
+    width: 100%;
 }
 
 nav.menu ul li {
@@ -79,20 +83,21 @@ nav.menu ul li img{
 }
 
 /* ############ SECTION INPUT ############ */
-section.data-input div.formulario form{
+section#data-input div.formulario form{
     background-color: var(--color3);
     padding: 0.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 0.875em;
     text-align: center;
+    width: 100%;
 }
 
-section.data-input div.formulario form label{
+section#data-input div.formulario form label{
     color: #000;
 }
 
-section.data-input div.formulario form #link{
+section#data-input div.formulario form #link{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     outline: none;
     border: none;
@@ -101,19 +106,27 @@ section.data-input div.formulario form #link{
     height: 2.5em;
 }
 
-section.data-input div.formulario form .button{
+section#data-input div.formulario form .button{
     height: 2.5em;
     border-radius: 0.75em;
     outline: none;
+    text-decoration: none;
     background-color:  var(--color7);
     
 }
 
-section.data-input div.formulario form .button:hover{
+section#data-input div.formulario form .button:hover{
     background-color: #56ffc7;
 }
 
 /* ############ MAIN ############ */
+html{
+    margin: 0 auto;
+    width: 100%;
+}
+main{
+    width: 100%;
+}
 main div.list{
     background-color: var(--color3);
     text-align: center;
@@ -123,6 +136,10 @@ main div.list{
     padding: 1em;
     border-radius: 2em;
     overflow-y: scroll;
+}
+
+main div.list ul{
+    padding: 0;
 }
 
 /* ############ SECTION DEDSCRIPTION APLICATION ############ */
@@ -166,4 +183,123 @@ footer div.developer{
 /* ############ VIDEO AND ADVERTISING ############ */
 div.hidden {
     display: none;
+}
+
+/* ############ Tblet version ############ */
+@media screen and (min-width: 480px){
+    div.hidden{
+        display: none;
+    }
+    /* ############ HEARDER ############ */
+    header {
+        display: flex;
+        flex-direction: row;
+        width: 100vh;
+    }
+
+    header div.logo {
+        display: flex;
+        margin: 1px;
+    }
+
+    header div.logo img {
+        /* padding-top: 1.5em; */
+        width: 9em;
+        /* height: 4em; */
+        align-items: center;
+    }
+
+    nav.menu ul li {
+        padding: 0.2em;
+        margin: 0.5em;
+    }
+
+    /* ############ VIDEO AND ADVERTISING ############ */
+    div.description-medias{
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+
+    div.media-video iframe{
+        width: 50vh;
+        height: 15em;
+    }
+
+    div.advertising img{
+        align-items: center;
+        margin: 1em auto;
+        width: 50vh;
+        height: 15em;
+    }
+
+    div.description-aplication span {
+        display: flex;
+        flex-direction: column;
+        width: 50vh;
+    }
+
+    div.hidden {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    /* ############ HEADER, NAV ############ */
+    header {
+        position: relative;
+        width: 100%;
+    }
+
+    .navegation {
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+
+    .navegation .menu{
+        width: 100%;
+    }
+
+    /* ############ FORM, INPUT, BUTTON ############ */
+    section#data-input div.formulario form{
+        font-size: 1em;
+    }
+
+    section#data-input div.formulario form #link {
+        width: 35em;
+        height: 3em;
+    }
+
+    section#data-input div.formulario form .button {
+        font-size: 0.90em;
+        height: 3em;
+    }
+
+    /* ############ MAIN - LIST ############ */
+    main div.list {
+        border-radius: 2em 0  0 2em;
+    }
+
+    /* ############ VIDEO AND ADVERTISING ############ */
+    #media-advertising-edit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 100%;
+    }
+
+    #media-advertising-edit .description-medias{
+        display: flex;
+        margin: 0 auto;
+        flex-direction: row;
+        position: relative;
+        width: 100%;
+    }
+
+    #media-advertising .media-avertinsing{
+        margin: 0 auto;
+        width: 100vw;
+    }
 }

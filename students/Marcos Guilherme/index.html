@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <title>Meus Links</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Link CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="content">
-
         <!-- HEADER -->
         <header>
+            <!-- Image logo -->
             <div class="logo">
                 <img src="images/logo-transparente.png" alt="logo">
             </div>
-
+            <!-- Menu the navegation -->
             <div class="navegation">
                 <nav class="menu">
-                    <ul type="none">
+                    <ul type="none" class="nav">
                         <li type="none">
-                            
+
                             <a href="#">
                                 <img src="images/Web-Home/icons8-página-inicial-ios-16-glyph-32.png" alt="Home">
                                 Home
                             </a>
                         </li>
                         <li>
-                            
+
                             <a href="#">
                                 <img src="images/Web-Editar/icons8-lápis-ios-16-glyph-32.png" alt="Editar">
                                 Editar
@@ -43,7 +45,8 @@
                         </li> <!--Não achei o icon-->
                         <li>
                             <a href="#">
-                                <img src="images/Web-Configurações/icons8-engrenagem-ios-16-glyph-32.png" alt="Configurações">
+                                <img src="images/Web-Configurações/icons8-engrenagem-ios-16-glyph-32.png"
+                                    alt="Configurações">
                                 Configurações
                             </a>
                         </li>
@@ -53,8 +56,8 @@
         </header>
 
         <!-- SECTION INPUT -->
-        <section class="data-input">
-            <div class="formulario" >
+        <section id="data-input">
+            <div class="formulario">
                 <form action="">
                     <label for="link">Insira o link aqui:</label>
                     <input type="text" id="link" name="link" placeholder="Digite a URL...">
@@ -73,34 +76,40 @@
         </main>
 
         <!-- SECTION MEDIA AND ADVERTISING -->
-        <section class="hidden">
+        <section id="media-advertising-edit">
             <div class="description-medias">
                 <div class="description-aplication">
                     <span>
                         <h3>Descrição da Aplicação</h3>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, in placeat fugiat praesentium perferendis quos non quibusdam maiores aliquam! Sequi, amet dolorum hic nisi quaerat a distinctio commodi officiis! Distinctio.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, in placeat fugiat
+                        praesentium perferendis quos non quibusdam maiores aliquam! Sequi, amet dolorum hic nisi quaerat
+                        a distinctio commodi officiis! Distinctio.
                     </span>
                 </div>
 
                 <div class="hidden media-advertising">
-                    <div class="hidden media-video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GdB8AgnpG1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="media-video">
+                        <iframe src="https://www.youtube.com/embed/GdB8AgnpG1I"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
                     </div>
-            
-                    <div class="hidden advertising">
+
+                    <div class="advertising">
                         <img src="images/images-advertising.jpg" alt="Advertising">
                     </div>
                 </div>
             </div>
-            
+
         </section>
 
         <footer>
             <span class="contacts">
                 <a href="tel:+55 68 992338248" target="_blank">
-                    <img src="images/Web-WhatsApp/icons8-whatsapp-material-outlined-16.png"> 
+                    <img src="images/Web-WhatsApp/icons8-whatsapp-material-outlined-16.png">
                     WhatsApp
-                </a> 
+                </a>
                 <a href="mailto:marcos.rocha@sou.ufac.br">
                     <img src="images/email.png" alt="email">
                     Email
@@ -108,23 +117,24 @@
                 <a href="#">
                     <img src="images/Web-Instagram/icons8-instagram-material-outlined-16.png" alt="intagram">
                     Intagram
-                </a><br> 
+                </a><br>
                 <a href="#">
                     <img src="images/Web-Linkedin/icons8-linkedin-material-outlined-16.png" alt="Linkedin">
                     Linkedin
-                </a> 
+                </a>
                 <a href="#">
                     <img src="images/github.png" alt="github">
                     Github
                 </a><br>
             </span>
             <div class="developer">
-            <span >Develope by Marcos Guilherme</span>
+                <span>Develope by Marcos Guilherme</span>
             </div>
-            
+
         </footer>
 
-        <script src="scripts.js"></script>
+        <!-- <script src="scripts.js"></script> -->
     </div>
 </body>
+
 </html>
