@@ -1,36 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
 
-
-* {
-  box-sizing: border-box;
+.box {
+  width: 500px;
+  height: 300px;
+  background: #fff;
+  text-align: center;
 }
-
-html {
-  font-size: 62.5%;
-}
-
 body {
-  font-family: 'Quicksand', sans-serif;
-  
-  background: #7159c1;
+  margin: 0px;
 }
 
-.container {
-  width: 80%;
-  max-width: 400px;
+
+.container ul {
+  background: white;
   
+  box-shadow: 0px 4px 8px -2px #00000033;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  
+  padding: 16px;
+  
+  font-size: 1.4rem;
+  width: 90%;
   margin: auto;
-}
-
-h1 {
-  text-align:center;
-  color: white;
+  float: left;
   
-  font-size: 3.4rem;
 }
 
-input {
-  width: 100%;
+.container li {
+  list-style: none;
+  
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  border-bottom: 1px solid rgb(252, 252, 252);
+  float:left ;
+  padding: 5px;
+  
+}
+
+html{
+  font-family: 'Arial', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container input {
+  width: 80%;
   
   padding: 8px 16px;
   margin-bottom: 32px;
@@ -43,57 +57,19 @@ input {
   font-size: 1.6rem;
   font-weight:300;
 }
-
-ul {
-  background: white;
-  
-  box-shadow: 0px 4px 8px -2px #00000033;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  
-  padding: 16px;
-  
-  font-size: 1.4rem;
-  
+.container a{
+  text-decoration: none;
 }
+.input-checkbox {
 
-li {
-  list-style: none;
-  
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  
-  border-bottom: 1px solid #ddd;
-}
-
-
-a {
-  display: block;
-  
-  color: #333;
-  text-decoration: none;  
-  
-  padding: 16px 0;
-  font-size: 1.8rem;
-  
-}
-
-a:hover {
-  font-weight: bold;
-}
-
-li:first-child,
-li:last-child {
-  border: none;
-}
-
-li span {
-  cursor:pointer;
-}
+  display: none; }
+  nav{
+    position: sticky;
+    top: 0px;
+  }
 
 footer {
-  color: white;
-  font-size: 1.5rem;
+  color: black;
+  font-size: 1rem;
 }
 
