@@ -90,8 +90,8 @@ input {
 .video {
   display: none;
   margin-top: 0.4em;
-  background: #b3b3e9;
-  height: 50px;
+  background: red;
+  /* height: 50px; */
 }
 
 .video h3 {
@@ -102,11 +102,11 @@ input {
   display: none;
   margin-top: 0.4em;
   background: #b3b3e9;
-  height: 50px;
+  height: 150px;
 }
 
 .slide h3 {
-  margin-left: 4em;
+  /* margin-left: 4em; */
 }
 
 /* footer */
