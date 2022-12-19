@@ -1,0 +1,114 @@
+/* General */
+
+body {
+   font-family: 'Roboto', sans-serif;
+}
+
+.row {
+   margin: 0;
+}
+
+.container {
+   padding: 30px 0;
+}
+
+p,
+li {
+   font-size: 14px;
+   color: #444;
+}
+
+/* Slideshow */
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+   height: 90vh;
+}
+
+/* About */
+
+#about-area {
+   background-color: #dcdcdc;
+}
+
+.main-title {
+   color: #444;
+   margin-bottom: 50px;
+   text-align: center;
+   font-size: 40px;
+}
+
+#about-title{
+   font-size: 17px;
+   color: #444;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+#about-list{
+   padding-left: 0;
+}
+
+.arrow{
+   height: 4px;
+   width: 80px;
+}
+
+#about-list li {
+   line-height: 30px;
+}
+
+.main-title::after {
+   content: "";
+   display: block;
+   background-color: #444;
+   width: 200px;
+   height: 2.5px;
+   margin: 30px auto 0 auto;
+}
+
+#about-list i {
+   color: #347fc4;
+   margin-right: 15px;
+}
+
+/* Specialities */
+
+.specialities-box {
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+.specialities-box i,
+.specialities-box h4 {
+   color: #444;
+   transition: 1.5s;
+   margin-bottom: 20px;
+}
+
+.specialities-box:hover > i,
+.specialities-box:hover > h4 {
+   color: #347fc4;
+   cursor: pointer;
+}
+
+.specialities-box i {
+   font-size: 36px;
+}
+
+.specialities-box h4 {
+   font-size: 24px;
+}
+
+/* Team */
+
+.card-body {
+   text-align: center;
+}
+
+/* Work with us */
+
+.decorative-image {
+   background-image: url("../img/empresa.jpg");
+   background-position: center center;
+   background-repeat: none;
+   background-size: cover;
+}
