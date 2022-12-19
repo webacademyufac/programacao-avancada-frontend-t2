@@ -25,10 +25,6 @@ li {
     height: 90vh;
 }
 
-@media (max-width: 480px) {
-    
-}
-
 /* About */
 
 #about-area {
@@ -126,6 +122,11 @@ li {
 }
 
 
+/* Ponto de quebra para resoluções abaixo de 480 px, para corrigir falhas no CSS em dispositivos móveis */
+
+@media (max-width: 480px) {
+
+}
 
 
 
