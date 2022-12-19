@@ -17,7 +17,7 @@ body {
 
 main {
     display: block;
-    height: 90vh;
+    
     font-family: 'Quicksand', sans-serif;
     padding: 0.5em;
     background: #7159c1;
@@ -165,15 +165,12 @@ header a {
     transition: 0.4s;
 }
 
-#video-hide,
-#ad-hide {
-    display: none;
-    padding: 8px 16px;
-    text-align: center;
+.video-youtube {
+    padding: 10px 16px;
 }
 
-#copyright-area {
-    padding: 10px;
+.img-fluid {
+    padding: 10px 16px;
 }
 
 #post-links {
@@ -205,16 +202,26 @@ header a {
     font-weight: 300;
 }
 
+#copyright-area {
+    padding: 10px;
+}
+
 #text-main,
 #copyright-area {
     font-size: 16px;
 }
 
+#hide {
+    display: none;
+    text-align: center;
+}
+
+
 @media (min-width: 600px) {
 
-    #video-hide,
-    #ad-hide {
-        display: block;
+    #hide {
+        display: flex;
+        justify-content: center;
     }
 
     /* modifiquei para a barra de expansão sumisse e a nav aparecesse só quando entrasse no "modo pc" pois esse costuma ser o padrão */
