@@ -51,6 +51,17 @@ li a:hover{
 .busca {
     width: 30%;
     border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+}
+
+i {
+    display: flex; 
+    justify-content: right;
+}
+
+.buscar {
+  
 }
 
 
