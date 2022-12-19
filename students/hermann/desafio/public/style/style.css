@@ -89,7 +89,7 @@ input {
 
 .video {
   display: none;
-  margin-top: 0.4em;
+  /* margin-top: 0.4em; */
   background: red;
   /* height: 50px; */
 }
@@ -100,13 +100,9 @@ input {
 
 .slide {
   display: none;
-  margin-top: 0.4em;
-  background: #b3b3e9;
-  height: 150px;
-}
-
-.slide h3 {
-  /* margin-left: 4em; */
+  /* margin-top: 0.4em; */
+  background: blue;
+  /* height: 150px; */
 }
 
 /* footer */
@@ -138,18 +134,18 @@ footer span {
   }
 
   .text {
-    display: flex;
+    /* display: flex; */
     margin: 0.5em;
   }
   
   .video {
-    display: flex;
+    /* display: flex; */
     margin: 0.5em;
     
   }
   
   .slide {
-    display: flex;
+    /* display: flex; */
     margin: 0.5em;
   }
 
