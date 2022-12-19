@@ -65,9 +65,19 @@ img {
 
 /* CONTEÚDO - SLIDER, VÍDEO E TEXTO */
 
-.main-container {
+.main-item iframe{
+  display: block;
+}
+
+.main-item .carousel-inner{
+  display: block;
+}
+
+
+
+/* .main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+ grid-template-columns: repeat(2, 1fr); 
   grid-gap: 20px;
   margin: 0 auto;
   max-width: 800px;
@@ -103,4 +113,4 @@ img {
     color: black;
     background: rgb(190, 184, 184);
     justify-content: justify;
-}
+} */

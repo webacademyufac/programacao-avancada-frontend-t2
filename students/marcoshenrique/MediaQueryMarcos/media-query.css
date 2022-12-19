@@ -1,5 +1,16 @@
-@media screen and (max-width: 480px){
-    .main-item iframe img{
+@media screen and (min-width: 480px){
+
+    .main-item iframe{
         display: none;
-    }
+      }
+      
+      .main-item .carousel-inner{
+        display: none;
+      }
+      
+}
+
+
+@media screen and (min-width: 768px){
+
 }
