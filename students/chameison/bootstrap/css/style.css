@@ -1,92 +1,768 @@
-/* General */
+/*-- Classes gerais --*/
 
 body {
     font-family: 'Roboto', sans-serif;
 }
-
+ 
 .row {
     margin: 0;
+
 }
 
 .container {
-    padding: 50px 0;
+    padding: 70px 0;
 }
 
-p,
-li {
-    font-size: 14px;
+p, li {
     color: #444;
+    font-size: 14px;
 }
 
-/* Slideshow */
+/*Nav bar*/
 
-#mainSlider .carousel-inner,
-#mainSlider .carousel-item {
+header, .navbar{
+    background-color: #103555;
+    /* background-image: linear-gradient(to right, #eff7fe , rgb(16, 11, 107)); */
+}
+
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo{
+    width: 75px;
+}
+.navbar-brand{
+    padding: 0;
+    color: #fff;
+}
+.navbar-brand:hover {
+    color: #fff;
+}
+
+#navbar-links a{
+    color:#fff;
+    cursor: pointer;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+/*Slider*/
+
+.container-fluid {
+    padding: 0;
+}
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
     height: 90vh;
 }
 
-/* About */
+#mainSlider .carousel-caption {
+    top: 30%;
+    margin-right: 0px;
+}
+
+#mainSlider .carousel-caption h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p {
+    font-size: 15px ;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #fff;
+}
+
+.main-btn{
+    background-color: #103555;
+    color: #fff;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+
+.main-btn:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border-color: #103555;
+}
+
+.carousel-indicators .active{
+    background-color: #103555;
+}
+
+/*Sobre a empresa*/
 
 #about-area {
-    background-color: #dddddd;
+    background-color: #F9F9F9;
 }
-
 .main-title {
     color: #444;
-    margin: 0 0 50px 0;
-    text-align: center;
+    margin: 0 0 65px 0;
     font-size: 40px;
+    text-align: center;
 }
 
-#about-title {
+.main-title::after {
+    content: "";
+    border-top: 2px solid #333;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+.about-title {
     font-size: 17px;
     color: #444;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: bolder;
+}
+.about-sub {
+    margin-top: 40px;
+    font-size: 13px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
 #about-list {
+    list-style: none;
     padding-left: 0;
 }
 
-#about-list li {
+#about-list li{
     line-height: 30px;
 }
-
 #about-list i {
-    color: #347fc4;
+    color: #103555;
     margin-right: 15px;
 }
+/*SEVIÇOS*/
 
-/* Specialities */
-
-.specialities-box {
+.service-box {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.specialities-box i,
-.specialities-box h4 {
+.service-box i, .service-box h4{
+    transition: 1s;
+}
+.service-box i{
+    font-size: 36px;
+    margin-bottom: 20px;
     color: #444;
-    transition: 1.5s;
+}
+.service-box h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+
+.service-box:hover > i, .service-box:hover > h4{
+    color: #103555;
+}
+
+/*Dados*/
+
+.circle-box div {
+    padding: 0 40px;
+}
+.progressbar-text {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#data-area p{
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+/*TIME*/
+
+.card-body{
+    text-align: center;
+}
+/*trabalhe conosco*/
+
+#apply-area {
+    height: 500px;
+}
+
+/**/
+#apply-area .container-fluid, #apply-area .row {
+    height: 100%;
+}
+
+#apply-area .apply-box {
+    text-align: center;
+    padding:  70px 50px;
+}
+
+#company-img {
+    background-image: url(../img/empresa.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+#pattern-img h4, #pattern-img p{
+    color: #fff;
+}
+#pattern-img h4{
+    margin-top: 8%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#pattern-img p{
+    margin-bottom: 20px;
+}
+#apply-btn {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: #fff ;
+}
+
+#apply-btn:hover {
+    border-color: #103555;
+    background-color: #103555;
+}
+
+/*Portfolio*/
+
+.project-box {
+    margin-bottom: 30px;
+}
+
+#filter-btn-box {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#portfolio-area .filter-btn {
+    color: #444;
+    border: 1px solid #444;
+    background-color: transparent;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
+    color: #fff;
+    background-color: #103555;
+    border-color: #103555;
+}
+
+/*Recebidos - newsletter*/
+#news-area {
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#news-area p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+#email-input {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #103555;
+    display: inline;
+    box-sizing: border-box; /*diz que a borda é o limite*/
+    width: 40%;
+    height: 40px;
+}
+
+#news-btn{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #103555;
+    background-color: #103555;
+    text-transform: uppercase;
+    color: #fff;
+    height: 40px;
+    padding: 0 30px;
+    margin-left: -130px;
+    position: absolute;
+    transition: .5s; 
+}
+
+#news-btn:hover{
+    background-color: #fff;
+    color: #103555;
+
+}
+
+/*Call to action*/
+
+#call-area {
+    background-color: #103555;
+    text-transform: uppercase;
+}
+#call-area .container {
+    padding: 40px 100px ;
+}
+
+#call-area .row {
+    display: block; /*alinhar os textos*/
+    text-align: center;
+}
+
+#call-area p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    width: auto;
+    margin-bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    letter-spacing: 2px;
+    display: inline;
+}
+
+#call-area #call-btn {
+    background-color: #fff;
+    color: #103555;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 30px;
+    width: auto;
+    letter-spacing: 2px;
+}
+
+/*Footer - Rodapé */
+
+#contact-area {
+    text-align: center;
+}
+
+.contact-box {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #1b5385;
+}
+
+.contact-box i {
+    color: #444;
+    border: 1px solid #444;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
-.specialities-box:hover>i,
-.specialities-box:hover>h4 {
-    color: #347fc4;
+.contact-box p{
+    font-size: 16px;
 }
 
-.specialities-box i {
-    font-size: 36px;
+.contact-title {
+    font-weight: bold;
+    color: #1b5385;
 }
 
-.specialities-box h4 {
-    font-size: 24px;
+
+#msg-box p {
+    font-size: 22px;
 }
 
-/* Team */
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea{
+    margin-bottom: 15px;
+    border-radius: 0;
+}
 
-.card-body {
+#contact-form .main-btn {
+    width: 120px;
+    height: 50px;
+}
+#contact-form .main-bt .main-btn:hover {
+    color: #1b5385;
+}
+
+/* copyrith */
+#copy-area {
+    background-color:  #f1f1f1;
+}
+
+#copy-area .container {
+    padding: 10px 0;
     text-align: center;
+}
+
+
+#copy-area .container p {
+    margin-bottom: 0;
+}
+
+#copy-area .container a {
+    font-weight: bold;
+    color: #444;
+}
+#copy-area .container a:hover {
+    text-decoration: none;
+    color: #3EC1D5
+}
+
+
+
+/* parte das skill */
+.skills-area{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 13%;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills_head{
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.skills_head h2{
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+.skills_head h2 span{
+    color: #103555;
+}
+.skills_main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+.skills_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+}
+.skill_bar .info p:nth-child(2){
+    font-weight: 500;
+}
+.skill_bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.skill_bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #103555;
+    border-radius: 25px;
+}
+.skill_bar .bar .html{
+    width: 90%;
+    animation: html 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+.skill_bar .bar .css{
+    width: 85%;
+    animation: css 2s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.skill_bar .bar .sass{
+    width: 40%;
+    animation: sass 2s;
+}
+@keyframes sass {
+    0%{
+        width: 0%;
+    }100%{
+        width: 40%;
+    }
+}
+.skill_bar .bar .js{
+    width: 80%;
+    animation: css 2s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .boot{
+    width: 70%;
+    animation: css 2s;
+}
+@keyframes boot {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+.skill_bar .bar .sql{
+    width: 60%;
+    animation: mongo 2s;
+}
+@keyframes sql {
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
+.skill_bar .bar .react{
+    width: 75%;
+    animation: react 2s;
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }100%{
+        width: 75%;
+    }
+}
+.skill_bar .bar .node{
+    width: 50%;
+    animation: node 2s;
+}
+@keyframes node {
+    0%{
+        width: 0%;
+    }100%{
+        width: 50%;
+    }
+}
+.skill_bar .bar .java{
+    width: 50%;
+    animation: express 2s;
+}
+@keyframes java {
+    0%{
+        width: 0%;
+    }100%{
+        width: 50%;
+    }
+}
+.skill_bar .bar .spring{
+    width: 50%;
+    animation: express 2s;
+}
+@keyframes spring {
+    0%{
+        width: 0%;
+    }100%{
+        width: 50%;
+    }
+}
+
+
+/* responsividade de table */
+
+@media (max-width: 768px) {
+ /* container - geral  */
+    .container {
+        padding: 20px 0;
+    }
+    /* carrosel - slide */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: auto;
+    }
+    #mainSlider .carousel-caption h2 {
+        font-size: 28px;
+    }
+
+    #mainSlider .carousel-caption p{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .carousel-caption {
+        left: 10%;
+        right: 10%;
+    }
+
+    /* sobre */
+
+    #about-area img {
+        margin-top: 100px;
+    }
+    #about-area .img-fluid img {
+        width: 10px;
+        height: 500px;
+    }
+    /* circles data */
+
+    .circle-box div {
+        padding: 0 10px;
+    }
+
+    #data-area p {
+        font-size: 16px;
+    }
+    /* time/team */
+
+    .card-title {
+        font-size: 14px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+
+    /* parte da div com img + desafio */
+    #apply-area .apply-box {
+        padding: 50px 25px;
+    }
+    /* news + contact */
+
+    #news-area p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #email-input {
+        width: 70%;
+    }
+    #call-area {
+        margin-top: 30px;
+    }
+    #call-area .container {
+        padding: 30px;
+    }
+
+    #call-area p, #call-area #call-btn {
+        font-size: 16px;
+    }
+
+}
+
+/* responsividade celular  */
+@media(max-width: 425px) {
+    /* caroulsel/slide */
+    #mainSlider {
+        margin-top: 110px;
+    }
+
+    #mainSlider .carousel-caption {
+        top: 5%;
+    }
+
+    #mainSlider .carousel-caption h2 {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #mainSlider .carousel-caption p {
+        display: none;
+    }
+    .carousel-caption .main-btn {
+        font-size: 14px;
+    }
+
+     /* sobre  */
+    .main-title {
+        font-size: 30px;
+    }
+
+    #about-area img {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    /* circles - data  */
+
+    .circle-box {
+        width: 50%;
+    }
+
+    /* time-team */
+    #team-area .col-md-3 {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    /* apply */
+    
+    #apply-area {
+        height: auto;
+    } 
+
+    #company-img {
+      display: none;  
+    } 
+
+    /* filtro de cursos  */
+
+    #portfolio-area .filter-btn {
+        margin-bottom: 20px;
+    }
+
+    .project-box {
+        width: 50%;
+    }
+
+    #news-area .main-title {
+        font-size: 24px;
+    }
+
+    #news-area p {
+        font-size: 16px;
+    }
+    
+    #email-input {
+        width: 80%;
+    }
+    
+    #call-area p, #call-area #call-btn {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    
+    #call-area p, #call-area #call-btn {
+        margin: 0;
+        width: 50%;
+    }
+    
+      /* contact */
+    .contact-box {
+        border: none;
+        margin-bottom: 0;
+      }
+    
+    
 }
