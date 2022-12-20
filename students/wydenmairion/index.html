@@ -1,13 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Academy</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover</title>
+
+  <link rel="stylesheet" href="theme/global.css" />
+
+  <link rel="stylesheet" href="modules/header.css" />
+  <link rel="stylesheet" href="modules/footer.css">
+
+  <link rel="stylesheet" href="theme/pages/home.css" />
 </head>
-<body>  
-    <h1>Project</h1>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+      <div class="header-logo">
+        <img src="assets/logo.svg" alt="website logo" title="website logo"
+          aria-label="logo in shades of blue and with the name on the right side written: discover" />
+      </div>
+      <div class="header-hamburguer" id="menu-hamburguer">
+        <i class="fa-sharp fa-solid fa-bars"
+          aria-label="three white stripes representing a hamburger menu, click here for more details">
+        </i>
+      </div>
+    </header>
+
+    <nav class="nav" id="nav">
+      <ul class="nav-links">
+        <li><a href="#" title="Home" aria-label="Home">Home</a></li>
+        <li><a href="#" title="About" aria-label="About">About</a></li>
+        <li title="Click for search" aria-label="Click for search">
+          <div class="search-diviser">
+            <input type="search" placeholder="Search...">
+            <div class="icon-search">
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="search">
+      <div class="search-input-content">
+        <input type="search" placeholder="Enter the link to favorite." aria-label="Enter the link to favorite." />
+      </div>
+      <div class="search-input-button">
+        <button title="click for add new favorite link" aria-label="click for add new favorite link">+ Add</button>
+      </div>
+    </section>
+
+    <main class="links">
+
+      <div class="link">
+        <div class="link-details">
+          <h1>Title</h1>
+          <a href="http://localhost.com.br" aria-label="Click here to access the link" title="http://localhost.com.b">
+            http://localhost.com.br
+          </a>
+        </div>
+        <div class="link-actions">
+          <button aria-label="click for delete" title="click for delete">
+            <i class="fa-sharp fa-solid fa-trash"></i>
+          </button>
+          <button aria-label="click for to-browser" title="click for to-browser">
+            <i class="fa-sharp fa-solid fa-globe"></i></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="link">
+        <div class="link-details">
+          <h1>Title</h1>
+          <a href="http://localhost.com.br">http://localhost.com.br</a>
+        </div>
+        <div class="link-actions">
+          <button aria-label="click for delete" title="click for delete">
+            <i class="fa-sharp fa-solid fa-trash"></i>
+          </button>
+          <button aria-label="click for to-browser" title="click for to-browser">
+            <i class="fa-sharp fa-solid fa-globe"></i></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <article class="details">
+      <span 
+        title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do."
+        aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+      </span>
+    </article>
+
+    <section class="marketing">
+      <div class="marketing-video">
+        <span>Video</span>
+      </div>
+      <div class="marketing-slideshow">
+        <span>Slideshow</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span 
+        title="All website rights reserved ©Will Silva" 
+        aria-label="All website rights reserved ©Will Silva">
+        All website rights reserved ©Will Silva
+      </span>
+    </footer>
+
+  </div>
 </body>
+<script src="https://kit.fontawesome.com/d827d44034.js"></script>
+<script src="scripts/hamburguer.js"></script>
+
 </html>
