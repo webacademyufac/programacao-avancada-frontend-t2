@@ -1,0 +1,200 @@
+/* ========== RESET ========== */
+
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, ::placeholder {
+    font-size: 90%;
+    color: var(--text);
+}
+
+/* TODO: optmize this structure to make more reusable for multiples projects. */
+::selection {
+    color: var(--background-theme);
+    background-color: var(--background-theme-alt);
+}
+
+:disabled {
+    cursor: not-allowed;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-family: 'Source Serif Pro', serif;
+    /*font-family: 'Rajdhani', serif;*/
+    word-wrap: break-word;
+    word-break: break-word; /* Analisar: pode causar erros na quebra da estrutura do flex */
+    /*white-space: normal;*/
+    hyphens: auto;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+html {
+    font-size: 1vw;
+}
+
+/*
+PARA ATIVIDADE FAZER AS SEGUINTES QUEBRAS:
+@media (min-width: 480px) {} -> PARA TABLET
+@media (min-width: 768px) {} -> PARA DESKTOP
+*/
+
+/* Mobile */
+
+@media (min-width: 0px) {
+    body {
+        font-size: 600%;
+    }
+}
+
+@media (min-width: 128px) {
+    body {
+        font-size: 500%;
+    }
+}
+
+@media (min-width: 256px) {
+    body {
+        font-size: 400%;
+    }
+}
+
+@media (min-width: 576px) {
+    body {
+        font-size: 350%;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 300%;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 992px) {
+    body {
+        font-size: 200%;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 1400px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 1600px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 1900px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+body {
+    letter-spacing: 0.015em;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, input, pre, hr {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-size: 100%;
+}
+
+hr {
+    border: none;
+    border-bottom: 0.1em solid var(--border);
+}
+
+pre, input, button, textarea, select, table, figcaption {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+pre {
+    font-family: inherit;
+    white-space: pre-line;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 0;
+}
+
+input {
+    vertical-align: middle;
+}
+
+input, select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+    color: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+legend, fieldset {
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-size: 150%;
+    font-weight: bold;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+button {
+    color: inherit;
+    border: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+}
+
+/* TODO: test this to set as default in 2.reset.css */
+ul {
+    -webkit-padding-start: 1em;
+}

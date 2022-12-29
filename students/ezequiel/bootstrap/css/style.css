@@ -1,0 +1,122 @@
+/* Geral */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 50px 0;
+}
+
+p,
+li {
+    font-size: 14px;
+    color: #442;
+}
+
+/* Slideshow */
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 90vh;
+}
+
+/* About */
+
+#about-area {
+    background-color: #F9F9F9;
+}
+
+.main-title {
+    color: #444;
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+#about-title {
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about-list {
+    padding-left: 0;
+}
+
+#about-list li {
+    line-height: 30px;
+}
+
+#about-list i {
+    color: #347fc4;
+    margin-right: 15px;
+}
+
+/* especialities */
+
+.especialities-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.especialities-box i,
+.especialities-box h4 {
+    color: #444;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.especialities-box:hover > i,
+.especialities-box:hover > h4 {
+    color: #347fc4;
+}
+
+.especialities-box > i  {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.especialities-box h4 {
+    font-size: 24px;
+}
+
+/* Team */
+
+.card-body {
+    text-align: center;
+    
+}
+
+/* Work */
+
+#company-img {
+    background-image: url('../img/empresa.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+#work-area {
+    height: 500px;
+}
+
+#work-area .container-fluid,
+#work-area .row {
+    height: 100%;
+}
+
+/* Progress Bar */
+.circle-box {
+    padding: 0 40px;
+}
+
+#numbers-area p {
+    color: #dddddd;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}

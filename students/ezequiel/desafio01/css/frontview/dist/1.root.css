@@ -1,0 +1,14 @@
+/* ========== ROOT ========== */
+
+:root {
+    --transparent: transparent;
+    --white: hsl(0, 100%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --background: hsl(0, 0%, 98%);
+    --text: hsl(0, 0%, 100%);
+    --text-alt: hsl(0, 0%, 27%);
+    --border: hsl(0, 0%, 67%);
+
+    --background-theme: hsl(254, 46%, 55%);
+    --background-theme-alt: hsl(0, 100%, 100%);
+}
