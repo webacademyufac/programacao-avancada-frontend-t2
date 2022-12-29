@@ -1,0 +1,4 @@
+Criando uma estrutura com inde.html, uma pasta css e uma pasta js
+criou um style.css na pasta css e um scripts.js na pasta js
+acessou o reset css do Eric e Meyer e copioiu para um documento chamado reset.css na pasta css
+ buscou no bootstrap o código do quick start e copiou para a index.html
