@@ -1,0 +1,57 @@
+/* slideshow */
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+   height: 90vh;
+}
+
+/* general */
+
+body {}
+
+.row {
+   margin: 0;
+}
+
+.container {
+   padding: 50pxF;
+}
+
+p, li {
+   font-size: 14px;
+   color: #444;
+}
+
+/* slideshow */
+
+#mainSlider {}
+
+/* About */
+
+#about-area {
+   background-color: #ddd;
+}
+
+.main-title {
+   color: #444;
+   margin: 0 0 50px 0;
+   text-align: center;
+}
+
+#about-title {
+   font-size: 17px;
+   color: #444;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+#about-list {
+   padding: 0;
+}
+
+#about-list li {
+   line-height: 30px;
+}
+
+#about-list i {
+   color: #0f3;
+   margin-left: ;
+}

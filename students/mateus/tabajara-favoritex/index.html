@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Document</title>
+   <link rel="stylesheet" href="./assets/css/reset.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+      @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/webfonts/fa-brands-400.ttf');
+   </style>
+   <link rel="stylesheet" href="./assets/css/style.css" />
+   <link rel="stylesheet" href="./assets/css/accordion.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/webfonts/fa-brands-400.ttf"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <header>
+      <div id="visual-identity" class="visual-identity">
+         <img class="logo" src="./assets/images/logo.png" />
+         <h1>Seus Problemas Acabaram!</h1>
+      </div>
+      <nav id="nav-menu" class="nav-menu">
+         <button class="accordion">
+            <span>
+               <h1 class="menu-icon"><i class="fa-solid fa-bars"></i></h1>Menu
+            </span>
+         </button>
+         <ul class="panel">
+            <li>
+               <a href="#">Home</a>
+            </li>
+            <li>
+               <a href="#">Meus Favoritos</a>
+            </li>
+            <li>
+               <a href="#">Outros Produtos</a>
+            </li>
+         </ul>
+      </nav>
+   </header>
+   <div>
+      <div id="search-container" class="search-container">
+         <form action="javascript:void(0)">
+            <input type="text" placeholder="Search.." name="search" />
+         </form>
+      </div>
+      <div id="fav-list" class="fav-list-container">
+         <ul>
+            <li><a href="#">1º Link</a><button type="button">x</button></li>
+            <li><a href="#">2º Link</a><button type="button">x</button></li>
+            <li><a href="#">3º Link</a><button type="button">x</button></li>
+            <li><a href="#">4º Link</a><button type="button">x</button></li>
+         </ul>
+      </div>
+      <div class="content">
+         <div class="container">
+            <h1>Organizações Tabajara</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+               aliquip
+               ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+               eu
+               fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+               deserunt
+               mollit anim id est laborum.</p>
+         </div>
+         <div class="media-container">
+            <iframe class="video-fluid" src="https://www.youtube.com/embed/9bU2Vh8rwm8" title="YouTube video player"
+               frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+               allowfullscreen></iframe>
+            <img class="image-fluid" src="./assets/images/seu-creysson.jpeg" />
+         </div>
+      </div>
+   </div>
+   <footer>
+      <span>Desenvolvido e idealizado por <a href="http://www.github.com/mscmateus">Mateus Costa</a></span>
+      <span>&copy; 2022 Todos os Direitos Reservados</span>
+   </footer>
+   <script src="./assets/js/accordion.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+      integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
