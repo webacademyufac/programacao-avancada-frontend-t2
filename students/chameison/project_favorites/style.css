@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color:antiquewhite;
+}
+
+.clear{clear: both;}
+header{
+    padding: 8px 0;
+    background-color: #282634;
+}
+.logo{
+    float: left;
+    margin-top: 10px;
+}
+.logo img{
+    height: 60px;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+}
+
+/* menu mobile */
+nav.menu-mobile{
+    display: none;
+    float: right;
+}
+
+nav.menu-mobile h2{
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+nav.menu-mobile ul{
+    display: none;
+    width: 100%;
+    background: #282634;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 999;
+    text-align: center;
+
+}
+nav.menu-mobile li{
+    padding: 8px 0;
+    border-bottom:1px solid black ;
+    list-style-type: none;
+}
+nav.menu-mobile li.selected{
+    background: #4e4a65;
+}
+nav.menu-mobile a{
+    display: block;
+    color: #f1f1f1;
+    text-decoration: none;
+}
+/* fim menu mobile  */
+
+/* menu desktop  */
+nav.menu-desktop li.selected{font-weight: normal;}
+nav.menu-desktop{
+    float: right;
+    margin: 15px 0;
+}
+nav.menu-desktop ul{
+    position: relative;
+    top: 8px;
+}
+nav.menu-desktop li{
+    padding: 0 10px;
+    font-weight: lighter;
+    display: inline-block;
+    font-size: 20px;
+}
+nav.menu-desktop a {
+    color: white;
+    text-decoration: none;
+}
+nav.menu-desktop a:hover{text-decoration: underline;} 
+nav li.selected a{
+    color: rgb(176, 45, 62);
+    font-weight: bold;
+}
+/* fim menu desktop */
+.img-fluid{
+    margin-top: 20px;
+}
+.links {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    background-color:  #f1f1f1;
+    padding: 40px 30px;
+    margin-top: 20px;
+}
+.links h1{
+    font-size: 25px;
+    font-weight: normal;
+}
+ /* input */
+ div.links input{
+    width: 100%;
+    border: 0;
+    display: block;
+    padding: 10px 10px;
+    font-size: 18px;
+    color: #4e4a65;
+    background-color: rgba(12, 12, 12, 0.1);;
+    margin-top: 30px;
+}
+div.aviso{
+    margin-top: 20px;
+    width: 100%;
+}
+div.aviso p {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+/* botao */
+.btn1{
+    cursor: pointer;
+    display: inline-block;
+    background: #5244a0;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 17px;
+    margin-top: 35px;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    font-weight: normal;
+    flex: auto;
+ }
+
+.anwaer{
+    padding: 30px 0;
+}
+.int{
+    display: flex;
+    justify-content: center;
+}
+.anwaer .botao-e{
+    padding: 10px;
+    background-color: rgb(79, 142, 101);
+    color: white;
+    border: none;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+.anwaer .botao-d{
+    font-size: 20px;
+    background-color: rgb(121, 3, 3);
+    color: white;
+    padding: 10px;
+    border: none;
+}
+.anwaer ul {
+  background: rgba(12, 12, 12, 0.1);
+  font-size: 10px;
+  padding: 10px;
+  margin: 10px 0;
+
+}
+
+div.anwaer li {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+div.anwaer a {
+  display: block;  
+  color: #282634;
+  text-decoration: none;  
+  padding: 16px 0;
+  font-size: 2.0rem;
+
+}
+
+div.anwaer a:hover {
+    text-decoration:underline;
+    color: rgb(78, 78, 78)
+}
+
+/* paralax */
+section.paralax{
+    padding: 30px 0;
+    width: 100%;
+    min-height: 300px;
+    background-image: url('./img/back1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+
+}
+section.paralax h2.chamada-paralax{
+    border: 2px solid white;
+    padding: 5px 25px;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: lighter;
+    margin-top: 100px;
+    
+}
+/* fim paralax */
+
+/* secao */
+.secao{
+    padding: 100px 0;
+}
+.secao h3{
+    padding: 10px 0;
+    font-size: 30px;
+    font-weight: normal;
+}
+.secao p{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 2.7rem;
+}
+.image img {
+   height: 250px;
+   
+   margin-bottom: 10px;
+}
+/* fim secao */
+
+/* footer */
+
+footer.footer{
+    background-color: #282634;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    text-align: center;
+}
+.dev{
+    padding-top: 15px;
+}
+.dev a {
+    color: #f1f1f1;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+    top: 10px;
+    padding: 0 10px;
+    font-weight: normal;
+    display: inline;
+}
+/* fim footer  */
+/* responsividade */
+@media screen and (min-width: 320px){
+    nav.menu-desktop{display: none;}
+    nav.menu-mobile{
+        display: block;
+    }
+    nav.menu-mobile ul {
+    margin-top: 30px;
+    }
+    .links{
+        width: 100%;
+    }
+    .anwaer{
+        width: 100%;
+    }
+    .image img{
+        width: 100%;
+        height: auto;
+    }
+    .video iframe{
+        width: 100%;
+        height: auto;
+    }
+    .parag{
+        width: 100%;
+    }
+    .secao{width: 100%;}
+}
+@media screen and (min-width: 480px){
+    nav.menu-desktop{display: none;}
+    nav.menu-mobile{
+        display: block;
+    }
+    nav.menu-mobile ul {
+    margin-top: 30px;
+    }
+    .links{
+        width: 100%;
+    }
+    .anwaer{
+        width: 100%;
+    }
+    .img-fluid img{
+        width: 100%;
+        height: auto;
+    }
+    .image img{
+        width: 100%;
+        height: auto;
+    }
+    .video iframe{
+        width: 100%;
+        height: auto;
+    }
+    .parag{
+        width: 100%;
+    }
+    .secao{width: 100%;}
+}
+@media screen and (min-width: 600px){
+    nav.menu-desktop{display: none;}
+    nav.menu-mobile{
+        display: block;
+    }
+    nav.menu-mobile ul {
+    margin-top: 30px;
+    }
+    .links{
+        width: 100%;
+    }
+    .anwaer{
+        width: 100%;
+    }
+    .image img{
+        width: 100%;
+        height: auto;
+    }
+    .video iframe{
+        width: 100%;
+        height: auto;
+    }
+    .parag{
+        width: 100%;
+    }
+    .secao{width: 100%;}
+    .img-fluid img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav.menu-desktop{display: block;}
+    nav.menu-mobile{
+        display: none;
+    }
+}

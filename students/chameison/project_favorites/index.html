@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <script src="./scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <section class="container">
+            <div class="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li class="selected">
+                        <a href="index.html">Links</a>
+                    </li>
+                
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="menu-mobile">
+                <h2><i class="fa fa-bars"></i></h2>
+                <ul>
+                    <li class="selected">
+                        <a href="index.html">Links</a>
+                    </li>
+            
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </section>
+    </header>
+    <section class="main">
+        <section class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid" style="height: 300px;" src="img/rede.png" alt="ch Dev">
+                </div>
+                <div class="col-md-6">
+                    <div class="links">
+                        <h1>Meus links</h1>
+                       <form action="" id="form">
+                           <input type="text" name="url" id="url" placeholder="Url....">
+                           <button class="btn1" type="submit">Guardar</button>
+                           <div class="clear"></div>
+                       </form>
+                       <div class="aviso">
+                        <p>Não esqueça o link!</p>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            
+            <div class="anwaer">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            <li><a>www.google.com</a> <button class="botao-e">Edit</button> <button class="botao-d">Del</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <section class="paralax">
+                <div class="container">
+                    <h2 class="chamada-paralax">Para todo problema, há uma solução tecnológica</h2>
+        
+                </div>
+            </section>  
+            <div class="secao">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="parag">
+                            <h3>O que é o projeto ?</h3>
+                            <p>O projeto favoritos foi um projeto desenvolvido na disciplas de front-end avançado e back-end avançado, da qual trabalhamos em um modelo no back-end e que está sendo aprimorado agora!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="video">
+                            <h3>Vamos aprender +</h3>
+                            <iframe width="300" height="240" src="https://www.youtube.com/embed/iulq3G5xroU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image">
+                            <h3>Foto gerada com IA</h3>
+                            <img src="img/ia.png">
+                        </div>
+                    </div>
+                </div>  
+            </div>                      
+        </section>
+    </section>
+    <footer class="footer">
+        <section class="container">
+            <div class="dev">
+                <a href="">Chameison</a>
+            </div>
+        </section>
+        
+        
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $('nav.menu-mobile h2').click(function(){
+                $('nav.menu-mobile ul').slideToggle();
+            });
+    </script>
+</body>
+</html>
