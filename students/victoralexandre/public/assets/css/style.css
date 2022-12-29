@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 70%;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    color: white;
+    background-color: #353836;
+}
+
+main {
+    display: block;
+    height: 90vh;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0.5em;
+    background: #7159c1;
+    font-size-adjust: 3;
+    background-color: #353836;
+}
+
+header {
+    padding: 0.5em;
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1d1f1d;
+}
+
+footer {
+    padding: 0.5em;
+    background-color: #1d1f1d;
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.4rem;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#links-list ul {
+    background: white;
+
+    box-shadow: 0px 4px 8px -2px #00000033;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+
+    padding: 12px;
+
+    font-size: 1.4rem;
+}
+
+li {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    padding: 3px;
+    margin-left: 10px;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+#links-list li {
+    color: black;
+}
+
+li:first-child,
+li:last-child {
+    border: none;
+}
+
+.container {
+    width: 80%;
+    max-width: 400px;
+
+    margin: auto;
+}
+
+header nav {
+    display: none;
+}
+
+li input {
+    align-items: center;
+}
+
+li span {
+    cursor: pointer;
+}
+
+body a {
+    text-decoration: none;
+    color: white;
+}
+
+header a {
+    font-size: 1.8rem;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background: wheat;
+}
+
+.size-button {
+    border-color: white;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: block;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.video-youtube {
+    padding: 10px 16px;
+}
+
+.img-fluid {
+    padding: 10px 16px;
+}
+
+#post-links {
+    padding: 8px 16px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#logo-text {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#links-input {
+    width: 100%;
+
+    padding: 8px 16px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+
+    border-radius: 16px;
+    border: 1px solid #ccc;
+
+    outline: none;
+
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+#copyright-area {
+    padding: 10px;
+}
+
+#text-main,
+#copyright-area {
+    font-size: 16px;
+}
+
+#hide {
+    display: none;
+    text-align: center;
+}
+
+
+@media (min-width: 600px) {
+
+    #hide {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* modifiquei para a barra de expansão sumisse e a nav aparecesse só quando entrasse no "modo pc" pois esse costuma ser o padrão */
+    header nav {
+        display: block;
+    }
+
+    header a {
+        font-size: 1.4rem;
+    }
+
+    #hamburger-icon {
+        display: none;
+    }
+
+    #text-main,
+    #copyright-area {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 700px) {
+    header a {
+        font-size: 1.9rem;
+    }
+}
+
+/*
+@media (min-width: 480px) {
+
+}
+*/
