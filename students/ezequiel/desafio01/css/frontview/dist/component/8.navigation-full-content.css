@@ -1,0 +1,69 @@
+/* =================================== NAVIGATION FULL CONTENT =================================== */
+
+.navigation.full.content > .content-row > .content {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    font-size: 115%;
+    color: #fff;
+}
+
+.navigation.full.content > .content-row > .content > .brand {
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.navigation.full.content > .content-row > .content > .brand > .toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.navigation.full.content > .content-row > .content > .link > a:not(:last-child) {
+    margin-right: 1em;
+}
+
+.navigation.full.content > .content-row > .content > .link.hide {
+    display: block;
+}
+
+@media screen and (max-width: 992px) {
+    .navigation.full.content > .content-row > .content > .link > a {
+        display: block;
+        padding: 1em;
+        border-top: 0.1em solid;
+    }
+
+    .navigation.full.content > .content-row > .content > .link > a:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .navigation.full.content > .content-row > .content {
+        padding: 0;
+        display: block;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .navigation.full.content > .content-row > .content > .brand,
+    .navigation.full.content > .content-row > .content > .brand > a {
+        font-size: 125%;
+    }
+
+    .navigation.full.content > .content-row > .content > .brand {
+        padding: 0.75em;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navigation.full.content > .content-row > .content > .brand > .toggle {
+        display: block;
+    }
+
+    .navigation.full.content > .content-row > .content > .link.hide {
+        display: none;
+    }
+}
+
+/* =================================== /NAVIGATION FULL CONTENT =================================== */

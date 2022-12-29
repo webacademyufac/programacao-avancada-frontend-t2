@@ -1,0 +1,9 @@
+/* ========== TOOL ========== */
+
+.hide {
+    display: none;
+}
+
+.responsive {
+    overflow: auto;
+}

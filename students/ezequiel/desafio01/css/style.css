@@ -1,0 +1,13 @@
+/* TABLET */
+@media (min-width: 480px) {
+    #title {
+        background-color: red;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+    #title {
+        background-color: blue;
+    }
+}

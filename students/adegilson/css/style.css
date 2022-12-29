@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #1C1C1C;
+  height: 100vh;
+  
+}
+
+
+h1 {
+  text-align:center;
+  color: white;
+  
+  font-size: 3.4rem;
+}
+
+input {
+  width: 100%;
+  
+  padding: 8px 16px;
+  margin-bottom: 32px;
+  
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  
+  outline: none;
+  
+  font-size: 1.6rem;
+  font-weight:300;
+}
+
+
+li {
+  list-style: none;
+  
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  border-bottom: 1px solid #ddd;
+}
+
+
+a {
+  display: block;
+  
+  color: #333;
+  text-decoration: none;  
+  
+  padding: 16px 0;
+  font-size:2rem;
+  
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+li:first-child,
+li:last-child {
+  border: none;
+}
+
+li span {
+  cursor:pointer;
+}
+/* logo */
+#logo{
+  background-color: #ffc107;
+}
+
+/* menu */
+#menu{
+  background-color:#fd7e14;
+  font-size: 3rem;
+}
+.navbar-brand{
+  font-size: 3rem;
+}
+
+/* entrada de links */
+
+
+
+/* lista de links */
+.entrada-link{
+  background-color: rgb(250, 249, 249);
+  font-size:2rem;
+}
+
+
+#listlink{
+  background-color: rgb(13, 13, 13);
+  color: #ccc;
+  font-size:2rem;
+
+}
+#link h3{
+  font-size:2rem;
+  color: #ddd;
+}
+
+/* texto de funcionamento */
+.tex{
+  background-color: rgb(253, 252, 252);
+  color: rgb(72, 71, 71);
+  font-size:3rem;
+}
+
+/* footer */
+
+footer{
+margin-bottom: 0;
+}
+
+
+
+.main_footer{
+  background-color:	#1C1C1C;
+  color: #ccc;
+  margin:0 0 0 0;
+}
+.colfooter{
+  background-color: blueviolet;
+  color: #ddd;
+  text-align: center;
+}
+.main_footer_copy{
+  text-align:center;
+}
+.main_footer_copy{
+  background-color: blueviolet;
+  color: #ddd;
+  text-align: center;
+}
+
+.video{
+  display:none;
+}
+@media (min-width:576px){
+.video{
+  display:flex;
+  justify-content: center;
+
+}
+.log img{
+  height: 60px;
+  width: 100%;
+}
+  
+}

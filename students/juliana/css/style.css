@@ -1,15 +1,89 @@
-body{
-    background-color: #beb4ff;
-}
-h1{
+#div-logo{
     text-align: center;
     background-image: linear-gradient(#8106ec, #bb8ce6);
-
-
+}
+#nav-nav{
+    background-color:#bb8ce6;
+}
+body{
+    background-color:  rgb(222, 199, 230);
+}
+#container-url{
+    
+    padding-top: 110px;
+}
+main{
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+div{
+    border: 0;
+}
+header div.container{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100vw;
+    /* background-color: #003366; */
+    background-color: black;
+    margin-top: auto;
+    color: white;
+    padding: 0.3em;
 }
 
-div#form{
-    background-color: rgb(223, 139, 249);
-    border-radius: 0.5em;
+footer a {
+    color: white;
+}
 
+footer span {
+    display: block;
+    margin-bottom: 0.3em;
+}
+.paragrafo-explicacao{
+    text-align: justify;
+}
+.paragrafo-explicacao span{
+    font-weight: bold;
+}
+#inputGroup-sizing-sm{
+    background-color: #8106ec;
+    color: white;
+    font-weight: bold;
+}
+
+
+@media(min-width: 480px) {
+    #row-logo{
+        background-image: linear-gradient(#8106ec, #bb8ce6);
+    }
+   #div-logo{
+    background: none;
+   }
+   #nav-nav{
+   
+    background: none;
+   }
+   main ul{
+    margin-left: 10vw;
+    }
+}
+   @media(min-width: 768px) {
+    #row-logo{
+        background-image: linear-gradient(#8106ec, #bb8ce6);
+    }
+   #div-logo{
+    background: none;
+   }
+   #nav-nav{
+   
+    background: none;
+   }
+   main ul{
+    margin-left: 100px;
+    }
 }

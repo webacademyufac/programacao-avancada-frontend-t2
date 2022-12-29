@@ -1,0 +1,32 @@
+/* @Header */
+.header {
+  display: flex;
+  grid-area: header;
+  background-color: var(--primary-color);
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  top: 0;
+  position: sticky;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+.header-hamburguer i {
+  font-size: 1.5rem;
+  color: var(--primary-font-color);
+  cursor: pointer;
+}
+
+/* @Tablet */
+@media (min-width: 480px) {
+  .header {
+    padding-left: 7.8%;
+  }
+
+  .header .header-hamburguer {
+    display: none;
+  }
+}

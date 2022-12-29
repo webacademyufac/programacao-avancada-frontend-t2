@@ -1,0 +1,6 @@
+.list.links {
+    background-color: var(--white);
+    color: var(--text-alt);
+    padding: 0.75em;
+    border-radius: 1em;
+}

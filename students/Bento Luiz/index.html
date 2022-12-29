@@ -4,21 +4,151 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Loja Bikcraft</title>
 </head>
 <body>
+
+    <header id="cabecalho" class="container">
+
+        <img class="logo" src="img/bikcraft.svg" alt="Logo Bikcraft">
+
+        <nav id="menu_navegacao">
+            <form id="form_pesquisa" action="">
+                <a class="icone_decorativo" href=""><img src="img/search.png"></a>
+                <input class="campo" name="pesquisa" type="text" placeholder="Pesquisando...">
+            </form>
+            <div id="menu_items">
+                <a class="icone_decorativo" href=""><img src="img/user.png" alt="login de usuário"></a>
+                <a class="icone_decorativo" href=""><img src="img/menu-aberto.png" alt="barra de menu"></a>
+            </div>
+        </nav>
+
+        <div id="CEP">
+            <a href="">Informe o CEP</a>
+        </div>  
+
+        <div id="desktop_menu_items">
+
+            <div id="desktop_menu_items_list">
+
+                <div class="desktop_menu_item">
+                    <a href="">Ajuda</a>
+                </div>
+                <div class="desktop_menu_item">
+                    <a href="">Categorias</a>
+                </div>
+                <div class="desktop_menu_item">
+                    <a href="">Carrinho</a>
+                </div>
+
+            </div>
+
+            <div class="desktop_item">
+                <a href="">Faça Login</a>
+            </div>
+            
+        </div>
+
+    </header>
+
+    <section id="section_link">
+
+            <h1 class="titulo">LINKS</h1>
+
+            <div class="arrow"></div>
     
-    <h1>Meus Links</h1>
+            <h2>ADICIONE UMA URL À SUA LISTA</h2>
+            
+            <form id="form_url" action="">
+                <input class="campo" type="text" placeholder="Adicionando uma url...">
+            </form>
 
-    <form action="">
-        <input type="text" placeholder="Digite a url...">
-    </form>
+    </section>
 
-    <ul>
-        <li>Nunca mais esqueça um link!</li>
-    </ul>
+    <main id="main" class="container">
+
+        <h2 class="titulo">MEUS LINKS</h2>
+
+        <div class="arrow"></div>
+        
+        <table id="table_urls">
+            <tr>
+                <th>NOME</th>
+                <th>URL</th>
+            </tr>
+            <tr>
+                <td>Playstation</td>
+                <td>https://playstation.com</td>
+            </tr>
+            <tr class="tr_content">
+                <td>Xbox</td>
+                <td>https://xbox.com</td>
+            </tr>
+            <tr class="tr_content">
+                <td>SIGAA IFAC</td>
+                <td>https://sig.ifac.edu.br</td>
+            </tr>
+            <tr class="tr_content">
+                <td>Submarino</td>
+                <td>https://submarino.com.br</td>
+            </tr>
+        </table>
+
+    </main>
+
+    <section id="tutorial_section">
+
+        <article id="article_description" class="container">
+            <h2 class="titulo">LOREM IPSUM</h2>
+
+            <div class="arrow"></div>
+
+            <p class="text">Aliquam erat volutpat. Curabitur consectetur, velit et lacinia tempor, lorem mauris auctor nisi, eu aliquet sem odio nec odio. Suspendisse placerat euismod diam sit amet fringilla.</p>
+        </article>
+
+        <div id="tutorial">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MXU_FlI5qFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="advertisement">
+                <p>ANÚNCIO</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer_content" class="container">
+
+            <div id="footer_socialmedia">
+                <img src="img/instagram-svgrepo-com.svg" alt="">
+                <img src="img/facebook-svgrepo-com.svg" alt="">
+                <img src="img/twitter-svgrepo-com.svg" alt="">
+                <img src="img/youtube-svgrepo-com.svg" alt="">
+            </div>
+
+            <div class="arrow"></div>
+            
+            <div id="footer_information">
+                <ul>                    
+                    <li>Suporte</li>
+                    <li>Política de privacidade</li>
+                    <li>Termos de serviço</li>
+                    <li>Bikcraft e o meio ambiente</li>
+                </ul>
+                <ul>
+                    <li>Segurança do cliente</li>
+                    <li>Avisos sobre Saúde</li>
+                    <li>Mapa do site</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer_rights" class="container">
+            <p>Alguns direitos reservados - 2022</p>
+            <img src="img/bikcraft-footer.svg" alt="logo">
+        </div>
+         
+    </footer>
+
 
 </body>
 </html>

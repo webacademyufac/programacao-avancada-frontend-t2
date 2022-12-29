@@ -1,0 +1,147 @@
+/*======== GENERAL =============*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.row {
+  margin: 0;
+}
+
+.container {
+  padding: 50px 0;
+}
+
+p,li {
+  font-size: 14px;
+  color: #442;
+}
+
+.line__title {
+  border-bottom: 2px solid #333;
+  width: 10%;
+  left: 45%;
+  position: absolute;
+  margin-top: -40px;
+}
+/*======== SLIDESHOW ========== */
+
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
+    height: 90vh;
+}
+
+@media (min-width: 480px) {
+  
+}
+
+/*========== ABOUT AREA ==========*/
+
+#about__area {
+  background-color: rgb(221, 215, 215);
+}
+
+.main__title {
+  color: #444;
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+#about__title {
+  font-size: 17px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+#about__list {
+  padding: 0;
+}
+
+#about__list li {
+ line-height: 30px;
+}
+
+#about__list i {
+  color: #347fc4;
+  margin-right: 8px;
+}
+
+.specialities__box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.specialities__box:hover>i,
+.specialities__box:hover>h4 {
+  color: #347fc4;
+}
+
+.specialities__box i{
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.specialities__box h4 {
+  font-size: 24px;
+}
+
+/*==================== Numbers===============*/
+
+.circle-box{
+  padding: 0 40px;
+}
+
+#numbers-area p {
+  color: #dddddd;
+  text-align: center;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+#circle__a {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+#circle__b {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+#circle__c {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+#circle__d {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+/*===========Work==========*/
+
+#work-area {
+  height: 500px;
+}
+
+#work-area .container-fluid, 
+#work-area .row {
+  height: 100%;
+}
+
+#company-img {
+  background-image: url('../img/empresa.jpg');
+  background-size: cover;
+  height: 100%;
+  border-radius: 12px;
+}
