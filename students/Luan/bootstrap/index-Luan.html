@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MVP Studio - Desenvolvendo soluções</title>
+  <!-- Reset CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- Bootstrap v5.2.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fontes -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  </style>
+
+  <!-- Ícones -->
+  <script src="https://kit.fontawesome.com/e00b21def0.js" crossorigin="anonymous"></script>
+  <!-- Barra de progresso em JS -->
+  <script src="js/progressbar.min.js"></script>
+  <!-- jQuery que vai servir para o parallax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Parallax -->
+  <script src="js/parallax.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Todo o conteúdo da página -->
+  <div id="content">
+
+    <!-- Cabeçalho -->
+    <header>
+      <!-- barra superior com identidade visual e menu -->
+    </header>
+
+    <!-- Slideshow -->
+    <section id="slideshow">
+      <div id="mainSlider" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/banner1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/banner2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Sobre (main) -->
+
+    <main>
+      <div id="about-area" class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="main-title">Sobre a MVP Studio</h3>
+          </div>
+          <div class="col-md-6">
+            <img src="img/agencia.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-6">
+            <h3 id="about-title">Uma agência que pensa no futuro</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>Ab perspiciatis consectetur necessitatibus amet aperiam neque quia veritatis.</p>
+            <p>Ea minus ratione corporis veniam suscipit hic nam, culpa eos officiis eligendi libero!</p>
+            <p>Veja outros diferenciais:</p>
+            <ul id="about-list">
+              <li><i class="fas fa-check"></i> Utilização de Machine Learning e Inteligência Artificial</li>
+              <li><i class="fas fa-check"></i> Layout responsivo com mobile first</li>
+              <li><i class="fas fa-check"></i> Integração com diversos sistemas</li>
+              <li><i class="fas fa-check"></i> Desenvolvimento com metodologia ágil</li>
+              <li><i class="fas fa-check"></i> Equipe qualificada nas principais tecnologias do mercado</li>
+            </ul>
+          </div>
+        </div>
+    </main>
+
+    <!-- Especialidades -->
+    <section id="specialities">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="main-title">Nossas especialidades</h3>
+          </div>
+          <div class="col-md-4 col-lg-2 specialities-box">
+            <i class="fa-solid fa-comments-dollar"></i>
+            <h4>Ferramentas comerciais</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="col-md-4 col-lg-2 specialities-box">
+            <i class="fa-solid fa-comments-dollar"></i>
+            <h4>Ferramentas comerciais</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="col-md-4 col-lg-2 specialities-box">
+            <i class="fa-solid fa-comments-dollar"></i>
+            <h4>Ferramentas comerciais</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="col-md-4 col-lg-2 specialities-box">
+            <i class="fa-solid fa-comments-dollar"></i>
+            <h4>Ferramentas comerciais</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="col-md-4 col-lg-2 specialities-box">
+            <i class="fa-solid fa-comments-dollar"></i>
+            <h4>Ferramentas comerciais</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="col-md-4 col-lg-2 specialities-box">
+            <i class="fa-solid fa-comments-dollar"></i>
+            <h4>Ferramentas comerciais</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Números -->
+
+
+    <!-- Nosso time -->
+    <section id="team">
+      <div class="container">
+        <div class="row">
+          <div>
+            <h3 class="main-title">Nosso time</h3>
+          </div>
+
+          <div class="card col-6 col-md-3">
+            <img src="img/profile1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Fulano</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card col-6 col-md-3">
+            <img src="img/profile2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Fulano</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card col-6 col-md-3">
+            <img src="img/profile3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Fulano</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card col-6 col-md-3">
+            <img src="img/profile4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5>Fulano</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Desafio -->
+    <section id="challenge">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/empresa.jpg" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-6">
+            <img src="img/pattern.png" class="img-fluid" alt="...">
+          </div>  
+        </div>
+      </div>
+    </section>
+
+     <!-- Nossos projetos -->
+    <section id="projects">
+        <div id="container">
+          <div id="row">
+            <div>
+              <h3 class="main-title">Conheça nossos projetos</h3>
+            </div>
+            <div class="col-md-3 specialities-box">
+              <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <div class="col-md-3 specialities-box">
+              <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <div class="col-md-3 col-lg-2 specialities-box">
+              <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <div class="col-md-3 col-lg-2 specialities-box">
+              <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+          </div>
+        </div>
+     </section>
+
+
+     <!-- Contato -->
+     <section id="contact">
+      <div id="container">
+        <div id="row">
+          <div>
+            <h3 class="main-title">Conheça nossos projetos</h3>
+          </div>
+          <div class="col-md-3 specialities-box">
+            <button type="button" class="btn btn-primary">Primary</button>
+          </div>
+          <div class="col-md-3 specialities-box">
+            <button type="button" class="btn btn-primary">Primary</button>
+          </div>
+          <div class="col-md-3 col-lg-2 specialities-box">
+            <button type="button" class="btn btn-primary">Primary</button>
+          </div>
+          <div class="col-md-3 col-lg-2 specialities-box">
+            <button type="button" class="btn btn-primary">Primary</button>
+          </div>
+        </div>
+      </div>
+   </section>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
