@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.row {
+    margin: 0;
+    /* remove a margem padrão do bootstrap */
+}
+
+.container {
+    padding: 50px 0;
+    /* 70px de padding top e bottom */
+}
+
+p,
+li {
+    font-size: 14px;
+    color: #444;
+}
+
+/* Slideshow */
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
+    height: 90vh;
+}
+
+/* About */
+#about-area {
+    background-color: #ddd;
+}
+
+.main-title {
+    color: #444;
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* adiciona uma linha abaixo do título */
+.main-title:after {
+    content: '';
+    display: block;
+    width: 170px;
+    height: 2px;
+    background-color: #444;
+    margin: 0 auto;
+}
+
+#about-title {
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about-list {
+    padding-left: 0;
+    /* remove o padding padrão do ul */
+}
+
+#about-list li {
+    line-height: 30px;
+    /* aumenta a altura da linha */
+}
+
+#about-list li i {
+    color: #347fc4;
+    margin-right: 10px;
+}
+
+/* Specialities */
+.specialities-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.specialities-box i,
+.specialities-box h4 {
+    color: #444;
+    /* transition: 1.5s; */
+    transition: all 0.3s ease-in-out;
+    /* animação ease-in-out é uma animação mais suave */
+    margin-bottom: 24px;
+}
+
+.specialities-box:hover>i,
+.specialities-box:hover>h4 {
+    color: #347fc4;
+}
+
+.specialities-box i {
+    font-size: 40px;
+}
+
+.specialities-box h4 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Numbers */
+.circle-box {
+    padding: 0 40px;
+}
+
+#numbers-area p {
+    color: #347fc4;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+/* Team */
+.card-body {
+    text-align: center;
+}
+
+#team div .card {
+    padding: 0;
+}
+
+/* Work */
+#work-area {
+    padding: 15px;
+}
+
+#work-area .container-fluid,
+#work-area .row {
+    height: 100%;
+}
+
+/* Portfolio */
+#filter-btn-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#filter-btn-box button {
+    border: 1px solid #444;
+    background-color: #fff;
+    margin: 0 15px;
+    border-radius: 20px;
+    padding: 5px 24px 5px 24px;
+    font-weight: bold;
+}
+
+#filter-btn-box button:hover {
+    background-color: #3dc5f2;
+    color: #fff;
+}
+
+/* Newsletter */
+#news-area {
+    background-color: rgb(211 208 208 / 55%);
+    padding: 50px 0;
+}
+
+#news-area p {
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+#news-area input {
+    border: 1px solid #3dc5f2;
+    padding: 5px 24px 5px 24px;
+    display: inline-block;
+}
+
+#email-input {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-weight: bold;
+}
+
+#news-btn {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: bold;
+    background-color: #3dc5f2;
+    color: #fff;
+}
+
+.input-group {
+    width: 65%;
+    margin: 0 auto;
+}
+
+/* call-area */
+#call-area {
+    background-color: #74dafc;
+    padding: 0;
+}
+
+#call-area p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    padding: 6px;
+    text-align: center;
+    /* alinha o texto no final da div */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* aumenta o espaçamento entre as letras */
+}
+
+#call-area .main-btn {
+    background-color: #fff;
+    color: #74dafc;
+    border: 1px solid #74dafc;
+    font-weight: bold;
+    padding: 10px 22px 10px 22px;
+    border-radius: 20px;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* FOOTER */
+/* contact-area */
+#contact-area .icon-adjust {
+    width: 16px;
+    height: 16px;
+}
+
+#contact-area .contact-box {
+    text-align: center;
+}
+
+#contact-area .contact-box i {
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#contact-area .contact-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #74dafc;
+    margin-top: 20px;
+}
+
+/* Linha horizontal acima do contact-form */
+#form-contact:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #74dafc;
+    margin: 10px 0;
+    margin-bottom: 30px;
+}
+
+#form-contact p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#form-contact input,
+#form-contact textarea {
+    margin-bottom: 20px;
+}
+
+#form-contact .main-btn {
+    background-color: #74dafc;
+    color: #fff;
+    border: 1px solid #74dafc;
+    font-weight: bold;
+    padding: 10px 22px 10px 22px;
+    border-radius: 20px;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#form-contact .main-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+#copy-area {
+    background-color: rgb(211 208 208 / 55%);
+    font-size: 14px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+#copy-area .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+}
+
+.navbar-nav a {
+    margin: 5px;
+    text-align: center;
+}
+
+#copy-area .container a {
+    text-decoration: none;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+#copy-area span {
+    font-weight: bold;
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    .input-group {
+        width: 80%;
+    }
+}
+
+/* mobile */
+@media (max-width: 480px) {
+    .input-group {
+        width: 100%;
+    }
+
+    #mainSlider .carousel-inner,
+    #mainSlider .carousel-item,
+    #mainSlider .carousel-item img {
+        height: 30vh;
+    }
+}
