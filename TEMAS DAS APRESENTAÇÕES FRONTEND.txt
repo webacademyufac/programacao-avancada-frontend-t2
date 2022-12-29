@@ -1,7 +1,0 @@
-Boilerplante HTML e HTML5 Bones - Luan Svelte - Jonatan - (Terça feira)
-Vue.js - Felipe - (Quarta feira)
-Sass e Less - Fabiana - (Quinta feira)
-Responsive Web Desing Check e Am I Responsive e Materialize - Danel e Luiz Felipe - Sexta feira 
-
-
-
