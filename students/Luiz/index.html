@@ -4,9 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>challenger 01</title>
+    <title>Document</title>
+    <script src="./js/scripts.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link id="icone" rel="icon" type="image/x-icon" href="https://favicon-generator.org/favicon-generator/htdocs/favicons/2014-12-16/7ccccace02367f6dbbc8cd76cea93716.ico">
 </head>
 <body>
-    
+    <header>
+        <div id="container">
+            <a href="index.html"><img id="logo" src="./img/logo cf.png"></a>
+            
+            <div class="menu">
+                <input type="checkbox" id="checkbox-menu">
+                <label id="check" for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Contato</a></li>
+                        <li><a href="">Sobre nós</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="acessibilidade">
+                <div id="font">
+                    <img class="diminuiFont" src="./img/aumenta_font.svg">
+                    <img class="aumentaFont" src="./img/diminui_font.svg">
+                </div>
+            </div>
+
+            <div class="pesquisar">
+                <form action="#">
+                    <input id="pesquisa" type="text" placeholder="Search..." size="12">
+                    <button id="search"><i class='bx bx-search'></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="conteudo">
+            <h1>Meus Links</h1>
+
+            <div>
+                <label>Digite um novo link para a lista:</label>
+                <div>
+                    <input type="text" name="text-item" placeholder="Digite a URL...">
+                    <button>Adicionar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="lista">
+            <ul class="list">
+            </ul>
+        </div>
+        
+        <div id="texto">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores placeat, minus distinctio nobis 
+                reiciendis error voluptate deleniti illum cupiditate omnis! Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Nemo ex, debitis cupiditate nisi nulla quae asperiores recusandae ullam facere a 
+                cum dolores ipsa, soluta doloremque quam enim! Quaerat, aut id!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores placeat, minus distinctio nobis 
+                reiciendis error voluptate deleniti illum cupiditate omnis! Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Nemo ex, debitis cupiditate nisi nulla quae asperiores recusandae ullam facere a 
+                cum dolores ipsa, soluta doloremque quam enim! Quaerat, aut id!
+            </p>
+            
+            <div id="video">
+                <iframe src="https://www.youtube.com/embed/9PtEkXVkKIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <img id="anuncio" src="./img/maxresdefault.jpg">
+        </div>
+    </main>
+
+    <footer>
+        <h2>Lorem ipsum</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit est rem sint non, 
+            reiciendis recusandae.</p>
+        <div id="redes">
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-instagram-alt'></i>
+            <i class='bx bxl-twitter'></i>
+            <i class='bx bxl-linkedin-square'></i>
+        </div>
+        <p id="ass">Desenvolvido por Luiz Rocha</p>
+    </footer>
 </body>
 </html>

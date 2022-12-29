@@ -1,0 +1,419 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://alefmirandadesigner.com/wp-content/uploads/2022/08/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* header */
+header{
+    background-color: rgb(113, 35, 186);
+}
+
+header div#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'menu logo acessibilidade'
+        'pesquisar pesquisar pesquisar';
+    padding: 10px;
+}
+
+a img#logo{
+    width: 100px;
+    margin: 0 38%;
+    grid-area: logo;
+}
+
+div#container > a{
+    padding: 0;
+}
+
+.pesquisar{
+    grid-area: pesquisar;
+    margin-top: 10px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input#pesquisa{
+    width: calc(100% - 30px);
+    display: inline-block;
+    padding: 5px;
+}
+
+.acessibilidade{
+    grid-area: acessibilidade;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu{
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+}
+
+.aumentaFont{
+    width: 25px;
+    height: 25px;
+}
+
+.diminuiFont{
+    width: 25px;
+    height: 25px;
+}
+
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+
+label#check{
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+    margin: 5px;
+}
+
+label#check span{
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #eee;
+    transition: 0.25s ease-in-out;
+    z-index: 1;
+}
+
+label#check span:nth-child(1){
+    top: 0;
+}
+
+label#check span:nth-child(2){
+    top: 9px;
+}
+
+label#check span:nth-child(3){
+    top: 18px;
+}
+
+#checkbox-menu:checked + label#check span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked + label#check span:nth-child(2){
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label#check span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+/* nav */
+nav{
+    position: absolute;
+    padding: 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    left: -100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(100%);
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 20px 0 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 350px;
+    height: 2px;
+    background-color: rgb(69, 0, 101);
+    margin-top: 11%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #eee;
+}
+
+input::placeholder{
+    color: rgba(82, 0, 158, 0.437);
+}
+
+#search{
+    width: 25px;
+    height: 100%;
+    font-size: 20px;
+    color: #eee;
+    background: transparent;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main */
+#conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    color: #eee;
+}
+
+#conteudo label{
+    font-size: 20px;
+    display: block;
+    padding: 15px;
+}
+
+#conteudo input{
+    width: calc(100% - 90px);
+    display: inline-block;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+}
+
+#conteudo button{
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(113, 35, 186);
+    color: #eee;
+    font-size: 15px;
+}
+
+#lista ul{
+    color: #eee;
+    list-style: none;
+}
+
+#lista{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: #b8151d;
+}
+
+.list li{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+#texto{
+    padding: 15px;
+    font-size: 18px;
+    text-align: justify;
+    color: #eee;
+}
+
+/* Foorter */
+footer{
+    background-color: rgb(113, 35, 186);
+    color: #eee;
+    padding: 15px;
+}
+
+footer h2{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+footer p{
+    padding: 15px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+}
+
+#redes{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+#redes i{
+    padding: 5px;
+}
+
+footer p#ass{
+    padding: 0;
+    align-items: flex-end;
+    font-size: 15px;
+}
+
+/* none na versão mobile */
+div#video > iframe{
+    display: none;
+}
+
+img#anuncio{
+    display: none;
+}
+
+@media (min-width: 480px){
+    header div#container{
+        grid-template-columns: 100px 1fr 60px;
+        gap: 10px;
+        grid-template-areas: 
+            'logo menu acessibilidade'
+            'pesquisar pesquisar pesquisar';
+        align-items: center;
+        justify-content: center;
+    }
+
+    a img#logo{
+        margin: 0 auto 0 5px;
+    }
+
+    .acessibilidade{
+        margin: 0 5px 0 auto;
+    }
+
+    label#check span{
+        display: none;
+    }
+
+    nav{
+        left: 0;
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li{
+        list-style: none;
+        font-size: 16px;
+        padding: 0;
+    }
+
+    nav ul li::after{
+        display: none;
+    }
+
+    nav ul li a:hover{
+        background-color: rgb(45, 45, 45);
+        border-radius: 4px;
+    }
+
+    .pesquisar{
+        margin-top: 0;
+    }
+
+    input#pesquisa{
+        width: calc(100% - 30px);
+    }
+
+    label#check{
+        display: none;
+    }
+
+    form{
+        justify-content: flex-end;
+    }
+
+    #conteudo button:hover{
+        cursor: pointer;
+        background-color: rgb(75, 18, 128);
+    }
+
+    div#lista ul a:hover{
+        color: #8f1118;
+    }
+
+    div#texto{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+            'paragrafo video'
+            'paragrafo image';
+        align-items: flex-start;
+        justify-content: center;
+        padding: 30px;
+        gap: 10px;
+    }
+
+    div#texto p{
+        grid-area: paragrafo;
+        font-size: 16px;
+    }
+
+    div#video{
+        position: relative;
+        grid-area: video;
+        padding-bottom: 50%;
+    }
+
+    div#video > iframe{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    div#texto img{
+        display: block;
+        width: 100%;
+        grid-area: image;
+    }
+
+    .list li{
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (min-width: 768px){
+    div#texto{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            'paragrafo video image';
+    }
+}
