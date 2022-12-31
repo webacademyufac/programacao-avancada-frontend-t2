@@ -1,0 +1,297 @@
+@charset "UTF-8"; 
+
+/* Geral */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Conteúdo do Corpo */
+body, html {
+    background-color: #234569;
+}
+
+/* Cabeçalho */
+header {
+    background-color: black;
+}
+
+/* Logo do Projeto */
+.logo { /* header > div > h1 = class logo */
+    padding: 10px;
+    text-align: center;
+    color: #00b4cc;
+}
+
+/* Menu Hamburguer item */
+#burguer{
+  background-color: #d6464c;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#burguer:hover{
+  background-color: white;
+  color: black;
+}
+
+/* Menu Hamburguer - Conteúdo */
+menu { 
+    display: none; 
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background: #d6464c;
+    color: white;
+    border-top: 2px solid #d9d2be;
+}
+
+menu ul li a:hover{
+    background-color: #234569;
+}
+
+
+/* Local de Inserir URLS do Projeto */
+.api{
+  padding: 10px;
+}
+
+.inputUrl {
+  width: 95%;
+
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  outline: none;
+  
+  font-size: 1.0rem;
+  font-weight:300;
+  
+}
+
+/* ul li onde serão salvas os links inseridos no input */
+.urls{
+  display: flex;
+  justify-content: space-between
+  
+}
+.api > ul > li {
+  background: #00b4cc;
+  box-shadow: 0px 4px 8px -2px #00000033;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  display: flex;
+  width: 100%;
+
+}
+
+/* Botão ao lado dos links */
+.btn{
+  background: #cc0707;
+  color: white;
+}
+
+.btn:hover{
+  background-color: rgb(124, 42, 42);
+  cursor: pointer;
+}
+
+
+/* Conbteúdo Principal, onde tem o texto, imagens e vídeos */
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Título H2 */
+.descricao h2 {
+    padding-bottom: 20px; 
+    text-align: center;
+}
+
+/* Descrição Textual */
+.descricao p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+
+/* Vídeos e Slider(fotos) */
+.midias{
+  display: none;
+}
+
+
+/* Rodapé do Projeto */
+
+footer{
+  color: white;
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  padding: 50px 100x;
+  background: black;
+}
+
+footer .container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+footer .container .sec h2 {
+  position: relative;
+  color: #00b4cc;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+footer .container .sec h2::before{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #d6464c;
+}
+
+footer .container .sec p {
+  color: white;
+}
+
+.sci{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-gap: 10px;
+
+}
+
+.sci li{
+  list-style: none;
+}
+
+.sci li a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: #3e56cb;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.sci li a:hover {
+  background: #6380fe;
+}
+
+.sci li a .fa{
+  color: white;
+  font-size: 20px;
+}
+
+.quicklinks{
+  position: relative
+}
+
+.quicklinks li {
+  list-style: none;
+}
+
+.quicklinks li a{
+  color: #f7f7f7;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.quicklinks li a:hover{
+  color: #00b4cc;
+}
+
+.info{
+  position: relative;
+}
+
+.info li{
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  margin-bottom: 16px;
+}
+
+.info li span:nth-child(1){
+  color: #fff;
+  font-size: 20px;
+}
+
+.info li span {
+  color: #fff;
+  font-size: 20px;
+}
+
+.info a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.info a:hover{
+  color: #00b4cc;
+}
+
+.copyrightText{
+  width: 100%;
+  background: #1f3389;
+  padding: 8px 100px;
+  text-align: center;
+  color: #fff;
+}
+
+
+/*   .footer{
+    background-color: black;
+    color: #f2f2f2;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 0.8em;
+    
+  }
+
+  .footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+    color: #00b4cc;
+  }  */

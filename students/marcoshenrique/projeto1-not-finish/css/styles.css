@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* Mobile First */
+
+/* :root{
+    font-size: 16px;
+    --black: #0a0c0d; 
+    --cinza: #213635; 
+    --white-gelo: #f2f2f2;
+    --background: #e2e3e9; 
+  } */
+  
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .header-container {
+    background-color: #0a0a0a;
+  }
+
+  h1 {
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.49);
+    color: #00b4cc;
+  }
+
+  header#logo {
+    padding: 10px;
+    text-align: center;
+  }
+
+  #burguer{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  #burguer:hover{
+    background-color: white;
+    color: black;
+  }
+  menu{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #e68b02;
+  }
+  menu ul li a:hover{
+    color: white;
+
+  }
+
+  .menu-item{
+    flex: 1;
+    margin: 5px;
+    padding: 0;
+    flex: 1 1 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+    .menu-link{
+      color: black;
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+    }
+
+  body, html {
+    height: 100vh;
+  }
+
+  body{
+    background: #0a0c0d;
+  }
+
+  main{
+    background: #f2f2f2;
+    width: 80vw;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  input {
+    width: 100%;
+    
+    padding: 8px 16px;
+    margin-bottom: 32px;
+    
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    
+    font-size: 1.6rem;
+    font-weight:300;
+    
+  }
+
+  ul.urls{
+    background: #00b4cc;
+    box-shadow: 0px 4px 8px -2px #00000033;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 16px;
+    font-size: 1.4rem;
+    list-style-type: none;
+    
+  }
+
+  .btn{
+    text-align: end;
+    background: #cc0707;
+    width: 0;
+  }
+
+  h2 {
+    text-align: center;
+    color: black;
+
+  }
+  article > p {
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px;
+  }
+
+  .footer{
+    color: #f2f2f2;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+  }

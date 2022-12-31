@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../newMobile/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../newMobile/css/media-query.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="../newMobile/js/js.js" defer></script>
+
+    <title>WebSystem</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <div class="logo">
+            <h1>Meu Site</h1> 
+        </div>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">My Links</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Content</a></li>
+            </ul>
+        </menu>
+
+    </header>
+
+    <section class="api">
+        <div>
+            <form action="" >
+                <input class="inputUrl"type="text" placeholder="Digite a url...">
+            </form>
+        </div>
+
+        <ul class="urls">
+            <li>Nunca mais esqueça um link!</li>
+            <span class="btn"><input class="btn" type="button" value="Delete"></span>
+        </ul>
+
+    </section> 
+
+
+    <main>
+        <!-- Descrição, Inframe e Slider -->
+        <div class="descricao-main">
+            <div class="descricao-texto">
+                <h2>Descrição da Aplicação</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit adipisci delectus cum eveniet qui nostrum est nihil quisquam libero officiis quas quaerat id ab, error excepturi perspiciatis eius commodi quod?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facilis minus vero possimus! Itaque error obcaecati quis nostrum recusandae numquam temporibus, enim earum explicabo accusamus suscipit, deserunt aut quasi pariatur.</p>
+            </div>
+
+            <div class="midias">
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qIGYM4S8x50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div>
+                    <img src="../newMobile/img/slider.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </main>     
+
+    <footer>
+        <div class = "container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dignissimos, numquam, corporis, debitis asperiores iusto illo 
+                nemo mollitia aut voluptatibus repellendus earum vel autem quae? 
+                Aperiam autem necessitatibus praesentium assumenda excepturi!</p>
+                <ul class="sci">
+                    <li><a href="#"></a><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                    <li><a href="#"></a><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    <li><a href="#"></a><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li><a href="#"></a><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Provacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Shop</h2>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Watch</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>Rodovia BR 364, Km 04 - Distrito Industrial<br>
+                        Rio Branco-AC, 69920-900<br>BRASIL</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-whatsapp" aria-hidden="true"></i></span>
+                        <p><a href="tel:+5568984119153">+5568 98411-9153</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="mailto:marcossistemas@gmail.com">marcossistemas@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright &copy; 2022 Gestão de Links. Todos os direitos reservados.</p>
+    </div>
+    
+<!--    <footer class="footer">
+        <span>Desenvolvedor: Marcos Henrique / (68) 98411-9153 | <a href="mailto:marcossistemas.ac@gmail.com">marcossistemas.ac@gmail.com</a></span>
+        <span>&copy;Webacademy System</span>
+    </footer> -->
+</body>
+</html>

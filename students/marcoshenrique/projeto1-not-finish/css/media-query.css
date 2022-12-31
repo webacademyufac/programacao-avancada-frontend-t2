@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints
+Common Responsive Breakpoints
+Mobile: 360 x 640.
+Mobile: 375 x 667.
+Mobile: 360 x 720.
+iPhone X: 375 x 812.
+Pixel 2: 411 x 731.
+Tablet: 768 x 1024.
+Laptop: 1366 x 768.
+High-res laptop or desktop: 1920 x 1080.
+
+
+Pequenas Telas: até 600px;
+Mobile: até 600px até 768px; 
+Version Tablet: 480px; (prof victor)
+Version Desktop: 768px; (prof victor)
+desktop: 992px até 1200px; 
+Grandes Telas: acima de 1200px; 
+*/
+
+@media screen and (min-width: 480px) {
+
+    /* tablet */
+    .menu-item {
+        flex-basis: 100px;
+    }
+
+    .header-container {
+        display: flex;
+        margin-top: auto;
+        text-align: left;
+        background: #f24e02;
+        align-items: left;
+        justify-content: left;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+    /* desktop */
+    .menu-item {
+        flex-basis: 100px;
+    }
+
+    .header-container {
+        display: flex;
+        margin-top: auto;
+        text-align: left;
+        background: #a6a21c;
+        align-items: left;
+        justify-content: left;
+    }
+
+    div#logo {
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    iframe{
+        display: block;
+      }
+
+
+} 
